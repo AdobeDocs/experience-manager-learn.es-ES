@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo habilitar ModSecurity para protege
 feature: Security
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
-role: Admin, Architect
+role: Admin, Developer
 level: Experienced
 jira: KT-10385
 thumbnail: KT-10385.png
@@ -12,7 +12,7 @@ doc-type: Article
 last-substantial-update: 2023-08-18T00:00:00Z
 exl-id: 9f689bd9-c846-4c3f-ae88-20454112cf9a
 duration: 783
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 100%
@@ -24,7 +24,7 @@ ht-degree: 100%
 Aprenda a habilitar ModSecurity para proteger el sitio de ataques de denegación de servicio (DoS) mediante el **conjunto de reglas principales (CRS) de OWASP ModSecurity** en Publish Dispatcher de Adobe Experience Manager (AEM).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452127?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
 
 ## Información general
 
@@ -295,7 +295,7 @@ La configuración del registrador de ModSecurity registra los detalles del incid
 
 ## Impacto en el rendimiento de ModSecurity
 
-La activación de ModSecurity y sus reglas asociadas tienen algunas implicaciones en el rendimiento, por lo que hay que tener en cuenta qué reglas son necesarias, cuáles son redundantes y cuáles se deben omitir. Colabore con sus expertos en seguridad web para habilitar y personalizar las reglas de CRS.
+La habilitación de ModSecurity y sus reglas asociadas tienen algunas implicaciones en el rendimiento, por lo que hay que tener en cuenta qué reglas son necesarias, cuáles son redundantes y cuáles se deben omitir. Colabore con sus expertos en seguridad web para habilitar y personalizar las reglas de CRS.
 
 ### Reglas adicionales
 

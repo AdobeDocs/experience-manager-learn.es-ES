@@ -4,16 +4,16 @@ description: Obtenga información sobre cómo configurar la autenticación SAML 
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '4262'
+source-wordcount: '4233'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Aprenda a configurar y autenticar usuarios finales (no autores de AEM) en un IDP
 
 La integración de SAML 2.0 con AEM Publish (o Preview) permite a los usuarios finales de una experiencia web basada en AEM autenticarse en un IDP (proveedor de identidad) que no es de Adobe y acceder a AEM como un usuario autorizado con nombre.
 
-|                       | AEM Author | Publicación de AEM |
+|                       | AEM Author | AEM Publish |
 |-----------------------|:----------:|:-----------:|
 | Compatibilidad con SAML 2.0 | ✘ | ✔ |
 
@@ -56,7 +56,7 @@ El flujo típico de una integración de AEM Publish SAML es el siguiente:
 
 ## Introducción a la configuración
 
->[!VIDEO](https://video.tv.adobe.com/v/3455334?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
 
 Este vídeo explica cómo configurar la integración de SAML 2.0 con el servicio de publicación de AEM as a Cloud Service y cómo utilizar Okta como IDP.
 
@@ -141,7 +141,7 @@ _Es necesario crear un almacén de claves para el servicio de autenticación cua
 1. Seleccione __Guardar y cerrar__.
 1. Cree un paquete que contenga el usuario __authentication-service__ actualizado.
 
-   _Use la siguiente solución temporal mediante paquetes:_
+   _Usar la siguiente solución temporal mediante paquetes :_
 
    1. Vaya a __Herramientas > Implementación > Paquetes__.
    1. Creación de un paquete
@@ -228,7 +228,7 @@ Tanto la firma de AuthnRequest como el cifrado de aserción de SAML son opcional
 1. Seleccione __Guardar y cerrar__.
 1. Cree un paquete que contenga el usuario __authentication-service__ actualizado.
 
-   _Use la siguiente solución temporal mediante paquetes:_
+   _Usar la siguiente solución temporal mediante paquetes :_
 
    1. Vaya a __Herramientas > Implementación > Paquetes__.
    1. Creación de un paquete
@@ -251,7 +251,7 @@ La configuración es una configuración de fábrica de OSGi, lo que significa qu
 
 ### Configuración OSGi del Controlador de autenticación SAML 2.0 de Adobe Granite{#configure-saml-2-0-authentication-handler-osgi-configuration}
 
-|                                   | Propiedad OSGi | Requerido | Formato de valor | Valor predeterminado | Descripción |
+|                                   | Propiedad OSGi | Necesario | Formato de valor | Valor predeterminado | Descripción |
 |-----------------------------------|-------------------------------|:--------:|:---------------------:|---------------------------|-------------|
 | Rutas | `path` | ✔ | Matriz de cadenas | `/` | Rutas de AEM para las que se utiliza este controlador de autenticación. |
 | URL de IDP | `idpUrl` | ✔ | Cadena |                           | Dirección URL de IDP a la que se envía la solicitud de autenticación SAML. |
@@ -335,7 +335,7 @@ Las configuraciones de OSGi por entorno (`config.publish.dev`, `config.publish.s
 
 Al [cifrar AuthnRequest y la aserción SAML](#encrypting-the-authnrequest-and-saml-assertion), se requieren las siguientes propiedades: `useEncryption`, `spPrivateKeyAlias` y `keyStorePassword`. El `keyStorePassword` contiene una contraseña; por lo tanto, el valor no debe almacenarse en el archivo de configuración OSGi, sino insertarse usando [valores de configuración secretos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=es#secret-configuration-values)
 
-+++Opcionalmente, actualice la configuración de OSGi para utilizar el cifrado
++++Opcionalmente, actualice la configuración OSGi para utilizar el cifrado
 
 1. Abra `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json` en su IDE.
 1. Agregue las tres propiedades `useEncryption`, `spPrivateKeyAlias` y `keyStorePassword` como se muestra a continuación.
@@ -452,7 +452,7 @@ La pertenencia a grupos dinámicos es una característica de [Apache Jackrabbit 
 ### Cómo habilitar la pertenencia a grupos dinámicos para usuarios de SAML en nuevos entornos
 
 Para mejorar significativamente el rendimiento de la evaluación de grupos en nuevos entornos de AEM as a Cloud Service, se recomienda activar la función de pertenencia a grupos dinámicos en nuevos entornos.
-También es un paso necesario cuando se activa la sincronización de datos. Más detalles [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+También es un paso necesario cuando se activa la sincronización de datos. Más detalles [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
 Para ello, agregue la siguiente propiedad al archivo de configuración OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
@@ -597,7 +597,7 @@ y proporcionando parámetros de consulta:
 
 | Nombre del parámetro de consulta | Valor del parámetro de consulta |
 |----------------------|-----------------------|
-| `resource` | Cualquier ruta JCR, o subruta, que sea la escucha del controlador de autenticación SAML, tal como se define en la propiedad [OSGi del controlador de autenticación SAML 2.0 de Adobe Granite de la configuración &#x200B;](#configure-saml-2-0-authentication-handler) `path`. |
+| `resource` | Cualquier ruta JCR, o subruta, que sea la escucha del controlador de autenticación SAML, tal como se define en la propiedad [OSGi del controlador de autenticación SAML 2.0 de Adobe Granite de la configuración ](#configure-saml-2-0-authentication-handler) `path`. |
 | `saml_request_path` | La ruta URL a la que debe dirigirse el usuario después de autenticarse correctamente en SAML. |
 
 Por ejemplo, este vínculo de HTML almacenará en déclencheur el flujo de inicio de sesión de SAML y, una vez realizado correctamente, llevará al usuario a `/content/wknd/us/en/protected/page.html`. Estos parámetros de consulta se pueden configurar mediante programación según sea necesario.
@@ -618,7 +618,7 @@ y proporcionar los datos del formulario:
 
 | Nombre de datos de formulario | Valor de datos de formulario |
 |----------------------|-----------------------|
-| `resource` | Cualquier ruta JCR, o subruta, que sea la escucha del controlador de autenticación SAML, tal como se define en la propiedad [OSGi del controlador de autenticación SAML 2.0 de Adobe Granite de la configuración &#x200B;](#configure-saml-2-0-authentication-handler) `path`. |
+| `resource` | Cualquier ruta JCR, o subruta, que sea la escucha del controlador de autenticación SAML, tal como se define en la propiedad [OSGi del controlador de autenticación SAML 2.0 de Adobe Granite de la configuración ](#configure-saml-2-0-authentication-handler) `path`. |
 | `saml_request_path` | La ruta URL a la que debe dirigirse el usuario después de autenticarse correctamente en SAML. |
 
 

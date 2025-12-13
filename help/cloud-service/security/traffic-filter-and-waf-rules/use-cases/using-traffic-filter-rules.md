@@ -4,15 +4,15 @@ description: Obtenga información sobre cómo proteger los sitios web de AEM fre
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18307
 thumbnail: null
 exl-id: 5e235220-82f6-46e4-b64d-315f027a7024
-source-git-commit: b7f567da159865ff04cb7e9bd4dae0b140048e7d
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 100%
 
@@ -234,7 +234,7 @@ Para crear paneles de control en Splunk, siga los pasos de [Paneles de control d
 
 La siguiente captura de pantalla muestra un ejemplo de un panel de control Splunk que muestra el número máximo de solicitudes en el origen y el borde por IP, lo que puede ayudarle a identificar posibles ataques DoS.
 
-![Panel de Splunk: número máximo de solicitudes en el origen y el borde por IP](../assets/use-cases/splunk-dashboard-max-origin-edge-requests.png)
+![Panel de control de Splunk: número máximo de solicitudes en el origen y el borde por IP](../assets/use-cases/splunk-dashboard-max-origin-edge-requests.png)
 
 ## Cuándo y cómo perfeccionar las reglas
 

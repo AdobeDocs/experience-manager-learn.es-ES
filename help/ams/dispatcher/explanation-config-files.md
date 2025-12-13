@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Al servidor web Apache no le importa realmente la extensión de archivo de un ar
 | Archivo | Destino del archivo | Descripción |
 | --- | --- | --- |
 | NOMBRE DE ARCHIVO`.any` | `/etc/httpd/conf.dispatcher.d/` | El módulo AEM Dispatcher Apache obtiene su configuración a partir de `*.any` archivos. El archivo de inclusión principal predeterminado es `conf.dispatcher.d/dispatcher.any` |
-| NOMBRE DE ARCHIVO`_farm.any` | Ensayado: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Activo: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b>Nota:</b> estos archivos de granja no se van a copiar en la carpeta `enabled_farms`, pero usan `symlinks` para establecer una ruta relativa al archivo `available_farms/*_farm.any`. Dentro del archivo `conf.dispatcher.d/dispatcher.any` se incluyen <br/>`*_farm.any` archivos. Estos archivos de granja principales existen para controlar el comportamiento del módulo para cada tipo de representación o sitio web. Los archivos se crean en el directorio `available_farms` y se habilitan con un `symlink` en el directorio `enabled_farms`.  <br/>Los incluye automáticamente por nombre del archivo `dispatcher.any`.<br/><b>Los archivos de granja de servidores de línea de base</b> comienzan por `000_` para asegurarse de que se cargan primero.Los archivos de granja <br><b>Custom</b> deben cargarse después de iniciar su esquema numérico en `100_` para garantizar el comportamiento correcto de inclusión. |
+| NOMBRE DE ARCHIVO`_farm.any` | Ensayado: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Activo: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b>Nota:</b> estos archivos de granja no se van a copiar en la carpeta `enabled_farms`, pero usan `symlinks` para establecer una ruta relativa al archivo `available_farms/*_farm.any`. Dentro del archivo <br/>`*_farm.any` se incluyen `conf.dispatcher.d/dispatcher.any` archivos. Estos archivos de granja principales existen para controlar el comportamiento del módulo para cada tipo de representación o sitio web. Los archivos se crean en el directorio `available_farms` y se habilitan con un `symlink` en el directorio `enabled_farms`.  <br/>Los incluye automáticamente por nombre del archivo `dispatcher.any`.<br/><b>Los archivos de granja de servidores de línea de base</b> comienzan por `000_` para asegurarse de que se cargan primero.Los archivos de granja <br><b>Custom</b> deben cargarse después de iniciar su esquema numérico en `100_` para garantizar el comportamiento correcto de inclusión. | |
 | NOMBRE DE ARCHIVO`_filters.any` | `/etc/httpd/conf.dispatcher.d/filters/` | `*_filters.any` archivos se incluyen desde dentro de los `conf.dispatcher.d/enabled_farms/*_farm.any` archivos. Cada granja tiene un conjunto de reglas que cambian el tráfico que debe filtrarse y no llegar a los procesadores. |
 | NOMBRE DE ARCHIVO`_vhosts.any` | `/etc/httpd/conf.dispatcher.d/vhosts/` | `*_vhosts.any` archivos se incluyen desde dentro de los `conf.dispatcher.d/enabled_farms/*_farm.any` archivos. Estos archivos son una lista de nombres de host o rutas uri que deben coincidir con la coincidencia de blob para determinar qué procesador utilizar para atender esa solicitud |
 | NOMBRE DE ARCHIVO`_cache.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_cache.any` archivos se incluyen desde dentro de los `conf.dispatcher.d/enabled_farms/*_farm.any` archivos. Estos archivos especifican qué elementos se almacenan en caché y cuáles no |
@@ -249,11 +249,11 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 ### La granja de AMS incluye
 
-![&lt;FILENAME>_farms.any incluirá los archivos sub.any para completar la configuración de una granja.  En esta imagen puede ver que una granja incluirá cada caché de archivos de sección de nivel superior, encabezados de cliente, filtros, procesamientos y vhosts .any archivos](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")
+![<FILENAME>_farms.any incluirá los archivos sub.any para completar la configuración de una granja.  En esta imagen puede ver que una granja incluirá cada caché de archivos de sección de nivel superior, encabezados de cliente, filtros, procesamientos y vhosts .any archivos](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")
 
 Cuando cualquier archivo FILENAME_farm.any del directorio `/etc/httpd/conf.dispatcher.d/available_farms/` se enlace simbólicamente al directorio `/etc/httpd/conf.dispatcher.d/enabled_farms/`, se utilizará en la configuración en ejecución.
 
-Los archivos de granja tienen subinclusiones basadas en [secciones de nivel superior de la granja](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#defining-farms-farms), como caché, clientheaders, filtros, procesamientos y vhosts.
+Los archivos de granja tienen subinclusiones basadas en [secciones de nivel superior de la granja](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#defining-farms-farms), como caché, clientheaders, filtros, procesamientos y vhosts.
 
 Los `FILENAME_farm.any` archivos tendrán instrucciones de inclusión para cada archivo en función de dónde deban incluirse en el archivo de granja.  Esta es una sintaxis de ejemplo de un archivo `FILENAME_farm.any` como buena referencia:
 

@@ -4,16 +4,16 @@ description: Obtenga información acerca de las consideraciones de implementaci�
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10797
 thumbnail: kt-10797.jpg
 exl-id: 9d4aab4c-82af-4917-8c1b-3935f19691e6
 duration: 31
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 2%
+source-wordcount: '155'
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ Las implementaciones de AEM sin encabezado [Web Component](https://developer.moz
 
 La siguiente configuración de implementación debe estar implementada para implementaciones de componentes web/JS.
 
-| La aplicación web Component/JS se conecta a → | AEM Author | Publicación de AEM | Previsualización de AEM |
+| La aplicación web Component/JS se conecta a → | AEM Author | AEM Publish | Previsualización de AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros de Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Uso compartido de recursos de origen cruzado (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |

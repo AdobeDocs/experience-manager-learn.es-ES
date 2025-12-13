@@ -4,7 +4,7 @@ description: Aprenda a utilizar las API de Java&trade; de entrega de imágenes o
 version: Experience Manager as a Cloud Service
 feature: APIs, Sling Model, OSGI, HTL or HTML Template Language
 topic: Performance, Development
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Code Sample
 last-substantial-update: 2023-03-30T00:00:00Z
@@ -12,7 +12,7 @@ jira: KT-13014
 thumbnail: KT-13014.jpeg
 exl-id: c6bb9d6d-aef0-42d5-a189-f904bbbd7694
 duration: 352
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 1%
@@ -26,14 +26,14 @@ Aprenda a utilizar las API de Java™ de entrega de imágenes optimizadas para l
 AEM as a Cloud Service admite [entrega de imágenes optimizadas para la web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=es), lo cual genera automáticamente representaciones web de imágenes optimizadas de los recursos. La entrega de imágenes optimizadas para la web se puede utilizar con tres enfoques principales:
 
 1. [Usar componentes de AEM Core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-2. Crear un componente personalizado que [extienda el componente de imagen de AEM Core WCM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html?lang=es#tackling-the-image-problem)
+2. Crear un componente personalizado que [extienda el componente de imagen de AEM Core WCM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html#tackling-the-image-problem)
 3. Cree un componente personalizado que utilice la API Java™ de AssetDelivery para generar direcciones URL de imagen optimizadas para la web.
 
 Este artículo explora el uso de las API de Java™ de imagen optimizada para la web en un componente personalizado, de una manera que permite que las API basadas en código funcionen tanto en AEM as a Cloud Service como en AEM SDK.
 
 ## API de Java™
 
-La [API AssetDelivery](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/cq/wcm/spi/AssetDelivery.html) es un servicio OSGi que genera direcciones URL de entrega optimizadas para la web para los recursos de imagen. `AssetDelivery.getDeliveryURL(...)` opciones permitidas están [documentadas aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=es#can-i-use-web-optimized-image-delivery-with-my-own-component%3F).
+La [API AssetDelivery](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/cq/wcm/spi/AssetDelivery.html) es un servicio OSGi que genera direcciones URL de entrega optimizadas para la web para los recursos de imagen. `AssetDelivery.getDeliveryURL(...)` opciones permitidas están [documentadas aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html#can-i-use-web-optimized-image-delivery-with-my-own-component%3F).
 
 El servicio OSGi `AssetDelivery` solo se cumple cuando se ejecuta en AEM as a Cloud Service. En AEM SDK, las referencias al servicio OSGi `AssetDelivery` devuelven `null`. Es mejor utilizar de forma condicional la URL optimizada para la web cuando se ejecuta en AEM as a Cloud Service y utilizar una URL de imagen de reserva en el SDK de AEM. Normalmente, la representación web del recurso es una reserva suficiente.
 

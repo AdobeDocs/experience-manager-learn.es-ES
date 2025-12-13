@@ -4,13 +4,13 @@ description: Personalización de experiencias en acción en el sitio web de habi
 version: Experience Manager as a Cloud Service
 feature: Personalization, Integrations
 topic: Personalization, Integrations
-role: Developer, Architect, Leader, User
+role: Developer, Leader, User
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-11-03T00:00:00Z
 jira: KT-19546
 thumbnail: KT-19546.jpeg
-source-git-commit: ed7af09d747d54a84d2583073d3c731388b5f516
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Visite el [sitio web de habilitación de WKND](https://wknd.enablementadobe.com/us/en.html){target="wknd"} para ver ejemplos reales de pruebas A/B, segmentación basada en el comportamiento y personalización de usuarios conocidos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476464/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476461/?learn=on&enablevpops)
 
 Esta página le guía a través de demostraciones prácticas de cada escenario de personalización. Utilícelo para explorar las posibilidades antes de crear estas funciones en su propio sitio de AEM.
 

@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 167a4b11-1202-4c7a-b022-f3f996348a4e
 duration: 476
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 Aprenda a añadir widgets al editor de texto enriquecido (RTE) en el editor de fragmentos de contenido de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447435?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
 
 Para agregar contenido dinámico en el Editor de texto enriquecido (RTE), se puede usar la funcionalidad **widgets**. Los widgets ayudan a integrar la IU simple o compleja en RTE y la IU se puede crear utilizando el marco de trabajo JS de su elección. Se pueden considerar como cuadros de diálogo que se abren pulsando la tecla especial `{` en RTE.
 
 Normalmente, los widgets se utilizan para insertar el contenido dinámico que tiene una dependencia externa del sistema o que podría cambiar según el contexto actual.
 
-Los **widgets** se han agregado a **RTE** en el editor de fragmentos de contenido usando el punto de extensión `rte`. Con el método `getWidgets()` del punto de extensión `rte` se agregan uno o varios widgets. Se activan pulsando la tecla especial `{` para abrir la opción del menú contextual y, a continuación, seleccione el widget deseado para cargar la interfaz de usuario del cuadro de diálogo personalizado.
+Los **widgets** se han agregado a **RTE** en el editor de fragmentos de contenido usando el punto de extensión `rte`. Con el método `rte` del punto de extensión `getWidgets()` se agregan uno o varios widgets. Se activan pulsando la tecla especial `{` para abrir la opción del menú contextual y, a continuación, seleccione el widget deseado para cargar la interfaz de usuario del cuadro de diálogo personalizado.
 
 Este ejemplo muestra cómo agregar un widget llamado _Lista de códigos de descuento_ para buscar, seleccionar y agregar el código de descuento específico de la aventura WKND dentro de un contenido RTE. Estos códigos de descuento se pueden administrar en sistemas externos como Order Management System (OMS), Product Information Management (PIM), una aplicación propia o una acción de AppBuilder de Adobe.
 
@@ -40,7 +40,7 @@ Para simplificar las cosas, este ejemplo usa el módulo [Adobe React Spectrum](h
 Este ejemplo se extiende al punto de extensión `rte` para agregar un widget al RTE en el Editor de fragmentos de contenido.
 
 | IU de AEM extendida | Punto de extensión |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Widgets del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
 ## Extensión de ejemplo

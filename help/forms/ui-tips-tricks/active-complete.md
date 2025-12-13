@@ -11,7 +11,7 @@ jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 68
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 24%
@@ -24,7 +24,7 @@ Cuando tenga un formulario adaptable con navegación de pestaña izquierda, es p
 
 ![espaciado de barra de herramientas](assets/active-completed.png)
 
-## Creación de un formulario adaptable
+## Crear un formulario adaptable
 
 Para crear el formulario de ejemplo se utilizó un formulario adaptable simple basado en la plantilla Básico y la temática Lienzo 3.0.
 Los [iconos utilizados en este artículo](assets/icons.zip) se pueden descargar desde aquí.
@@ -46,7 +46,7 @@ Establezca las propiedades CSS para el estado predeterminado como se muestra a c
 | Texto | Color | #FFF |
 | Texto | Altura de la línea | 3 |
 | Texto | Alineación de texto | Izquierda |
-| Fondo | Color | #056dae |
+| Información general | Color | #056dae |
 
 Guarde los cambios
 
@@ -61,7 +61,7 @@ Asegúrese de que está en estado Activo y aplique estilo a las siguientes propi
 | Texto | Color | #FFF |
 | Texto | Altura de la línea | 3 |
 | Texto | Alineación de texto | Izquierda |
-| Fondo | Color | #056dae |
+| Información general | Color | #056dae |
 
 Aplicar un estilo a la imagen de fondo como se muestra en la captura de pantalla siguiente
 
@@ -82,7 +82,7 @@ Asegúrese de que está en el estado visitado y aplique estilo a las siguientes 
 | Texto | Color | #FFF |
 | Texto | Altura de la línea | 3 |
 | Texto | Alineación de texto | Izquierda |
-| Fondo | Color | #056dae |
+| Información general | Color | #056dae |
 
 Aplicar un estilo a la imagen de fondo como se muestra en la captura de pantalla siguiente
 

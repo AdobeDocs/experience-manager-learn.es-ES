@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo recibir eventos de AEM mediante la
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 457
@@ -12,10 +12,10 @@ last-substantial-update: 2024-01-29T00:00:00Z
 jira: KT-14878
 thumbnail: KT-14878.jpeg
 exl-id: b1c127a8-24e7-4521-b535-60589a1391bf
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -145,7 +145,7 @@ Para recibir eventos de AEM y ejecutar la acción de Adobe I/O Runtime creada en
 
 - Finalmente, en el paso **Cómo recibir eventos**, expanda la opción **Acción en tiempo de ejecución** y seleccione la acción _genérica_ creada en el paso anterior. Haga clic en **Guardar eventos configurados**.
 
-  ![Acción en tiempo de ejecución: configurar el proyecto &#x200B;](../assets/examples/runtime-action/select-runtime-action.png)
+  ![Acción en tiempo de ejecución: configurar el proyecto ](../assets/examples/runtime-action/select-runtime-action.png)
 
 - Revise los detalles de registro de eventos, también la ficha **Seguimiento de depuración** y compruebe la solicitud y respuesta de **Sondeo de desafío**.
 
@@ -169,6 +169,6 @@ Puede revisar los detalles del evento en la ficha **Seguimiento de depuración**
 ![Detalles de evento de AEM](../assets/examples/runtime-action/aem-event-details.png)
 
 
-## Pasos siguientes
+## Próximos pasos
 
 En el siguiente ejemplo, vamos a mejorar esta acción para procesar eventos de AEM, volver a llamar al servicio de creación de AEM para obtener detalles de contenido, almacenar detalles en el almacenamiento de Adobe I/O Runtime y mostrarlos mediante la aplicación de una sola página (SPA).

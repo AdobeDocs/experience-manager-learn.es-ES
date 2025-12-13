@@ -9,9 +9,9 @@ exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
 thumbnail: 328618.jpg
 last-substantial-update: 2022-07-20T00:00:00Z
 duration: 626
-source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
-workflow-type: ht
-source-wordcount: '266'
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
+source-wordcount: '265'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Una API moderna de suministro de contenido es clave para la eficacia y el rendim
 
 Para superar estos desafíos, GraphQL proporciona una API basada en consultas que permite a los clientes consultar en AEM únicamente el contenido que necesita y recibir mediante una sola llamada de la API.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452882?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/328618?quality=12&learn=on)
 
 Este vídeo ofrece información general sobre la API GraphQL implementada en AEM. La API GraphQL de AEM está diseñada principalmente para ofrecer fragmentos de contenido de AEM a aplicaciones posteriores como parte de una implementación sin encabezado.
 
@@ -36,7 +36,7 @@ Este vídeo ofrece información general sobre la API GraphQL implementada en AEM
 >id="aemcloud_learn_headless_graphql_overview"
 >title="Introducción a AEM sin encabezado: GraphQL"
 >abstract="Aprenda a enviar fragmentos de contenido mediante GraphQL."
->additional-url="https://video.tv.adobe.com/v/3452882?captions=spa" text="Información general sobre GraphQL en AEM"
+>additional-url="https://video.tv.adobe.com/v/328618" text="Información general sobre GraphQL en AEM"
 
 ## Serie de vídeos sobre GraphQL de AEM sin encabezado
 

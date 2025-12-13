@@ -4,7 +4,7 @@ description: Aprenda a realizar llamadas HTTPS desde AEM a las API web que requi
 feature: Security
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Experienced
 jira: KT-13881
 thumbnail: KT-13881.png
@@ -12,8 +12,8 @@ doc-type: Article
 last-substantial-update: 2023-10-10T00:00:00Z
 exl-id: 7238f091-4101-40b5-81d9-87b4d57ccdb2
 duration: 495
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Aprenda a realizar llamadas HTTPS desde AEM a las API web que requieran autenticación Mutual Transport Layer Security (mTLS).
 
->[!VIDEO](https://video.tv.adobe.com/v/3447862?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
 
 La autenticación mTLS o TLS bidireccional mejora la seguridad del protocolo TLS al requerir que **tanto el cliente como el servidor se autentiquen mutuamente**. Esta autenticación se realiza mediante certificados digitales. Se utiliza comúnmente en escenarios donde la seguridad sólida y la verificación de identidad son críticas.
 
@@ -122,7 +122,7 @@ Para importar el certificado de AEM, siga estos pasos:
 
    ![Clave privada de AEM y certificados importados](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-Si el proveedor de API utiliza un certificado de CA autofirmado, importe el certificado recibido en el TrustStore de AEM y siga los pasos desde [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html?lang=es#httpclient-and-load-aem-truststore-material).
+Si el proveedor de API utiliza un certificado de CA autofirmado, importe el certificado recibido en el TrustStore de AEM y siga los pasos desde [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material).
 
 Del mismo modo, si AEM utiliza un certificado de CA autofirmado, solicite al proveedor de API que lo importe.
 
@@ -227,6 +227,6 @@ Sin embargo, este método no está alineado con las prácticas recomendadas de s
 
 ## Paquete de soluciones
 
-El proyecto Node.js de muestra que se muestra en el vídeo se puede descargar desde [aquí](assets/internal-api-call/REST-APIs.zip).
+El proyecto Node.js de muestra que aparece en el vídeo se puede descargar desde [aquí](assets/internal-api-call/REST-APIs.zip).
 
-El código de servlet de AEM está disponible en la rama `tutorial/web-api-invocation` del proyecto WKND de Sites; [vea](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
+El código de servlet de AEM está disponible en la rama `tutorial/web-api-invocation` del proyecto WKND Sites, [véase](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).

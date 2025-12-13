@@ -4,15 +4,15 @@ description: Obtenga información sobre cómo crear, implementar, probar y anali
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18306
 thumbnail: null
 exl-id: 0a738af8-666b-48dc-8187-9b7e6a8d7e1b
-source-git-commit: b7f567da159865ff04cb7e9bd4dae0b140048e7d
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 100%
 
@@ -143,7 +143,7 @@ Es posible utilizar la función de reenvío de registros para transmitir los reg
 
 >[!NOTE]
 > 
-> Si los registros aún no se han introducido desde la CDN de AEMCS, los paneles aparecerán vacíos.
+> Si los registros aún no se han introducido desde la CDN de AEMCS, los paneles de control aparecerán vacíos.
 
 ### Ingesta de registros de CDN
 
@@ -157,11 +157,11 @@ Para introducir registros de CDN en la pila ELK, siga estos pasos:
   >
   > Las nuevas solicitudes pueden tardar hasta 5 minutos en aparecer en los registros de CDN.
 
-- Copie el archivo de registro descargado (por ejemplo, `publish_cdn_2025-06-06.log` en la captura de pantalla siguiente) en la carpeta `logs/dev` del proyecto de herramienta panel elástico.
+- Copie el archivo de registro descargado (por ejemplo, `publish_cdn_2025-06-06.log` en la captura de pantalla siguiente) en la carpeta `logs/dev` del proyecto de herramienta panel de control elástico.
 
   ![Carpeta de registros de herramientas ELK](./assets/setup/elk-tool-logs-folder.png){width="800" zoomable="yes"}
 
-- Actualice la página de herramienta de panel elástico.
+- Actualice la página de herramienta de panel de control elástico.
    - En la sección **Filtro global** superior, edite el filtro `aem_env_name.keyword` y seleccione el valor de entorno `dev`.
 
      ![Filtro global de herramienta ELK](./assets/setup/elk-tool-global-filter.png)

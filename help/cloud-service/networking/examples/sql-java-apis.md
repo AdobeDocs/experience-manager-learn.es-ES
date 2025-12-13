@@ -4,15 +4,15 @@ description: Obtenga información sobre cómo conectarse a bases de datos SQL de
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
 duration: 124
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Asegúrese de que la configuración avanzada de red [proper](../advanced-network
 
 ## Configuración de OSGi
 
-Dado que los secretos no deben almacenarse en el código, es mejor proporcionar el nombre de usuario y la contraseña de la conexión SQL a través de [variables de configuración OSGi secretas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#secret-configuration-values), configuradas mediante AIO CLI o API de Cloud Manager.
+Dado que los secretos no deben almacenarse en el código, es mejor proporcionar el nombre de usuario y la contraseña de la conexión SQL a través de [variables de configuración OSGi secretas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), configuradas mediante AIO CLI o API de Cloud Manager.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 

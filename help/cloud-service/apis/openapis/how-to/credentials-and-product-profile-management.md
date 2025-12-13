@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo administrar credenciales y perfile
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Article
 jira: KT-17428
@@ -12,7 +12,7 @@ thumbnail: KT-17428.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 277b4789-b035-4904-b489-c827c970fb55
-source-git-commit: f125cffc72a6f0eb558492f8dde6f4f30bc074ec
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -28,7 +28,7 @@ En este tutorial, aprenderá a añadir o eliminar:
 - _Credenciales_: proporcione autenticación para una API de AEM.
 - _Perfiles de producto_: proporcione permisos (o autorización) para que las credenciales tengan acceso a los recursos de AEM.
 
-## Fondo
+## Información general
 
 Cuando usa una API de AEM, necesita definir las _credenciales_ y el _perfil del producto_ en el proyecto de Adobe Developer Console (o ADC). En la siguiente captura de pantalla, puede ver las _credenciales_ y el _perfil de producto_ para una API de autor de AEM Assets:
 

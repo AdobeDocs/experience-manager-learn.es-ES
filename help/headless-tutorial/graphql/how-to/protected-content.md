@@ -4,13 +4,13 @@ description: Aprenda a proteger el contenido en AEM sin encabezado.
 version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-15233
 last-substantial-update: 2024-05-01T00:00:00Z
 exl-id: c4b093d4-39b8-4f0b-b759-ecfbb6e9e54f
 duration: 254
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Si se requieren varios niveles de acceso, cree varios grupos de usuarios que se 
 
 Para conceder acceso a las solicitudes de API de GraphQL sin encabezado de AEM al contenido protegido, puede asociar la solicitud sin encabezado a un usuario que pertenezca a un grupo de usuarios específico. Estos son dos enfoques comunes:
 
-1. **Cuentas técnicas de [AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials):**
+1. **Cuentas técnicas de [AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials):**
    - Cree una cuenta técnica en AEM as a Cloud Service Developer Console.
    - Inicie sesión en AEM Author una vez con la cuenta técnica de.
    - Agregue la cuenta técnica al grupo de usuarios mediante **Herramientas > Seguridad > Grupos > Usuarios de API sin encabezado de AEM > Miembros**.
@@ -73,7 +73,7 @@ La protección de los fragmentos de contenido es esencial para proteger el conte
 
 ![CUG sin encabezado de AEM](./assets/protected-content/cugs.png){align="center"}
 
-Siga estos pasos para lograr esto a través de [Grupos de usuarios cerrados (CUG)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/advanced/closed-user-groups).
+Siga estos pasos para lograr esto a través de [Grupos de usuarios cerrados (CUG)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/advanced/closed-user-groups).
 
 1. Inicie sesión en AEM Author como **usuario de DAM**.
 2. Vaya a **Assets > Archivos** y seleccione la **carpeta** que contiene los fragmentos de contenido que desea proteger. Los CUG se aplican jerárquicamente y afectan a las subcarpetas a menos que un CUG diferente los sustituya.
@@ -96,7 +96,7 @@ Según la arquitectura de contenido, puede ser necesario aplicar CUG a varias ca
 
 ## Impedir el almacenamiento en caché de contenido protegido
 
-AEM as a Cloud Service [almacena en caché las respuestas HTTP de forma predeterminada](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/caching/publish) para mejorar el rendimiento. Sin embargo, esto puede causar problemas al servir contenido protegido. Para evitar el almacenamiento en caché de dicho contenido, [quite los encabezados de caché para extremos específicos](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/caching/publish#how-to-customize-cache-rules-1) en la configuración de Apache de la instancia de publicación de AEM.
+AEM as a Cloud Service [almacena en caché las respuestas HTTP de forma predeterminada](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/publish) para mejorar el rendimiento. Sin embargo, esto puede causar problemas al servir contenido protegido. Para evitar el almacenamiento en caché de dicho contenido, [quite los encabezados de caché para extremos específicos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/publish#how-to-customize-cache-rules-1) en la configuración de Apache de la instancia de publicación de AEM.
 
 Añada la siguiente regla al archivo de configuración de Apache del proyecto de Dispatcher para eliminar los encabezados de caché de puntos finales específicos:
 
@@ -120,4 +120,4 @@ Tenga en cuenta que esto incurrirá en una penalización de rendimiento, ya que 
 
 ## Protección de extremos de API de GraphQL de AEM sin encabezado
 
-Esta guía no trata de proteger los [extremos de la API de GraphQL sin encabezado de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/headless/graphql-api/graphql-endpoint), sino que se centra en proteger el contenido que sirven. Todos los usuarios, incluidos los usuarios anónimos, pueden acceder a los extremos que contienen contenido protegido. Solo se devuelve el contenido accesible por los grupos de usuarios cerrados del usuario. Si no hay contenido accesible, la respuesta de la API de AEM sin encabezado seguirá teniendo un código de estado de respuesta HTTP 200, pero los resultados estarán vacíos. Normalmente, la seguridad del contenido es suficiente, ya que los propios extremos no exponen inherentemente datos confidenciales. Si necesita proteger los extremos, aplíqueles ACL en AEM Publish mediante [scripts de inicialización del repositorio Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).
+Esta guía no trata de proteger los [extremos de la API de GraphQL sin encabezado de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/graphql-endpoint), sino que se centra en proteger el contenido que sirven. Todos los usuarios, incluidos los usuarios anónimos, pueden acceder a los extremos que contienen contenido protegido. Solo se devuelve el contenido accesible por los grupos de usuarios cerrados del usuario. Si no hay contenido accesible, la respuesta de la API de AEM sin encabezado seguirá teniendo un código de estado de respuesta HTTP 200, pero los resultados estarán vacíos. Normalmente, la seguridad del contenido es suficiente, ya que los propios extremos no exponen inherentemente datos confidenciales. Si necesita proteger los extremos, aplíqueles ACL en AEM Publish mediante [scripts de inicialización del repositorio Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).

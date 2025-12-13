@@ -7,12 +7,12 @@ feature: Migration
 jira: KT-6729, KT-14796
 thumbnail: 329680.jpg
 topic: Migration
-role: Architect, Developer
+role: Developer
 level: Beginner
 last-substantial-update: 2024-01-16T00:00:00Z
 exl-id: 28644af8-babc-467d-afdb-8538728dc176
 duration: 712
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 2%
@@ -27,17 +27,17 @@ La herramienta Importación masiva de AEM as a Cloud Service permite a los admin
 
 >[!TAB Vista Recursos]
 
-Aprenda a importar numerosos archivos en los AEM Assets mediante [Asset view](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=es) [Importación masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=es), con Dropbox como el proveedor de almacenamiento en la nube de ejemplo para un proceso de integración claro y fácil de seguir.
+Aprenda a importar numerosos archivos en los AEM Assets mediante [Asset view](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [Importación masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html), con Dropbox como el proveedor de almacenamiento en la nube de ejemplo para un proceso de integración claro y fácil de seguir.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451962/?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
 
 >[!TAB Vista Administrador]
 
->[!VIDEO](https://video.tv.adobe.com/v/341381?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
 
 >[!TIP]
 >
-> Las fuentes de entrada de este vídeo solo muestran Azure Blob Storage y Amazon S3; sin embargo, las fuentes disponibles siguen creciendo con el tiempo. Para obtener una lista completa de las fuentes de entrada admitidas, consulte las opciones disponibles en el producto o [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=es#bulk-upload).
+> Las fuentes de entrada de este vídeo solo muestran Azure Blob Storage y Amazon S3; sin embargo, las fuentes disponibles siguen creciendo con el tiempo. Para obtener una lista completa de las fuentes de entrada admitidas, consulte las opciones disponibles en el producto o [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
 
 ## Programar importación masiva
 

@@ -4,15 +4,15 @@ description: Obtenga información acerca de las distintas consideraciones de imp
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10794
 thumbnail: kt-10794.jpg
 last-substantial-update: 2022-08-26T00:00:00Z
 exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
 duration: 59
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Antes de explorar las consideraciones de implementación, es imperativo comprend
 
 + __Autor de AEM__ es el servicio donde los equipos crean, colaboran y publican fragmentos de contenido (y otros recursos).
 + __Publicación de AEM__ es el servicio en el que se publicaron los fragmentos de contenido (y otros recursos) que se replican para uso general.
-+ __Vista previa de AEM__ es el servicio que imita AEM Publish en comportamiento, pero tiene contenido publicado para vista previa o revisión. La vista previa de AEM está destinada a audiencias internas y no a la entrega general de contenido. El uso de la vista previa de AEM es opcional, según el flujo de trabajo deseado.
++ __Vista previa de AEM__ es el servicio que imita AEM Publish en comportamiento, pero tiene contenido publicado para vista previa o revisión. La vista previa de AEM está destinada a públicos internos y no a la entrega general de contenido. El uso de la vista previa de AEM es opcional, según el flujo de trabajo deseado.
 
 ![Arquitectura de servicio de AEM](./assets/overview/aem-service-architecture.png)
 

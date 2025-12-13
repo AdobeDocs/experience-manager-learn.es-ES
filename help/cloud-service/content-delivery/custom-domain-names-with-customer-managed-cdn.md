@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo implementar un nombre de dominio p
 version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Operations
 topic: Administration, Architecture
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-06-21T00:00:00Z
 jira: KT-15945
 thumbnail: KT-15945.jpeg
 exl-id: fa9ee14f-130e-491b-91b6-594ba47a7278
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -41,13 +41,13 @@ Los pasos de alto nivel son los siguientes:
    - CDN del cliente: para configurar la CDN del cliente y agregar certificados SSL y detalles de dominio, como AWS CloudFront, Azure CDN o Akamai.
    - Servicio de alojamiento del Sistema de nombres de dominio (DNS): para agregar registros DNS para su dominio personalizado, como Azure DNS o AWS Route 53.
 - Acceso a [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) para implementar la regla de CDN de validación de encabezado HTTP en el entorno de AEM as a Cloud Service.
-- El sitio de muestra [AEM WKND](https://github.com/adobe/aem-guides-wknd) se ha implementado en el entorno AEM as a Cloud Service de tipo [programa de producción](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- El sitio de muestra [AEM WKND](https://github.com/adobe/aem-guides-wknd) se ha implementado en el entorno AEM as a Cloud Service de tipo [programa de producción](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Si no tiene acceso a servicios de terceros, _colabore con su equipo de seguridad o de alojamiento para completar los pasos_.
 
 ## Generar certificado SSL
 
->[!VIDEO](https://video.tv.adobe.com/v/3441477?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
 
 Tiene dos opciones:
 
@@ -222,7 +222,7 @@ Para configurar e implementar la regla CDN de validación de encabezado HTTP, si
 
 ## Pasar secreto en el encabezado HTTP X-AEM-Edge-Key
 
->[!VIDEO](https://video.tv.adobe.com/v/3445048?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
 
 Actualice la CDN del cliente para pasar el secreto en el encabezado HTTP `X-AEM-Edge-Key`. El secreto lo utiliza la CDN de Adobe para validar que la solicitud proviene de la CDN del cliente y transformar el valor del encabezado `Host` al valor de `X-Forwarded-Host` recibido de la CDN del cliente.
 

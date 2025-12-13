@@ -4,14 +4,14 @@ description: Aprenda a personalizar el contenido en función del comportamiento 
 version: Experience Manager as a Cloud Service
 feature: Personalization
 topic: Personalization,Content Management, Integrations
-role: Developer, Architect, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-09-10T00:00:00Z
 jira: KT-19113
 thumbnail: KT-19113.jpeg
 exl-id: fd7204fa-03f2-40df-9f0a-487a5aec2891
-source-git-commit: c367564acb6465d5f203e5db943c5470607b63c9
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '4185'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Visite el [sitio web de habilitación de WKND](https://wknd.enablementadobe.com/
 
 - **Página de la revista**: Cuando los usuarios leen _tres o más_ artículos, se clasifican como audiencia de **Lectores de la revista** y ven una sección personalizada en la página de la revista.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474004/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
 
 >[!TIP]
 >
@@ -59,7 +59,7 @@ Antes de continuar con el caso de uso de segmentación por comportamiento, aseg�
 - [Integrar Adobe Target](../setup/integrate-adobe-target.md): permite a los equipos crear y administrar contenido personalizado de forma centralizada en AEM y activarlo como ofertas en Adobe Target.
 - [Integrar etiquetas en Adobe Experience Platform](../setup/integrate-adobe-tags.md): permite a los equipos administrar e implementar JavaScript para la personalización y la recopilación de datos sin necesidad de volver a implementar el código de AEM.
 
-Familiarícese también con los conceptos de [Servicio de identidad de Adobe Experience Cloud (ECID)](https://experienceleague.adobe.com/es/docs/id-service/using/home) y [Adobe Experience Platform](https://experienceleague.adobe.com/es/docs/experience-platform/landing/home), como esquema, secuencia de datos, audiencias, identidades y perfiles.
+Familiarícese también con los conceptos de [Servicio de identidad de Adobe Experience Cloud (ECID)](https://experienceleague.adobe.com/en/docs/id-service/using/home) y [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home), como esquema, secuencia de datos, audiencias, identidades y perfiles.
 
 Aunque puede crear audiencias sencillas en Adobe Target, Adobe Experience Platform (AEP) proporciona el enfoque moderno para crear y administrar audiencias y crear perfiles de cliente completos mediante varias fuentes de datos, como datos de comportamiento y transaccionales.
 
@@ -659,9 +659,9 @@ La primera audiencia usa la evaluación de **Edge** para la personalización en 
 
 ## Recursos adicionales
 
-- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/es/docs/experience-platform/web-sdk/home)
-- [Resumen de flujos de datos](https://experienceleague.adobe.com/es/docs/experience-platform/datastreams/overview)
-- [Compositor de experiencias visuales (VEC)](https://experienceleague.adobe.com/es/docs/target/using/experiences/vec/visual-experience-composer)
-- [Segmentación de Edge](https://experienceleague.adobe.com/es/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Tipos de audiencia](https://experienceleague.adobe.com/es/docs/experience-platform/segmentation/types/overview)
-- [Conexión de Adobe Target](https://experienceleague.adobe.com/es/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [Resumen de flujos de datos](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
+- [Compositor de experiencias visuales (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
+- [Segmentación de Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Tipos de audiencia](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/overview)
+- [Conexión de Adobe Target](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)

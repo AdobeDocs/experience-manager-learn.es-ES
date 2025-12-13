@@ -4,7 +4,7 @@ description: Aprenda a utilizar la vista previa de fragmentos de contenido para 
 version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Headless, Content Management, Development
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2023-03-17T00:00:00Z
@@ -12,7 +12,7 @@ jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
 duration: 463
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Las aplicaciones sin encabezado de AEM admiten la previsualización de creación integrada. La experiencia de vista previa vincula el editor de fragmentos de contenido del autor de AEM con su aplicación personalizada (a la que se puede dirigir mediante HTTP), lo que permite establecer un vínculo profundo en la aplicación que procesa el fragmento de contenido que se está previsualizando.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449591?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 Para utilizar la vista previa de fragmentos de contenido, se deben cumplir varias condiciones:
 

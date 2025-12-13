@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo administrar permisos para los grup
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Article
 jira: KT-17429
@@ -12,7 +12,7 @@ thumbnail: KT-17429.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 3230a8e7-6342-4497-9163-1898700f29a4
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
@@ -28,7 +28,7 @@ En este tutorial, aprenderá lo siguiente:
 - Perfil del producto y su asociación con los servicios.
 - Actualizar los permisos del grupo de usuarios de servicios.
 
-## Fondo
+## Información general
 
 Cuando usa una API de AEM, debe asignar el _perfil de producto_ a las _credenciales_ en el proyecto de Adobe Developer Console (o ADC). El _Perfil de producto_ (y el servicio asociado) proporciona los _permisos o autorización_ para las credenciales de acceso a los recursos de AEM. En la siguiente captura de pantalla, puede ver las _credenciales_ y el _perfil de producto_ para una API de autor de AEM Assets:
 
@@ -90,7 +90,7 @@ Para actualizar los permisos del grupo de usuarios de servicios (por ejemplo, `A
 
 - Confirme y envíe los cambios al repositorio.
 
-- Implemente los cambios en la instancia de AEM mediante la [canalización de pila completa de Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
+- Implemente los cambios en la instancia de AEM mediante la [canalización de pila completa de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
 
 - También puede comprobar los permisos del grupo de usuarios mediante la vista **Permisos**. Vaya a **Herramientas** > **Seguridad** > **Permisos** en la instancia de AEM.
 

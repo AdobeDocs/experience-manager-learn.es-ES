@@ -4,19 +4,19 @@ description: Obtenga información sobre cómo integrar AEM as a Cloud Service co
 version: Experience Manager as a Cloud Service
 feature: Personalization, Integrations
 topic: Personalization, Integrations, Architecture, Content Management
-role: Developer, Architect, Leader, Data Architect, User
+role: Developer, Leader, User
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18719
 thumbnail: null
-source-git-commit: 70665c019f63df1e736292ad24c47624a3a80d49
+exl-id: 71cfb9f5-57d9-423c-bd2a-f6940cc0b4db
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 1%
 
 ---
-
 
 # Integración de etiquetas en Adobe Experience Platform
 
@@ -127,5 +127,5 @@ Para confirmar que la configuración de Etiquetas funciona correctamente, puede:
 
 ## Recursos adicionales
 
-- [Información general de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/es/docs/experience-platform/debugger/home)
+- [Información general de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
 - [Información general sobre las etiquetas](https://experienceleague.adobe.com/es/docs/experience-platform/tags/home)

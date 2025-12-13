@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo deshabilitar el almacenamiento en 
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2023-11-30T00:00:00Z
@@ -12,7 +12,7 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
 duration: 100
-source-git-commit: cf006f24abbc5aa4b91277b91d68538c41d33e15
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -32,7 +32,7 @@ El almacenamiento en caché de las respuestas HTTP en la CDN de AEM as a Cloud S
 Revise el [comportamiento de almacenamiento en caché predeterminado](./enable-caching.md#default-caching-behavior) para AEM Publish y Author cuando se implemente un proyecto de AEM basado en el tipo de archivo del proyecto de AEM.
 
 
-## Deshabilitar almacenamiento en caché
+## Deshabilitar el almacenamiento en caché
 
 Desactivar el almacenamiento en caché puede tener un impacto negativo en el rendimiento de la instancia de AEM as a Cloud Service, por lo que tenga cuidado al desactivar el comportamiento predeterminado del almacenamiento en caché.
 
@@ -67,7 +67,7 @@ Esta opción es el método recomendado para deshabilitar el almacenamiento en ca
 </LocationMatch>
 ```
 
-#### Ejemplos
+#### Ejemplo
 
 Para deshabilitar el almacenamiento en caché de CDN de los **tipos de contenido CSS** para algunos fines de solución de problemas, siga estos pasos.
 
@@ -88,7 +88,7 @@ Tenga en cuenta que, para omitir la caché CSS existente, se requiere un cambio 
    ```
 
    Los archivos vhost del directorio `dispatcher/src/conf.d/enabled_vhosts` son **symlinks** a los archivos del directorio `dispatcher/src/conf.d/available_vhosts`, así que asegúrese de crear enlaces simbólicos si no los hay.
-1. Implemente los cambios de vhost en el entorno de AEM as a Cloud Service deseado mediante [Cloud Manager - Canalización de configuración de nivel web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=es&#web-tier-config-pipelines) o [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=es#deploy-apache-or-dispatcher-configuration).
+1. Implemente los cambios de vhost en el entorno de AEM as a Cloud Service deseado mediante [Cloud Manager - Canalización de configuración de nivel web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) o [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
 ### Código Java™ personalizado
 

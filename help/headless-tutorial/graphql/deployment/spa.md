@@ -4,14 +4,14 @@ description: Obtenga información sobre las consideraciones de implementación p
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 5%
@@ -82,7 +82,7 @@ En este ejemplo, la SPA se implementa en un dominio de Netlify (`https://main--s
 
 1. La SPA se sirve desde un dominio de Netlify, pero realiza una llamada XHR a las API de AEM GraphQL en un dominio diferente. Esta solicitud entre sitios requiere que [CORS](./configurations/cors.md) se configure en AEM para permitir que la solicitud del dominio de Netlify acceda a su contenido.
 
-   ![Solicitud de SPA atendida desde los hosts de SPA y AEM &#x200B;](assets/spa/cors-requirement.png)
+   ![Solicitud de SPA atendida desde los hosts de SPA y AEM ](assets/spa/cors-requirement.png)
 
 2. Al inspeccionar la solicitud XHR a la API de AEM GraphQL, está presente `Access-Control-Allow-Origin`, lo que indica al explorador web que AEM permite que la solicitud de este dominio de Netlify acceda a su contenido.
 

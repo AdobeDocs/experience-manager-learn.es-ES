@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo depurar o eliminar la respuesta HT
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-13T00:00:00Z
 jira: KT-15963
 thumbnail: KT-15963.jpeg
 exl-id: 5d81f6ee-a7df-470f-84b9-12374c878a1b
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Obtenga información sobre cómo depurar o eliminar la respuesta HTTP en caché 
 
 En este tutorial, aprenderá a configurar y utilizar el token de API de purga para purgar la caché de CDN del sitio de muestra [AEM WKND](https://github.com/adobe/aem-guides-wknd) mediante la función de autoservicio.
 
->[!VIDEO](https://video.tv.adobe.com/v/3436929?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
 
 ## Invalidación de caché frente a purga explícita
 
@@ -45,7 +45,7 @@ Vamos a aprender a configurar el token de API de purga para purgar la caché de 
 
 El token de API de purga se crea configurando la regla de CDN en el código del proyecto de AEM.
 
-1. Abra el archivo `cdn.yaml` de la carpeta principal `config` de su proyecto de AEM. Por ejemplo, el archivo cdn.yaml[&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) del proyecto WKND.
+1. Abra el archivo `cdn.yaml` de la carpeta principal `config` de su proyecto de AEM. Por ejemplo, el archivo cdn.yaml[ del proyecto ](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml)WKND.
 
 1. Agregue la siguiente regla de CDN al archivo `cdn.yaml`:
 

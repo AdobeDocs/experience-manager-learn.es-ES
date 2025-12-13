@@ -1,6 +1,6 @@
 ---
 title: Gestión básica en AEM Sites
-description: El siguiente vídeo proporciona información general sobre la administración básica al utilizar el entorno de creación de AEM. Utiliza la consola Sitios como base.
+description: 'El siguiente vídeo proporciona información general sobre la administración básica al utilizar el entorno de creación de AEM. Utiliza la consola de Sites como base. '
 feature: Page Editor, Editable Templates
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-4495
@@ -11,10 +11,10 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 896d378c-c20e-4343-b592-277f4c71065e
 duration: 269
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 9%
+ht-degree: 15%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 9%
 
 {{edge-delivery-services-and-page-editor}}
 
-El siguiente vídeo proporciona información general sobre la administración básica al utilizar el entorno de creación de AEM. Utiliza la consola Sitios como base.
+El siguiente vídeo proporciona información general sobre la administración básica al utilizar el entorno de creación de AEM. Utiliza la consola de Sites como base. 
 
->[!VIDEO](https://video.tv.adobe.com/v/36996?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
 
 En este vídeo, se tratan las siguientes funciones o características:
 
@@ -34,7 +34,9 @@ En este vídeo, se tratan las siguientes funciones o características:
 
      | Consola | Función |
      |---|---|
-     | Recursos | Estas consolas le permiten importar y administrar recursos digitales, como imágenes, vídeos, documentos y archivos de audio. Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM | Comunidades | Esta consola le permite crear y administrar sitios de la comunidad para la participación y la habilitación | Comercio | Esto le permite administrar productos, catálogos de productos y pedidos relacionados con sus sitios de Commerce |
+     | Recursos | Estas consolas le permiten importar y administrar recursos digitales, como imágenes, vídeos, documentos y archivos de audio. Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM |
+     | Comunidades | Esta consola le permite crear y administrar sitios de la comunidad para la participación y la habilitación |
+     | Comercio | Esto le permite administrar productos, catálogos de productos y pedidos relacionados con sus sitios de Commerce |
      | Fragmentos de experiencias | Un fragmento de experiencia es una experiencia independiente que se puede reutilizar en varios canales y tener variaciones, de modo que se evita el problema de copiar y pegar repetidas veces experiencias o partes de experiencias |
      | Formularios | Esta consola le permite crear, administrar y procesar formularios y documentos |
      | Personalización | Esta consola proporciona un marco de herramientas para crear contenido dirigido y presentar experiencias personalizadas |
@@ -42,6 +44,7 @@ En este vídeo, se tratan las siguientes funciones o características:
      | Sites | La consola Sitios le permite crear, ver y administrar sitios web que se ejecuten en su instancia de AEM. Mediante estas consolas puede crear, editar, copiar, mover y eliminar páginas de sitios web, iniciar flujos de trabajo y publicar páginas |
 
    * Herramientas - Representado por un martillo
+
 * Omni Search
 * Solution Switcher
 * Ayuda
@@ -60,5 +63,5 @@ En este vídeo, se tratan las siguientes funciones o características:
 
 ## Recursos adicionales {#additional-resources}
 
-* [Editando documentación de contenido de página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=es)
+* [Edición de la documentación del contenido de una página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=es)
 * [Guía rápida para la creación de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=es)

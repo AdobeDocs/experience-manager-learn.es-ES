@@ -8,8 +8,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
 duration: 311
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ AEM Content Services permite utilizar las mismas abstracciones de contenido util
 
 Un tutorial completo que ilustra cómo crear y exponer contenido mediante AEM y consumido por una aplicación móvil nativa, en un escenario de CMS sin encabezado.
 
->[!VIDEO](https://video.tv.adobe.com/v/33125?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/28315?quality=12&learn=on)
 
 Este tutorial explora cómo se pueden utilizar los Servicios de contenido de AEM para potenciar la experiencia de una aplicación móvil que muestra información de eventos (música, actuaciones, arte, etc.) depurada por el equipo de WKND.
 

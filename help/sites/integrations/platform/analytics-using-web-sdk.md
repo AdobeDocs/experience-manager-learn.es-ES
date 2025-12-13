@@ -4,7 +4,7 @@ description: Integre AEM Sites y Adobe Analytics con el enfoque moderno de Platf
 version: Experience Manager as a Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
-role: Admin, Architect, Data Architect, Developer
+role: Admin, Developer
 level: Beginner, Intermediate
 doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
@@ -14,10 +14,10 @@ badgeIntegration: label="Integración" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2252
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1529'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,9 +27,9 @@ Conozca el **enfoque moderno** sobre cómo integrar Adobe Experience Manager (AE
 
 ## Información general
 
-Obtener perspectivas sobre el comportamiento del usuario es un objetivo crucial para cada equipo de marketing. Al comprender cómo los usuarios interactúan con su contenido, los equipos pueden tomar decisiones informadas, optimizar estrategias e impulsar mejores resultados. El equipo de marketing de WKND, una entidad ficticia, ha puesto su mira en implementar Adobe Analytics en su sitio web para lograr este objetivo. El objetivo principal es recopilar datos en dos métricas clave: vistas de página y clics en la llamada a acción de la página de inicio (CTA).
+Obtener perspectivas sobre el comportamiento del usuario es un objetivo crucial para cada equipo de marketing. Al comprender cómo los usuarios interactúan con su contenido, los equipos pueden tomar decisiones informadas, optimizar estrategias e impulsar mejores resultados. El equipo de marketing de WKND, una entidad ficticia, ha puesto su mira en implementar Adobe Analytics en su sitio web para lograr este objetivo. El objetivo principal es recopilar datos en dos métricas clave: vistas de página y clics en la página principal de call-to-action (CTA).
 
-Al realizar un seguimiento de las vistas de página, el equipo puede analizar qué páginas reciben la mayor atención de los usuarios. Además, el seguimiento de los clics en CTA de la página de inicio proporciona información valiosa sobre la eficacia de los elementos de llamada a acción del equipo. Estos datos pueden revelar qué CTA resuenan con los usuarios, cuáles necesitan ajustes y potencialmente descubrir nuevas oportunidades para mejorar la participación del usuario y dirigir las conversiones.
+Al realizar un seguimiento de las vistas de página, el equipo puede analizar qué páginas reciben la mayor atención de los usuarios. Además, el seguimiento de los clics en CTA en la página de inicio proporciona información valiosa sobre la eficacia de los elementos call-to-action del equipo. Estos datos pueden revelar qué CTA resuenan con los usuarios, cuáles necesitan ajustes y potencialmente descubrir nuevas oportunidades para mejorar la participación del usuario y dirigir las conversiones.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419872?quality=12&learn=on)
@@ -76,7 +76,7 @@ El documento de DEG ofrece una visión general del plan de implementación, aseg
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
 
-Para obtener más información sobre los conceptos y los diversos elementos que deben incluirse en el documento de SDR, visite el [Documento de referencia de diseño de la solución (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=es). También puede descargar una plantilla de Excel de ejemplo, aunque la versión específica de WKND también está disponible [aquí](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
+Para obtener más información sobre los conceptos y los diversos elementos que deben incluirse en el documento de SDR, visite el [Documento de referencia de diseño de la solución (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). También puede descargar una plantilla de Excel de ejemplo, aunque la versión específica de WKND también está disponible [aquí](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
 
 ## Configuración de Analytics: grupo de informes, Analysis Workspace
 
@@ -90,10 +90,10 @@ Para analizar, recopilar perspectivas y compartirlas con otros a partir de los d
 
 Para obtener más información sobre la configuración y los conceptos de Analytics, se recomiendan los siguientes recursos:
 
-+ [Grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html?lang=es)
-+ [Variables de conversión](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=es)
-+ [Eventos de éxito](https://experienceleague.adobe.com/es/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
-+ [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=es)
++ [Grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)
++ [Variables de conversión](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html)
++ [Eventos de éxito](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
++ [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)
 
 ## Actualizar secuencia de datos - Agregar servicio de Analytics
 
@@ -273,9 +273,9 @@ Al implementar los pasos recomendados y utilizar los recursos proporcionados, co
 
 ## Recursos adicionales
 
-+ [Integrar Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html?lang=es)
++ [Integrar Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
 + [Uso de la capa de datos del cliente de Adobe con los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=es)
 + [Integración de etiquetas de recopilación de datos de Experience Platform y AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/experience-platform-data-collection-tags/overview.html?lang=es)
-+ [Información general sobre Adobe Experience Platform Web SDK y Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=es)
-+ [Tutoriales de recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=es)
-+ [Información general de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=es)
++ [Información general sobre Adobe Experience Platform Web SDK y Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
++ [Tutoriales de recopilación de datos](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
++ [Información general de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

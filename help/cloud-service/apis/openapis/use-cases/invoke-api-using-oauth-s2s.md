@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo invocar las API de AEM basadas en 
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Tutorial
 jira: KT-16516
@@ -12,7 +12,7 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 57da04874cfb37dcccbf605c65fbcba8f12849fb
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1811'
 ht-degree: 2%
@@ -128,7 +128,7 @@ Para hacer pruebas, puede usar [Postman](https://www.postman.com/), [curl](https
 
 ### Revisión de la API
 
-Antes de desarrollar la aplicación, vamos a revisar [el extremo &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/#operation/getAssetMetadata) de los metadatos del recurso especificado desde la _API de autor de Assets_. La sintaxis de la API es:
+Antes de desarrollar la aplicación, vamos a revisar [el extremo ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/#operation/getAssetMetadata) de los metadatos del recurso especificado desde la _API de autor de Assets_. La sintaxis de la API es:
 
 ```http
 GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
@@ -417,7 +417,7 @@ Las llamadas clave desde el código de aplicación NodeJS de ejemplo son:
    ...
    ```
 
-## Bajo el capó
+## Internamente
 
 Tras la invocación correcta de la API, se crea un usuario que representa la credencial de servidor a servidor OAuth del proyecto ADC en el servicio de creación de AEM, junto con los grupos de usuarios que coinciden con la configuración del perfil de producto y los servicios. El _usuario de cuenta técnica_ está asociado con el perfil de producto y el grupo de usuarios _Servicios_, que tiene los permisos necesarios para _LEER_ los metadatos del recurso.
 

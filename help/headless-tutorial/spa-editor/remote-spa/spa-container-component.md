@@ -3,7 +3,7 @@ title: Añadir componentes editables del contenedor de React a una SPA remota
 description: Aprenda a añadir componentes de contenedor editables a una SPA remota que permitan a los autores de AEM arrastrar y soltar componentes en ellos.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7635
 thumbnail: kt-7635.jpeg
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
 duration: 306
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 1%
@@ -266,7 +266,7 @@ La implementación del componente Imagen editable debe tener un aspecto similar 
 Se hace referencia en la SPA a los componentes `EditableText` y `EditableImage` React recién creados y se crean instancias de forma dinámica en función del JSON devuelto por AEM. Para asegurarse de que estos componentes están disponibles para la SPA, cree instrucciones de importación para ellos en `Home.js`
 
 1. Abra el proyecto SPA en su IDE
-1. Abrir el archivo `src/Home.js`
+1. Abra el archivo `src/Home.js`
 1. Agregar instrucciones de importación para `AEMText` y `AEMImage`
 
    ```javascript
@@ -379,6 +379,6 @@ Ha agregado un componente contenedor que permite a los autores agregar component
 * Agregar componentes editables al componente contenedor
 * Creación y componentes de diseño en el Editor de SPA
 
-## Siguientes pasos
+## Próximos pasos
 
 El siguiente paso usa esta misma técnica para [agregar un componente editable a una ruta de detalles de aventura](./spa-dynamic-routes.md) en la SPA.

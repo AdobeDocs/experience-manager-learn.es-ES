@@ -11,7 +11,7 @@ last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-14903
 thumbnail: KT-14903.jpeg
 exl-id: 563bab0e-21e3-487c-9bf3-de15c3a81aba
-source-git-commit: be710750cd6f2c71fa6b5eb8a6309d5965d67c82
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Aprenda a crear campos personalizados en el Editor de fragmentos de contenido de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437637?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
 Las extensiones de la interfaz de usuario de AEM deben desarrollarse con el marco de trabajo [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), ya que mantiene una apariencia coherente con el resto de AEM y también tiene una amplia biblioteca de funcionalidades prediseñadas, lo que reduce el tiempo de desarrollo.
 
@@ -31,7 +31,7 @@ Las extensiones de la interfaz de usuario de AEM deben desarrollarse con el marc
 Este ejemplo reemplaza un campo existente en el Editor de fragmentos de contenido con una implementación personalizada.
 
 | IU de AEM extendida | Punto de extensión |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Procesamiento de elementos de formulario personalizado](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
 
 ## Extensión de ejemplo

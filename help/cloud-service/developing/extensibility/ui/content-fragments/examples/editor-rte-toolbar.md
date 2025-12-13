@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 6fd93d3b-6d56-43c5-86e6-2e2685deecc9
 duration: 345
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Aprenda a añadir un botón personalizado a la barra de herramientas del Editor 
 
 Se pueden agregar botones personalizados a la **barra de herramientas RTE** en el Editor de fragmentos de contenido usando el punto de extensión `rte`. Este ejemplo muestra cómo agregar un botón personalizado denominado _Agregar sugerencia_ a la barra de herramientas de RTE y modificar el contenido dentro de RTE.
 
-Utilizando el método `getCustomButtons()` del punto de extensión `rte`, se pueden agregar uno o varios botones personalizados a la **barra de herramientas RTE**. También es posible agregar o quitar botones RTE estándar como _Copiar, Pegar, Negrita y Cursiva_ utilizando los métodos `getCoreButtons()` y `removeButtons)` respectivamente.
+Utilizando el método `rte` del punto de extensión `getCustomButtons()`, se pueden agregar uno o varios botones personalizados a la **barra de herramientas RTE**. También es posible agregar o quitar botones RTE estándar como _Copiar, Pegar, Negrita y Cursiva_ utilizando los métodos `getCoreButtons()` y `removeButtons)` respectivamente.
 
 Este ejemplo muestra cómo insertar una nota o sugerencia resaltada mediante el botón personalizado _Agregar sugerencia_ de la barra de herramientas. El contenido de la nota o sugerencia resaltado tiene un formato especial aplicado mediante elementos HTML y las clases CSS asociadas. El contenido del marcador de posición y el código HTML se insertan mediante el método de devolución de llamada `onClick()` de `getCustomButtons()`.
 
@@ -36,7 +36,7 @@ Este ejemplo muestra cómo insertar una nota o sugerencia resaltada mediante el 
 Este ejemplo se extiende al punto de extensión `rte` para agregar un botón personalizado a la barra de herramientas RTE del Editor de fragmentos de contenido.
 
 | IU de AEM extendida | Punto de extensión |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Barra de herramientas del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
 
 ## Extensión de ejemplo

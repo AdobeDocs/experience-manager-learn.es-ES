@@ -3,7 +3,7 @@ title: Configuración de AEM para el Editor de SPA y SPA remota
 description: Se requiere un proyecto de AEM para configurar los requisitos de configuración y contenido compatibles con la instalación a fin de permitir que el Editor de SPA de AEM cree un SPA remoto.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7631
 thumbnail: kt-7631.jpeg
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
 duration: 297
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 0%
@@ -45,7 +45,7 @@ $ cd remote-spa-tutorial
 
 ## Creación de un proyecto de AEM
 
-Cree un proyecto de AEM en el que se administren configuraciones y contenido de línea de base. Este proyecto se generará dentro de la carpeta `remote-spa-tutorial` del proyecto `aem-guides-wknd-graphql` clonado.
+Cree un proyecto de AEM en el que se administren configuraciones y contenido de línea de base. Este proyecto se generará dentro de la carpeta `aem-guides-wknd-graphql` del proyecto `remote-spa-tutorial` clonado.
 
 _Utilice siempre la última versión del [tipo de archivo de AEM](https://github.com/adobe/aem-project-archetype)._
 
@@ -214,7 +214,7 @@ La asignación de Sling afecta a la ejecución de AEM en `http` y `localhost`, d
 
 ## Políticas de seguridad de Intercambio de recursos de origen cruzado
 
-A continuación, configure AEM para proteger el contenido de modo que solo esta SPA pueda acceder al contenido de AEM. Configure [Intercambio de recursos de origen cruzado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=es).
+A continuación, configure AEM para proteger el contenido de modo que solo esta SPA pueda acceder al contenido de AEM. Configure [Intercambio de recursos de origen cruzado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
 
 1. En su IDE, abra el subproyecto Maven `ui.config`
 1. Navegar `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
@@ -354,7 +354,7 @@ Recuerde que hemos cambiado el tipo de esta página al de una **página de SPA r
 
 Esta configuración solo debe establecerse en la página de AEM que corresponda a la raíz de la SPA. Todas las páginas de AEM debajo de esta página heredan el valor.
 
-## Felicitaciones
+## Enhorabuena.
 
 Ya ha preparado las configuraciones de AEM y las ha implementado en el autor local de AEM. Ahora ya sabe cómo:
 
@@ -364,6 +364,6 @@ Ya ha preparado las configuraciones de AEM y las ha implementado en el autor loc
 * Implemente el proyecto de AEM en el servicio local de AEM SDK Author
 * Marcar una página de AEM como raíz de la SPA remota mediante la propiedad de página URL del host de la SPA
 
-## Siguientes pasos
+## Próximos pasos
 
 Con AEM configurado, podemos centrarnos en [arrancar el SPA remoto](./spa-bootstrap.md) con soporte para áreas editables usando AEM SPA Editor.

@@ -4,19 +4,19 @@ description: Obtenga información sobre cómo integrar AEM as a Cloud Service co
 version: Experience Manager as a Cloud Service
 feature: Personalization, Integrations
 topic: Personalization, Integrations, Architecture
-role: Developer, Architect, Leader, Data Architect, User
+role: Developer, Leader, User
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18718
 thumbnail: null
-source-git-commit: 70665c019f63df1e736292ad24c47624a3a80d49
+exl-id: 86767e52-47ce-442c-a620-bc9e7ac2eaf3
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 2%
 
 ---
-
 
 # Integración con Adobe Target
 
@@ -140,7 +140,7 @@ Para confirmar que la integración funciona correctamente, pruebe la funcionalid
 
 ## Recursos adicionales
 
-- [Resumen de API de Target](https://experienceleague.adobe.com/es/docs/target-dev/developer/api/target-api-overview)
-- [Oferta de Target](https://experienceleague.adobe.com/es/docs/target/using/experiences/offers/manage-content)
+- [Resumen de API de Target](https://experienceleague.adobe.com/en/docs/target-dev/developer/api/target-api-overview)
+- [Oferta de Target](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/manage-content)
 - [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/)
-- [Fragmentos de experiencias en AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use)
+- [Fragmentos de experiencias en AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use)

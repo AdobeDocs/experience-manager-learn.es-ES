@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo invocar las API de AEM basadas en 
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Intermediate
 doc-type: Tutorial
 jira: KT-16718
@@ -12,7 +12,7 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '2262'
 ht-degree: 0%
@@ -49,7 +49,7 @@ La aplicación WKND PIM es una aplicación web de ejemplo diseñada para adminis
 
 El proyecto de Adobe Developer Console (ADC) está configurado para acceder a la API de autor de Assets mediante la autenticación de la aplicación web de OAuth. Proporciona los _client_id_ y _client_secret_ necesarios a la aplicación web WKND-PIM para iniciar el flujo de concesión de _authorization_code_.
 
->[!VIDEO](https://video.tv.adobe.com/v/3442760?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
 
 
 El diagrama siguiente ilustra el flujo funcional de la aplicación web WKND-PIM _que obtiene tokens de acceso específicos del usuario para interactuar con la API de autor de Assets_.
@@ -497,7 +497,7 @@ Siga las instrucciones del artículo [Configuración de las API de AEM basadas e
 
 De forma predeterminada, el proyecto de WKND Sites no tiene el esquema de metadatos de recurso necesario para mostrar los atributos del producto. Vamos a crear y aplicar el esquema de metadatos del recurso a una carpeta de recursos en la instancia de AEM.
 
-1. Inicie sesión en la instancia de AEM as a Cloud Service Asset. Con la [vista de recursos](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/authoring/switch-views), vaya a la carpeta `/content/dam/wknd-shared/en`.
+1. Inicie sesión en la instancia de AEM as a Cloud Service Asset. Con la [vista de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views), vaya a la carpeta `/content/dam/wknd-shared/en`.
 
    ![Vaya a la carpeta](../assets/web-app/navigate-to-folder.png)
 

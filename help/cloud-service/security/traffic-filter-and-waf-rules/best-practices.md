@@ -4,14 +4,15 @@ description: Conozca las prácticas recomendadas para configurar las reglas de f
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18310
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
+exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 100%
 
@@ -98,8 +99,8 @@ Obtenga información sobre cómo implementar reglas de filtro de tráfico y regl
                     <p class="is-size-6">Obtenga información sobre cómo proteger los sitios web de AEM frente a ataques DoS, DDoS y el abuso de bots mediante las reglas de filtro de tráfico estándar recomendadas por Adobe en AEM as a Cloud Service.</p>
                 </div>
                 <a href="./use-cases/using-traffic-filter-rules.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aplicar reglas</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aplicar reglas</span>
+                </a>
             </div>
         </div>
     </div>
@@ -134,4 +135,3 @@ Obtenga información sobre cómo implementar reglas de filtro de tráfico y regl
 - [Reglas de filtro de tráfico, incluidas las reglas WAF](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
 - [Explicación de la prevención de DoS/DDoS en AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/security/understanding-dos-and-prevention-approaches)
 - [Bloqueo de ataques DoS y DDoS mediante reglas de filtro de tráfico](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)
-

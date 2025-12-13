@@ -4,15 +4,15 @@ description: Obtenga información sobre cómo conectarse a bases de datos SQL de
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9355
 thumbnail: KT-9355.jpeg
 exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
 duration: 117
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Asegúrese de que la configuración avanzada de red [proper](../advanced-network
 
 La cadena de conexión de la configuración OSGi utiliza:
 
-+ Valor de `AEM_PROXY_HOST` a través de la variable de entorno de configuración [OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` como host de la conexión
++ Valor de `AEM_PROXY_HOST` a través de la variable de entorno de configuración [OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` como host de la conexión
 + `30001`, que es el valor `portOrig` para la asignación de reenvío de puerto de Cloud Manager `30001` → `mysql.example.com:3306`
 
 Dado que los secretos no deben almacenarse en el código, el nombre de usuario y la contraseña de la conexión SQL se proporcionan mejor mediante variables de configuración OSGi, establecidas mediante CLI de AIO o API de Cloud Manager.

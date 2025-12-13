@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 1f13d82e-c1d0-4c8c-8468-b4a4c5897c71
 last-substantial-update: 2021-02-09T00:00:00Z
 duration: 239
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -21,6 +21,8 @@ ht-degree: 0%
 
 A partir de AEM Forms 6.4, ahora podemos utilizar el servicio de modelo de datos de formulario como parte del flujo de trabajo de AEM. El siguiente vídeo explica los pasos necesarios para configurar el paso del modelo de datos de formulario en el flujo de trabajo de AEM
 
+>[!NOTE]
+>
 >La funcionalidad que se muestra en este vídeo requiere AEM Forms 6.5.1
 
 
@@ -38,5 +40,6 @@ Para probar esta capacidad en el servidor, siga las instrucciones siguientes
    * Formulario adaptable para almacenar en déclencheur el flujo de trabajo al enviar.
 * Abra [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Complete los detalles y envíe. Al enviar el formulario, se activa [el flujo de trabajo de la solicitud de préstamo](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html).
 
-![&#x200B; flujo de trabajo &#x200B;](assets/invokefdm651.PNG).
+![flujo de trabajo](assets/invokefdm651.PNG).
+
 El flujo de trabajo utiliza el componente OR Split para dirigir la solicitud al administrador si la puntuación crediticia es superior a 500. Si la puntuación crediticia es menor que 500, la solicitud se redirige a la captación.

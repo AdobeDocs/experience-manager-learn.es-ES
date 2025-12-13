@@ -4,20 +4,20 @@ description: Obtenga información sobre cómo configurar los filtros de Dispatch
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10829
 thumbnail: kt-10829.jpg
 exl-id: b76b7c46-5cbd-4039-8fd6-9f0f10a4a84f
 duration: 48
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '200'
+ht-degree: 3%
 
 ---
 
-# Dispatcher filters
+# Filtros de Dispatcher
 
 Adobe Experience Manager as a Cloud Service utiliza los filtros de Dispatcher de publicación de AEM para garantizar que solo las solicitudes que deberían llegar a AEM lleguen a AEM. De forma predeterminada, todas las solicitudes se deniegan y se deben agregar explícitamente patrones para las direcciones URL permitidas.
 
@@ -33,7 +33,7 @@ Adobe Experience Manager as a Cloud Service utiliza los filtros de Dispatcher de
 
 La configuración del filtro de AEM Publish Dispatcher define los patrones de URL permitidos para llegar a AEM y debe incluir el prefijo de URL del extremo de consulta persistente de AEM.
 
-| El cliente se conecta a | AEM Author | Publicación de AEM | Previsualización de AEM |
+| El cliente se conecta a | AEM Author | AEM Publish | Previsualización de AEM |
 |------------------------------------------:|:----------:|:-------------:|:-------------:|
 | Requiere la configuración de filtros Dispatcher | ✘ | ✔ | ✔ |
 

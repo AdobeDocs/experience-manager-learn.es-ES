@@ -4,14 +4,15 @@ description: Obtenga información sobre cómo restringir el acceso bloqueando so
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18312
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
+exl-id: 53cb8996-4944-4137-a979-6cf86b088d42
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 100%
 
@@ -84,4 +85,4 @@ Para analizar los resultados de la regla `block-internal-paths`, siga los mismos
 
 Debería ver las **solicitudes bloqueadas** y los valores correspondientes en las columnas IP del cliente (cli_ip), host, URL, acción (waf_action) y nombre de regla (waf_match).
 
-![Solicitud bloqueada del panel de herramientas ELK](../assets/how-to/elk-tool-dashboard-blocked.png)
+![Solicitud bloqueada del panel de control de herramientas ELK](../assets/how-to/elk-tool-dashboard-blocked.png)

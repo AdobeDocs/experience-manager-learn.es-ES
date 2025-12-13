@@ -3,7 +3,7 @@ title: Configuración rápida de Editor de SPA y SPA remota
 description: Aprenda a ponerse en marcha con un SPA remoto y un editor de SPA de AEM en 15 minutos.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7629
 thumbnail: 333181.jpg
@@ -13,14 +13,14 @@ doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
 duration: 647
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '730'
 ht-degree: 10%
 
 ---
 
-# Configuración rápida
+# Configuración rápida 
 
 {{spa-editor-deprecation}}
 
@@ -69,7 +69,7 @@ Descargue e instale AEM SDK Quickstart en el puerto 4502, con las credenciales p
    # Provide `admin` as the admin user's password
    ```
 
-AEM SDK se inicia automáticamente en [http://localhost:4502](http://localhost:4502). Inicie sesión con las siguientes credenciales:
+AEM SDK se inicia y se inicia automáticamente en [http://localhost:4502](http://localhost:4502). Inicie sesión con las siguientes credenciales:
 
 + Nombre de usuario: `admin`
 + Contraseña: `admin`
@@ -87,8 +87,8 @@ Este tutorial depende del proyecto __WKND 2.1.0+&#39;s__ (para contenido).
 
 Para realizar una configuración rápida, aquí se proporcionan paquetes de AEM que contienen la configuración y el contenido finales de AEM del tutorial.
 
-1. [Descargar &#x200B;](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [Descargar &#x200B;](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
+1. [Descargar ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [Descargar ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
 1. Inicie sesión en el Administrador de paquetes de AEM SDK en [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) con las credenciales de `admin`.
 1. __Cargar__ `wknd-app.all.x.x.x.zip` descargado en el paso 1
 1. Pulse el botón __Instalar__ para la entrada `wknd-app.all.x.x.x.zip`

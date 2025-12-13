@@ -1,5 +1,5 @@
 ---
-title: Determine la estructura de carpetas y la convención de nombres de archivos
+title: Determinar la estructura de carpetas y la convención de nomenclatura de los archivos
 description: La asignación de nombres de archivo es quizás la decisión más importante que tomará al implementar Dynamic Media Classic. La estructura de carpetas es igualmente importante. Aprenda por qué es tan importante y posibles enfoques para la estructura de carpetas y los nombres de archivo.
 feature: Dynamic Media Classic
 topic: Content Management
@@ -8,14 +8,14 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
 duration: 253
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Determine la estructura de carpetas y la convención de nombres de archivos {#folder-structure-filenaming}
+# Determinar la estructura de carpetas y la convención de nomenclatura de los archivos {#folder-structure-filenaming}
 
 Antes de saltar y empezar a cargar todo el contenido, es aconsejable tener en cuenta la estructura de carpetas que se utilizará y, en particular, la convención de nombres de archivos. Es probable que le ahorre tiempo y tenga que rehacer las tareas más adelante. Es mejor coordinar estas decisiones en todos los grupos.
 
@@ -77,7 +77,7 @@ Este es un sistema muy simple, y bueno si tiene necesidades modestas. Sin embarg
 | AA123 | Vistas Alt | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
 |         | Vistas en color | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
 |         | Muestras | AA123_BLU_SW.tif | AA123_BLU_SW |
-|         | Conjunto de imágenes o conjunto de muestras |                                             | AA123 o AA123_SET | -- |
+|         | Conjunto de imágenes o conjunto de muestras |                                             | AA123 o AA123_SET |
 
 Al tratar con colecciones de conjuntos, como conjuntos de imágenes y conjuntos de muestras, el propio conjunto también debe tener un nombre único. Por lo tanto, en este caso, el conjunto podría recibir el SKU base como su nombre o el SKU con la extensión &quot;_SET&quot;.
 

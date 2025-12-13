@@ -4,14 +4,15 @@ description: Obtenga información sobre cómo monitorizar solicitudes confidenci
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18311
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
+exl-id: 8fa0488f-b901-49bf-afa5-5ed29242355f
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 100%
 
@@ -88,11 +89,11 @@ Analicemos los resultados de la regla `publish-auth-requests` descargando los re
   >
   > Las nuevas solicitudes pueden tardar hasta 5 minutos en aparecer en los registros de CDN.
 
-- Copie el archivo de registro descargado (por ejemplo, `publish_cdn_2023-10-24.log` en la captura de pantalla siguiente) en la carpeta `logs/dev` del proyecto de herramienta panel elástico.
+- Copie el archivo de registro descargado (por ejemplo, `publish_cdn_2023-10-24.log` en la captura de pantalla siguiente) en la carpeta `logs/dev` del proyecto de herramienta panel de control elástico.
 
   ![Carpeta de registros de herramientas ELK](../assets/how-to/elk-tool-logs-folder.png)
 
-- Actualice la página de herramienta de panel elástico.
+- Actualice la página de herramienta de panel de control elástico.
    - En la sección **Filtro global** superior, edite el filtro `aem_env_name.keyword` y seleccione el valor de entorno `dev`.
 
      ![Filtro global de herramienta ELK](../assets/how-to/elk-tool-global-filter.png)
@@ -101,7 +102,6 @@ Analicemos los resultados de la regla `publish-auth-requests` descargando los re
 
      ![Intervalo de tiempo de herramienta ELK](../assets/how-to/elk-tool-time-interval.png)
 
-- Revise las **solicitudes analizadas**, las **solicitudes marcadas** y los paneles de **Datos de solicitudes marcadas** del panel actualizado. Para las entradas de registro de CDN coincidentes, debe mostrar los valores de la IP de cliente (cli_ip), el host, la URL, la acción (waf_action) y el nombre de regla (waf_match) de cada entrada.
+- Revise los paneles de **solicitudes analizadas**, **solicitudes marcadas** y **datos de las solicitudes marcadas** del panel de control actualizado. Para las entradas de registro de CDN coincidentes, debe mostrar los valores de la IP de cliente (cli_ip), el host, la URL, la acción (waf_action) y el nombre de regla (waf_match) de cada entrada.
 
-  ![Panel de herramientas ELK](../assets/how-to/elk-tool-dashboard.png)
-
+  ![Panel de control de herramientas ELK](../assets/how-to/elk-tool-dashboard.png)

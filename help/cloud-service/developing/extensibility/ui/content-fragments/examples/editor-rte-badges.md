@@ -12,10 +12,10 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
 duration: 538
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ El caso de uso más común de los distintivos RTE es usarlos junto con [widgets 
 
 Normalmente, las insignias asociadas con los widgets se utilizan para agregar el contenido dinámico que tiene una dependencia externa del sistema, pero _los autores de contenido no pueden modificar_ el contenido dinámico insertado para mantener la integridad. Solo se pueden eliminar como un elemento completo.
 
-Las **insignias** se han agregado a **RTE** en el editor de fragmentos de contenido usando el punto de extensión `rte`. Con el método `getBadges()` del punto de extensión `rte` se agregan uno o varios distintivos.
+Las **insignias** se han agregado a **RTE** en el editor de fragmentos de contenido usando el punto de extensión `rte`. Con el método `rte` del punto de extensión `getBadges()` se agregan uno o varios distintivos.
 
 Este ejemplo muestra cómo agregar un widget llamado _Servicio al cliente de reservas de grupos grandes_ para buscar, seleccionar y agregar los detalles del servicio al cliente específicos de la aventura de WKND como **Nombre del representante** y **Número de teléfono** dentro de un contenido RTE. Al usar la funcionalidad de distintivos, el **número de teléfono** pasa a ser **no editable**, pero los autores de contenido de WKND pueden editar el nombre del representante.
 
@@ -44,7 +44,7 @@ Para simplificar las cosas, este ejemplo usa el módulo [Adobe React Spectrum](h
 Este ejemplo se extiende al punto de extensión `rte` para agregar un distintivo al RTE en el editor de fragmentos de contenido.
 
 | IU de AEM extendida | Puntos de extensión |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Insignias del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) y [Widgets del editor de texto enriquecido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
 ## Extensión de ejemplo

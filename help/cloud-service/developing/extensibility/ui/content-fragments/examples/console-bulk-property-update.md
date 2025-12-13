@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: fbfb5c10-95f8-4875-88dd-9a941d7a16fd
 duration: 1362
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 # Extensión de ejemplo de actualización masiva de propiedades
 
->[!VIDEO](https://video.tv.adobe.com/v/3454452?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
 
-Esta extensión de la consola de fragmentos de contenido de AEM de ejemplo es una extensión de [barra de acciones](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) que actualiza de forma masiva una propiedad de fragmentos de contenido a un valor común.
+Esta extensión de la consola de fragmentos de contenido de AEM de ejemplo es una extensión de [barra de acciones](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar) que actualiza de forma masiva una propiedad de fragmentos de contenido a un valor común.
 
 El flujo funcional de la extensión de ejemplo es el siguiente:
 
@@ -42,8 +42,8 @@ El flujo funcional de la extensión de ejemplo es el siguiente:
 Este ejemplo se extiende al punto de extensión `actionBar` para agregar el botón personalizado a la consola Fragmento de contenido.
 
 | IU de AEM extendida | Punto de extensión |
-| ------------------------ | --------------------- | 
-| [Consola de fragmento de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Barra de acciones](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
+| ------------------------ | --------------------- |
+| [Consola de fragmento de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Barra de acciones](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar) |
 
 
 ## Extensión de ejemplo
@@ -171,7 +171,7 @@ En esta aplicación de ejemplo, hay un componente React modal (`BulkPropertyUpda
 Es importante destacar que cualquier interacción con AEM desde la extensión debe delegarse a una [acción de AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), que es un proceso independiente sin servidor que se ejecuta en [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 El uso de acciones de Adobe I/O Runtime para comunicarse con AEM es para evitar problemas de conectividad de Intercambio de Recursos de Origen Cruzado (CORS).
 
-Cuando se envía el formulario de actualización masiva de propiedades, un elemento personalizado `onSubmitHandler()` invoca la acción de Adobe I/O Runtime y pasa el host (dominio) de AEM actual y el token de acceso de AEM del usuario, que a su vez llama a la [API de fragmentos de contenido de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=es) para actualizar los fragmentos de contenido.
+Cuando se envía el formulario de actualización masiva de propiedades, un elemento personalizado `onSubmitHandler()` invoca la acción de Adobe I/O Runtime y pasa el host (dominio) de AEM actual y el token de acceso de AEM del usuario, que a su vez llama a la [API de fragmentos de contenido de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) para actualizar los fragmentos de contenido.
 
 Cuando se recibe la respuesta de la acción Adobe I/O Runtime, el modal se actualiza para mostrar los resultados de la operación de actualización de propiedades por lotes.
 

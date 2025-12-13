@@ -4,7 +4,7 @@ description: Vea cómo PGA TOUR mejoró los Core Web Vitals de su sitio web en u
 cloud: Experience Cloud
 solution: Experience Manager
 feature-set: Experience Manager
-role: Leader, User, Developer, Admin, Architect
+role: Leader, User, Developer, Admin
 level: Beginner, Intermediate, Experienced
 type: Event
 doc-type: Video Clip
@@ -12,13 +12,13 @@ duration: 95
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 0d93dab6ccdae1420589a00f3a46eef10bc16ec8
+exl-id: 8b13fb6c-f16f-45ba-aca1-c72c7e218b95
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%
 
 ---
-
 
 # Caso práctico de PGA TOUR: Optimización de los elementos vitales web principales
 

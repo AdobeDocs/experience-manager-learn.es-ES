@@ -4,14 +4,15 @@ description: Obtenga información sobre cómo normalizar solicitudes transformá
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18313
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
+exl-id: eee81cd6-9090-45d6-b77f-a266de1d9826
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 100%
 
@@ -68,4 +69,3 @@ data:
 - En los registros de AEM (`aemrequest.log`), debería ver que la solicitud se transforma en `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html?search=foo&campaignId=bar`, con `otherParam` eliminado.
 
   ![Transformación de la solicitud WKND](../assets/how-to/aemrequest-log-transformation.png)
-

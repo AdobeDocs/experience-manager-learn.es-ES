@@ -4,7 +4,7 @@ description: Obtenga información sobre la herramienta de análisis de registro 
 version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Development
-role: Developer, Architect, Admin
+role: Developer, Admin
 level: Beginner
 doc-type: Tutorial
 duration: 219
@@ -12,10 +12,10 @@ last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
 exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Obtenga información acerca de la _herramienta de análisis de registro de CDN de AEM Cloud Service_ que proporciona Adobe y cómo le ayuda a obtener información sobre el rendimiento de CDN y la implementación de AEM.
  
->[!VIDEO](https://video.tv.adobe.com/v/3446108?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
 
 ## Información general
 
@@ -48,7 +48,7 @@ Para iniciar rápidamente el análisis de registro, Adobe proporciona paneles pr
 
   ![Proporción de aciertos de caché de CDN](assets/CHR-dashboard.png)
 
-- **Tablero de tráfico de CDN**: proporciona información sobre el tráfico a través de la tasa de solicitudes de CDN y origen, tasas de error 4xx y 5xx, y solicitudes no almacenadas en caché. También proporciona el máximo de solicitudes de CDN y de origen por segundo por dirección IP del cliente y más perspectivas para optimizar las configuraciones de CDN.
+- **Panel de control de tráfico de CDN**: proporciona información sobre el tráfico a través de CDN y la frecuencia de solicitudes de origen, 4xx y 5xx, y las solicitudes no almacenadas en caché. También proporciona el máximo de solicitudes de CDN y de origen por segundo por dirección IP del cliente y más perspectivas para optimizar las configuraciones de CDN.
 
   ![Tablero de tráfico de CDN](assets/Traffic-dashboard.png)
 

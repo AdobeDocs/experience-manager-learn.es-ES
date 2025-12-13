@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
 duration: 175
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 9%
@@ -33,7 +33,7 @@ A continuación, se mostrará la creación de fragmentos de contenido a partir d
 
 Además, exploraremos la definición de puntos finales de AEM GraphQL. GraphQL recupera datos de AEM de forma eficaz y configuraremos los puntos de conexión para exponer los datos deseados. Las consultas persistentes optimizarán el rendimiento y el almacenamiento en caché.
 
-A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y sugerencias prácticas. Al final, tendrá las habilidades para habilitar fragmentos de contenido, crear modelos de fragmentos, generar fragmentos y definir puntos finales y consultas persistentes de AEM GraphQL. ¡Vamos a empezar!
+A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y sugerencias prácticas. Al final, tendrá las habilidades para habilitar fragmentos de contenido, crear modelos de fragmentos, generar fragmentos y definir puntos finales y consultas persistentes de AEM GraphQL. ¡Empecemos!
 
 ## Configuración según el contexto
 
@@ -52,19 +52,19 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
 1. Dentro de la carpeta, seleccione __Crear__ y asigne un nombre al modelo __Teaser__. Agregue los siguientes tipos de datos al modelo __Teaser__.
 
-   | Tipo de datos | Nombre | Requerido | Opciones |
+   | Tipo de datos | Nombre | Necesario | Opciones |
    |----------|------|----------|---------|
    | Referencia de contenido | Recurso | sí | Si lo desea, añada una imagen predeterminada. Ejemplo: /content/dam/wknd-headless/assets/AdobeStock_307513975.mp4 |
-   | Texto de línea única | Título | sí |
-   | Texto de línea única | Pre-Title | no |
+   | Texto de línea única | Título | sí | |
+   | Texto de línea única | Pre-Title | no | |
    | Texto multilínea | Descripción | no | Asegúrese de que el tipo predeterminado sea texto enriquecido |
-   | Lista desglosada | Estilo | sí | Procesar como menú desplegable. Las opciones son Hero -> Hero y Destacado -> destacado |
+   | Enumeración | Estilo | sí | Procesar como menú desplegable. Las opciones son Hero -> Hero y Destacado -> destacado |
 
    ![Modelo teaser](./assets/1/teaser-model.png)
 
 1. Dentro de la carpeta, cree un segundo modelo llamado __Oferta__. Haga clic en Crear y asigne al modelo el nombre &quot;Oferta&quot; y añada los siguientes tipos de datos:
 
-   | Tipo de datos | Nombre | Requerido | Opciones |
+   | Tipo de datos | Nombre | Necesario | Opciones |
    |----------|------|----------|---------|
    | Referencia de contenido | Recurso | sí | Agregar imagen predeterminada. Ejemplo: `/content/dam/wknd-headless/assets/AdobeStock_238607111.jpeg` |
    | Texto multilínea | Descripción | no |  |
@@ -74,7 +74,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
 1. Dentro de la carpeta, cree un tercer modelo denominado __Lista de imágenes__. Haga clic en Crear y asigne al modelo el nombre &quot;Lista de imágenes&quot; y añada los siguientes tipos de datos:
 
-   | Tipo de datos | Nombre | Requerido | Opciones |
+   | Tipo de datos | Nombre | Necesario | Opciones |
    |----------|------|----------|---------|
    | Referencia al fragmento | Elementos de la lista | sí | Procesar como campo múltiple. El modelo de fragmento de contenido permitido es Oferta. |
 
@@ -191,7 +191,7 @@ A lo largo del tutorial, proporcionaremos explicaciones, ejemplos de código y s
 
 1. Haga clic en __Guardar__ para mantener (guardar) la consulta y asigne un nombre a la consulta __teaser__. Esto nos permite hacer referencia a la consulta por su nombre en la aplicación.
 
-## Pasos siguientes
+## Próximos pasos
 
 ¡Enhorabuena! Ha configurado correctamente AEM as a Cloud Service para permitir la creación de fragmentos de contenido y extremos de GraphQL. También ha creado un modelo de fragmento de contenido y un fragmento de contenido, y ha definido un punto final de GraphQL y una consulta persistente. Ya está listo para pasar al siguiente capítulo del tutorial, donde aprenderá a crear una aplicación React de AEM sin encabezado que consuma los fragmentos de contenido y el extremo de GraphQL que ha creado en este capítulo.
 

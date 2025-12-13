@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo ejecutar un trabajo en la instanci
 version: Experience Manager as a Cloud Service
 topic: Development
 feature: OSGI, Cloud Manager
-role: Architect, Developer
+role: Developer
 level: Intermediate, Experienced
 doc-type: Article
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-10-23T00:00:00Z
 jira: KT-16399
 thumbnail: KT-16399.jpeg
 exl-id: b8b88fc1-1de1-4b5e-8c65-d94fcfffc5a5
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -80,7 +80,7 @@ public class SimpleJobCreaterImpl {
 Los puntos clave que se deben tener en cuenta en el código anterior son:
 
 - La carga del trabajo tiene dos propiedades: `action` y `message`.
-- Con el método `addJob(...)` de [JobManager](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/apache/sling/event/jobs/JobManager.html), el trabajo se agrega al tema `wknd/simple/job/topic`.
+- Con el método [ de ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/apache/sling/event/jobs/JobManager.html)JobManager`addJob(...)`, el trabajo se agrega al tema `wknd/simple/job/topic`.
 
 ### Procesar un trabajo
 
@@ -136,7 +136,7 @@ Esto suele resultar problemático si el trabajo es responsable de cambiar el est
 
 Si desea que el trabajo se ejecute una sola vez en el servicio de AEM Author, agregue la [configuración de cola de trabajos](#how-to-run-a-job-on-the-leader-instance) que se describe a continuación.
 
-Puede verificarlo si revisa los registros del servicio de AEM Author en [Cloud Manager](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
+Puede verificarlo si revisa los registros del servicio de AEM Author en [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
 
 ![Trabajo procesado por todas las instancias](./assets/run-job-once/job-processed-by-all-instances.png)
 

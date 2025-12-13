@@ -3,7 +3,7 @@ title: Añadir componentes editables a las rutas dinámicas de SPA remota
 description: Aprenda a añadir componentes editables a rutas dinámicas en una SPA remota.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7636
 thumbnail: kt-7636.jpeg
@@ -13,9 +13,9 @@ doc-type: Tutorial
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
 duration: 202
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ La ruta de la SPA Detalles de la aventura se define como `/adventure/:slug`, don
 
 En los dos capítulos anteriores, asignamos contenido de componente editable de la vista Inicio de la SPA a la página raíz de la SPA remota correspondiente en AEM en `/content/wknd-app/us/en/`.
 
-La definición de la asignación para componentes editables para las rutas dinámicas de la SPA es similar, pero debemos crear un esquema de asignación 1:1 entre instancias de la ruta y páginas de AEM.
+La definición de asignaciones para componentes editables para las rutas dinámicas de la SPA es similar; sin embargo, debemos crear un esquema de asignación de 1:1 entre instancias de la ruta y páginas de AEM.
 
 En este tutorial, tomamos el nombre del fragmento de contenido de WKND Adventure, que es el último segmento de la ruta, y lo asignamos a una ruta de acceso simple bajo `/content/wknd-app/us/en/adventure`.
 

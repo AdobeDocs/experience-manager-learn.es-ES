@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 70adb2c1-9e08-4a4b-b8f1-16bddd84c23d
 duration: 307
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Los botones de encabezado pueden existir como un solo botón o como un botón co
 Este ejemplo se extiende al punto de extensión `headerBar` para agregar un botón personalizado al Editor de fragmentos de contenido.
 
 | IU de AEM extendida | Punto de extensión |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Editor de fragmentos de contenido](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Menú Encabezado](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
 
 ## Extensión de ejemplo
