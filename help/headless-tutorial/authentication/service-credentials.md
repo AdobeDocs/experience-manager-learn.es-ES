@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Las integraciones con Adobe Experience Manager (AEM) as a Cloud Service deben poder autenticarse de forma segura en el servicio de AEM. Developer Console de AEM concede acceso a las credenciales de servicio, que se utilizan para facilitar que las aplicaciones, los sistemas y los servicios externos interactúen mediante programación con los servicios de AEM Author o Publish a través de HTTP.
 
-AEM se integra con otros productos de Adobe mediante [S2S OAuth administrado mediante Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Para integraciones personalizadas con cuentas de servicio, las credenciales de JWT se utilizan y administran en AEM Developer Console.
+AEM se integra con otros productos de Adobe mediante [S2S OAuth administrado mediante Adobe Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Para integraciones personalizadas con cuentas de servicio, las credenciales de JWT se utilizan y administran en AEM Developer Console.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
@@ -232,7 +232,7 @@ Una vez que el usuario de AEM de la cuenta técnica existe en AEM (después de l
 1. Busque el usuario de AEM con el __Nombre de inicio de sesión__ identificado en el paso 1 y abra sus __Propiedades__
 1. Vaya a la pestaña __Grupos__ y agregue el grupo __Usuarios de DAM__ (que tiene acceso de escritura a los recursos)
 
-   + [Consulte la lista de grupos de usuarios proporcionados por AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) a los que agregar el usuario del servicio para obtener los permisos óptimos. Si ningún grupo de usuarios proporcionado por AEM es suficiente, cree el suyo propio y agregue los permisos adecuados.
+   + [Consulte la lista de grupos de usuarios proporcionados por AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es#built-in-users-and-groups) a los que agregar el usuario del servicio para obtener los permisos óptimos. Si ningún grupo de usuarios proporcionado por AEM es suficiente, cree el suyo propio y agregue los permisos adecuados.
 
 1. Pulse __Guardar y cerrar__
 

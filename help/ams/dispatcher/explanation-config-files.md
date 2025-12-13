@@ -253,7 +253,7 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 Cuando cualquier archivo FILENAME_farm.any del directorio `/etc/httpd/conf.dispatcher.d/available_farms/` se enlace simbólicamente al directorio `/etc/httpd/conf.dispatcher.d/enabled_farms/`, se utilizará en la configuración en ejecución.
 
-Los archivos de granja tienen subinclusiones basadas en [secciones de nivel superior de la granja](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#defining-farms-farms), como caché, clientheaders, filtros, procesamientos y vhosts.
+Los archivos de granja tienen subinclusiones basadas en [secciones de nivel superior de la granja](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#defining-farms-farms), como caché, clientheaders, filtros, procesamientos y vhosts.
 
 Los `FILENAME_farm.any` archivos tendrán instrucciones de inclusión para cada archivo en función de dónde deban incluirse en el archivo de granja.  Esta es una sintaxis de ejemplo de un archivo `FILENAME_farm.any` como buena referencia:
 

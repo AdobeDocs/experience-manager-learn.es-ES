@@ -26,7 +26,7 @@ El contenido almacenado en caché en la CDN reduce la latencia experimentada por
 Aprenda a analizar los **registros de CDN** proporcionados por AEM as a Cloud Service y a obtener perspectivas como **proporción de visitas en caché** y **URL principales de _MISS_ y _PASS_ tipos de caché**, con fines de optimización.
 
 
-Los registros de CDN están disponibles en formato JSON, que contiene varios campos, incluidos `url`, `cache`. Para obtener más información, consulte [Formato de registro de CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). El campo `cache` proporciona información sobre _el estado de la caché_ y sus valores posibles son HIT, MISS o PASS. Revisemos los detalles de los valores posibles.
+Los registros de CDN están disponibles en formato JSON, que contiene varios campos, incluidos `url`, `cache`. Para obtener más información, consulte [Formato de registro de CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=es#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). El campo `cache` proporciona información sobre _el estado de la caché_ y sus valores posibles son HIT, MISS o PASS. Revisemos los detalles de los valores posibles.
 
 | Valor posible de estado de caché </br> | Descripción |
 |------------------------------------|:-----------------------------------------------------:|
@@ -67,7 +67,7 @@ Para analizar los registros de CDN, este tutorial presenta tres opciones:
 
 1. **Elasticsearch, Logstash y Kibana (ELK)**: las [herramientas de tablero ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) se pueden instalar localmente.
 1. **Splunk**: la [herramienta de tablero de Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) requiere acceso a Splunk y [reenvío de registros de AEMCS habilitado](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) para ingerir los registros de CDN.
-1. **Jupyter Notebook**: Se puede acceder a él de forma remota como parte de [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) sin instalar software adicional, para clientes que tengan licencia de Adobe Experience Platform.
+1. **Jupyter Notebook**: Se puede acceder a él de forma remota como parte de [Adobe Experience Platform](https://experienceleague.adobe.com/es/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) sin instalar software adicional, para clientes que tengan licencia de Adobe Experience Platform.
 
 ### Opción 1: Uso de herramientas de tablero ELK
 
@@ -149,7 +149,7 @@ Para identificar los detalles clave, usemos el proyecto [AEMCS-CDN-Log-Analysis-
 
 Para aquellos que prefieren no instalar software localmente (es decir, la herramienta de tablero ELK de la sección anterior), hay otra opción, pero requiere una licencia para Adobe Experience Platform.
 
-[Jupyter Notebook](https://jupyter.org/) es una aplicación web de código abierto que le permite crear documentos que contienen código, texto y visualización. Se utiliza para la transformación, visualización y modelado estadístico de datos. Se puede tener acceso a él de forma remota [como parte de Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
+[Jupyter Notebook](https://jupyter.org/) es una aplicación web de código abierto que le permite crear documentos que contienen código, texto y visualización. Se utiliza para la transformación, visualización y modelado estadístico de datos. Se puede tener acceso a él de forma remota [como parte de Adobe Experience Platform](https://experienceleague.adobe.com/es/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
 
 #### Descarga del archivo interactivo de Python Notebook
 

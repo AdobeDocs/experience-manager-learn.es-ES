@@ -162,7 +162,7 @@ Para realizar las tareas mencionadas anteriormente, vamos a desarrollar los sigu
   ...
   ```
 
-  Consulte el [tutorial de credenciales de servicio de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) para obtener más información al respecto. Además, los [archivos de configuración de App Builder](https://developer.adobe.com/app-builder/docs/guides/configuration/) para administrar secretos y parámetros de acción.
+  Consulte el [tutorial de credenciales de servicio de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es) para obtener más información al respecto. Además, los [archivos de configuración de App Builder](https://developer.adobe.com/app-builder/docs/guides/configuration/) para administrar secretos y parámetros de acción.
 
 - El módulo `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` almacena los datos de evento, el mensaje de actividad y los detalles de modificación originales (si los hay) en el almacenamiento de Adobe I/O Runtime.
 

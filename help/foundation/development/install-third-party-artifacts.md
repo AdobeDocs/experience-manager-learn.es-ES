@@ -27,7 +27,7 @@ Los **artefactos de terceros** pueden ser:
 
 - [Paquete OSGi](https://www.osgi.org/resources/architecture/): Un paquete OSGi es un archivo Java™ que contiene clases Java, recursos y un manifiesto que describe el paquete y sus dependencias.
 - [Java jar](https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html): un archivo Java™ que contiene clases y recursos Java.
-- [Paquete](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): un paquete es un archivo zip que contiene contenido del repositorio en forma de serialización del sistema de archivos.
+- [Paquete](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): un paquete es un archivo zip que contiene contenido del repositorio en forma de serialización del sistema de archivos.
 
 ## Escenario estándar
 
@@ -57,7 +57,7 @@ Las razones podrían ser:
 
 Para seguir este tutorial, necesita lo siguiente:
 
-- Configuración del [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) o del [entorno de desarrollo rápido (RDE)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview).
+- Configuración del [entorno de desarrollo local de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) o del [entorno de desarrollo rápido (RDE)](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/overview).
 
 - El [proyecto WKND de AEM](https://github.com/adobe/aem-guides-wknd) _para agregar el paquete, jar o paquete de terceros_ y comprobar los cambios.
 

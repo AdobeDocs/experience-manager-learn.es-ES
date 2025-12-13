@@ -27,7 +27,7 @@ La herramienta Importación masiva de AEM as a Cloud Service permite a los admin
 
 >[!TAB Vista Recursos]
 
-Aprenda a importar numerosos archivos en los AEM Assets mediante [Asset view](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [Importación masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html), con Dropbox como el proveedor de almacenamiento en la nube de ejemplo para un proceso de integración claro y fácil de seguir.
+Aprenda a importar numerosos archivos en los AEM Assets mediante [Asset view](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=es) [Importación masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=es), con Dropbox como el proveedor de almacenamiento en la nube de ejemplo para un proceso de integración claro y fácil de seguir.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
 
@@ -37,7 +37,7 @@ Aprenda a importar numerosos archivos en los AEM Assets mediante [Asset view](ht
 
 >[!TIP]
 >
-> Las fuentes de entrada de este vídeo solo muestran Azure Blob Storage y Amazon S3; sin embargo, las fuentes disponibles siguen creciendo con el tiempo. Para obtener una lista completa de las fuentes de entrada admitidas, consulte las opciones disponibles en el producto o [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+> Las fuentes de entrada de este vídeo solo muestran Azure Blob Storage y Amazon S3; sin embargo, las fuentes disponibles siguen creciendo con el tiempo. Para obtener una lista completa de las fuentes de entrada admitidas, consulte las opciones disponibles en el producto o [documentación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=es#bulk-upload).
 
 ## Programar importación masiva
 

@@ -452,7 +452,7 @@ La pertenencia a grupos dinámicos es una característica de [Apache Jackrabbit 
 ### Cómo habilitar la pertenencia a grupos dinámicos para usuarios de SAML en nuevos entornos
 
 Para mejorar significativamente el rendimiento de la evaluación de grupos en nuevos entornos de AEM as a Cloud Service, se recomienda activar la función de pertenencia a grupos dinámicos en nuevos entornos.
-También es un paso necesario cuando se activa la sincronización de datos. Más detalles [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+También es un paso necesario cuando se activa la sincronización de datos. Más detalles [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
 Para ello, agregue la siguiente propiedad al archivo de configuración OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`

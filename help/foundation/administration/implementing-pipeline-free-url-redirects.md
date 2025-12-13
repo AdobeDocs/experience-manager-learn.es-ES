@@ -21,7 +21,7 @@ ht-degree: 5%
 
 # Implementación de redirecciones de URL sin canalización
 
-Aprenda a implementar [redirecciones de URL sin canalizaciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) en AEM as a Cloud Service para permitir que el equipo de marketing administre las redirecciones sin necesidad de un desarrollador.
+Aprenda a implementar [redirecciones de URL sin canalizaciones](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) en AEM as a Cloud Service para permitir que el equipo de marketing administre las redirecciones sin necesidad de un desarrollador.
 
 Hay varias opciones para administrar las redirecciones de URL en AEM. Para obtener más información, consulte [Redirecciones de URL](url-redirection.md).
 
@@ -37,7 +37,7 @@ Para completar este tutorial, necesita lo siguiente:
 
 ## Caso de uso del tutorial
 
-Para el propósito de demostración, supongamos que el equipo de marketing de WKND está lanzando una nueva campaña de esquí. Les gustaría crear URL cortas para las páginas de aventura de esquí y administrarlas por su cuenta, como administran el contenido. Decidieron usar el método [redirecciones de URL sin canalizaciones](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) para administrar las redirecciones de URL.
+Para el propósito de demostración, supongamos que el equipo de marketing de WKND está lanzando una nueva campaña de esquí. Les gustaría crear URL cortas para las páginas de aventura de esquí y administrarlas por su cuenta, como administran el contenido. Decidieron usar el método [redirecciones de URL sin canalizaciones](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) para administrar las redirecciones de URL.
 
 En función de los requisitos del equipo de marketing, a continuación se indican las redirecciones URL que deben crearse.
 
@@ -229,7 +229,7 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 >
 >El término *sin canalizaciones* se usa para resaltar que las configuraciones se *implementan solo una vez* y el equipo de marketing puede administrar las redirecciones de URL al actualizar el archivo de texto.
 
-Para implementar las configuraciones, usa la canalización [full-stack](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) o [configuración de nivel web](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) en [Cloud Manager](https://my.cloudmanager.adobe.com/).
+Para implementar las configuraciones, usa la canalización [full-stack](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) o [configuración de nivel web](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) en [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
 ![Implementar mediante canalización de pila completa](./assets/pipeline-free-redirects/deploy-full-stack-pipeline.png)
 
@@ -248,5 +248,5 @@ El equipo de marketing puede administrar las redirecciones URL como pares clave-
 
 ## Recursos adicionales
 
-- [Redirecciones de URL sin canalización](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
+- [Redirecciones de URL sin canalización](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
 - [Redirecciones de URL](url-redirection.md)

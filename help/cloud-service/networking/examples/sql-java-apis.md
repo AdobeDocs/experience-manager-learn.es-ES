@@ -35,7 +35,7 @@ Asegúrese de que la configuración avanzada de red [proper](../advanced-network
 
 ## Configuración de OSGi
 
-Dado que los secretos no deben almacenarse en el código, es mejor proporcionar el nombre de usuario y la contraseña de la conexión SQL a través de [variables de configuración OSGi secretas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), configuradas mediante AIO CLI o API de Cloud Manager.
+Dado que los secretos no deben almacenarse en el código, es mejor proporcionar el nombre de usuario y la contraseña de la conexión SQL a través de [variables de configuración OSGi secretas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#secret-configuration-values), configuradas mediante AIO CLI o API de Cloud Manager.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 

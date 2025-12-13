@@ -26,4 +26,4 @@ Eche un vistazo a estos consejos de su compañero técnico, Rakesh Pasupuleti. R
 
 ## Recursos adicionales {#additional-resources}
 
-* [Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html) - Documentación sobre el uso de Cloud Manager en AEM as a Cloud Service
+* [Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html?lang=es) - Documentación sobre el uso de Cloud Manager en AEM as a Cloud Service
