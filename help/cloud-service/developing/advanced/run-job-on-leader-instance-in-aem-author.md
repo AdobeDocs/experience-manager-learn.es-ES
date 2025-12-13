@@ -80,7 +80,7 @@ public class SimpleJobCreaterImpl {
 Los puntos clave que se deben tener en cuenta en el código anterior son:
 
 - La carga del trabajo tiene dos propiedades: `action` y `message`.
-- Con el método [ de ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/apache/sling/event/jobs/JobManager.html)JobManager`addJob(...)`, el trabajo se agrega al tema `wknd/simple/job/topic`.
+- Con el método [&#x200B; de &#x200B;](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/apache/sling/event/jobs/JobManager.html)JobManager`addJob(...)`, el trabajo se agrega al tema `wknd/simple/job/topic`.
 
 ### Procesar un trabajo
 

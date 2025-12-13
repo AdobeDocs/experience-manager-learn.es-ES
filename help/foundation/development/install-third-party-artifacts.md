@@ -35,9 +35,9 @@ Normalmente, instalaría el paquete de terceros, el paquete que *está disponibl
 
 Por ejemplo:
 
-- [Componentes principales de WCM de AEM](https://github.com/adobe/aem-core-wcm-components) **paquete** se agrega como dependencia en el archivo [ ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) del proyecto WKND `pom.xml`de. En este caso, el ámbito `provided` se utiliza como paquete de componentes principales de WCM de AEM proporcionado por el tiempo de ejecución de AEM. Si el tiempo de ejecución de AEM no proporciona el paquete, utilizaría el ámbito `compile` y es el predeterminado.
+- [Componentes principales de WCM de AEM](https://github.com/adobe/aem-core-wcm-components) **paquete** se agrega como dependencia en el archivo [&#x200B; &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) del proyecto WKND `pom.xml`de. En este caso, el ámbito `provided` se utiliza como paquete de componentes principales de WCM de AEM proporcionado por el tiempo de ejecución de AEM. Si el tiempo de ejecución de AEM no proporciona el paquete, utilizaría el ámbito `compile` y es el predeterminado.
 
-- [WKND compartido](https://github.com/adobe/aem-guides-wknd-shared) **el paquete** se agrega como dependencia en el archivo [ ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) del proyecto `pom.xml`WKND.
+- [WKND compartido](https://github.com/adobe/aem-guides-wknd-shared) **el paquete** se agrega como dependencia en el archivo [&#x200B; &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) del proyecto `pom.xml`WKND.
 
 
 

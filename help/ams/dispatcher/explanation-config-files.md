@@ -249,7 +249,7 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 ### La granja de AMS incluye
 
-![<FILENAME>_farms.any incluirá los archivos sub.any para completar la configuración de una granja.  En esta imagen puede ver que una granja incluirá cada caché de archivos de sección de nivel superior, encabezados de cliente, filtros, procesamientos y vhosts .any archivos](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")
+![&lt;FILENAME>_farms.any incluirá los archivos sub.any para completar la configuración de una granja.  En esta imagen puede ver que una granja incluirá cada caché de archivos de sección de nivel superior, encabezados de cliente, filtros, procesamientos y vhosts .any archivos](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")
 
 Cuando cualquier archivo FILENAME_farm.any del directorio `/etc/httpd/conf.dispatcher.d/available_farms/` se enlace simbólicamente al directorio `/etc/httpd/conf.dispatcher.d/enabled_farms/`, se utilizará en la configuración en ejecución.
 

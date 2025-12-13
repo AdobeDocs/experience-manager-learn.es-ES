@@ -145,7 +145,7 @@ Para recibir eventos de AEM y ejecutar la acción de Adobe I/O Runtime creada en
 
 - Finalmente, en el paso **Cómo recibir eventos**, expanda la opción **Acción en tiempo de ejecución** y seleccione la acción _genérica_ creada en el paso anterior. Haga clic en **Guardar eventos configurados**.
 
-  ![Acción en tiempo de ejecución: configurar el proyecto ](../assets/examples/runtime-action/select-runtime-action.png)
+  ![Acción en tiempo de ejecución: configurar el proyecto &#x200B;](../assets/examples/runtime-action/select-runtime-action.png)
 
 - Revise los detalles de registro de eventos, también la ficha **Seguimiento de depuración** y compruebe la solicitud y respuesta de **Sondeo de desafío**.
 

@@ -597,7 +597,7 @@ y proporcionando parámetros de consulta:
 
 | Nombre del parámetro de consulta | Valor del parámetro de consulta |
 |----------------------|-----------------------|
-| `resource` | Cualquier ruta JCR, o subruta, que sea la escucha del controlador de autenticación SAML, tal como se define en la propiedad [OSGi del controlador de autenticación SAML 2.0 de Adobe Granite de la configuración ](#configure-saml-2-0-authentication-handler) `path`. |
+| `resource` | Cualquier ruta JCR, o subruta, que sea la escucha del controlador de autenticación SAML, tal como se define en la propiedad [OSGi del controlador de autenticación SAML 2.0 de Adobe Granite de la configuración &#x200B;](#configure-saml-2-0-authentication-handler) `path`. |
 | `saml_request_path` | La ruta URL a la que debe dirigirse el usuario después de autenticarse correctamente en SAML. |
 
 Por ejemplo, este vínculo de HTML almacenará en déclencheur el flujo de inicio de sesión de SAML y, una vez realizado correctamente, llevará al usuario a `/content/wknd/us/en/protected/page.html`. Estos parámetros de consulta se pueden configurar mediante programación según sea necesario.
@@ -618,7 +618,7 @@ y proporcionar los datos del formulario:
 
 | Nombre de datos de formulario | Valor de datos de formulario |
 |----------------------|-----------------------|
-| `resource` | Cualquier ruta JCR, o subruta, que sea la escucha del controlador de autenticación SAML, tal como se define en la propiedad [OSGi del controlador de autenticación SAML 2.0 de Adobe Granite de la configuración ](#configure-saml-2-0-authentication-handler) `path`. |
+| `resource` | Cualquier ruta JCR, o subruta, que sea la escucha del controlador de autenticación SAML, tal como se define en la propiedad [OSGi del controlador de autenticación SAML 2.0 de Adobe Granite de la configuración &#x200B;](#configure-saml-2-0-authentication-handler) `path`. |
 | `saml_request_path` | La ruta URL a la que debe dirigirse el usuario después de autenticarse correctamente en SAML. |
 
 

@@ -106,7 +106,7 @@ En principio, si todos los archivos se almacenan en caché y, por lo tanto, se a
 
 Para comprender Dispatcher con más detalle, volvamos a revisar la estructura de una URL de ejemplo simple.  Veamos el siguiente ejemplo...
 
-`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&amp;otherparameter=value#fragment`
+`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&otherparameter=value#fragment`
 
 * `http` indica el protocolo
 
@@ -1098,7 +1098,7 @@ Es un número que define a partir de qué nivel del sistema de archivos, dos sub
 
 Veamos el caso predeterminado en el que el nivel de archivo de estado es 0.
 
-![/statfileslevel &quot;0&quot;: _The_ _.stat_ _se crea en docroot. El dominio de invalidación abarca toda la instalación, incluidos todos los sitios ](assets/chapter-1/statfile-level-0.png)
+![/statfileslevel &quot;0&quot;: _The_ _.stat_ _se crea en docroot. El dominio de invalidación abarca toda la instalación, incluidos todos los sitios &#x200B;](assets/chapter-1/statfile-level-0.png)
 
 `/statfileslevel "0":`: el archivo `.stat` se crea en docroot. El dominio de invalidación abarca toda la instalación, incluidos todos los sitios.
 
