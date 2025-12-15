@@ -9,9 +9,9 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: a43bd7ae4e5b0a6793c52b5a8d0f36e3c1b260b1
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Explore las posibilidades de Adobe Dynamic Media con nuestra [**demostración en
 
 ## Información general de Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/34934?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ En este vídeo se describe cómo se administra y accede al contenido de medios m
 
 ## Uso con AEM Sites
 
->[!VIDEO](https://video.tv.adobe.com/v/34939?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ En este vídeo se describe cómo se administra el contenido de medios en Adobe E
 
 ## Crear una colección de medios mixtos
 
->[!VIDEO](https://video.tv.adobe.com/v/34945?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ En este vídeo se describe el proceso de creación sencillo de una colección de
 
 ## Ajustes preestablecidos de imagen
 
->[!VIDEO](https://video.tv.adobe.com/v/34633?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
 En este vídeo se describe cómo se crean los ajustes preestablecidos de imagen y qué es un ajuste preestablecido de imagen, un acortador de URL a una serie de argumentos del servidor de imágenes que funcionan en una imagen cada vez que una dirección URL lo solicita. Aprenda técnicas útiles para ampliar y editar ajustes preestablecidos de imagen.
 
@@ -84,7 +84,7 @@ En este vídeo se describe cómo se crean los ajustes preestablecidos de imagen 
 
 ## Modificadores de URL avanzados
 
->[!VIDEO](https://video.tv.adobe.com/v/34631?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
 En este vídeo se describe cómo ir más allá del cambio de tamaño de imágenes para aprovechar las funciones del propio archivo de origen (transparencia de fondo, trazados de recorte integrados y recortes y texto como variables) con los modificadores de URL de Dynamic Media.
 
@@ -96,7 +96,7 @@ En este vídeo se describe cómo ir más allá del cambio de tamaño de imágene
 
 ## Administración de tamaño de archivo de JPEG
 
->[!VIDEO](https://video.tv.adobe.com/v/35196?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
 
 >[!NOTE]
@@ -107,16 +107,7 @@ Equilibre la calidad de la imagen JPEG con el tamaño de archivo resultante (en 
 
 ## Subtítulos opcionales
 
->[!VIDEO](https://video.tv.adobe.com/v/34440?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Añada fácilmente subtítulos a vídeos de Dynamic Media añadiendo la URL de copia para que apunte a un documento de archivo de subtítulos opcionales adicional, un archivo de sidecar web.VTT, que contenga la información de CC de cualquier vídeo.
 
-## Enfoque de imagen
-
-Este vídeo explica por qué es esencial enfocar una imagen para mantener la fidelidad de la imagen y cómo utilizar ajustes avanzados para crear la imagen perfecta.
-
-<!--
-This link is broken
-
->[!VIDEO](https://demos-pub.assetsadobe.com/etc/dam/viewers/s7viewers/html5/VideoViewer.html?asset=%2Fcontent%2Fdam%2Fdm-public-facing-upgrade-portal-video%2F04_DynamicImagery_AdvancedSettings_071917_BH.mp4&config=/etc/dam/presets/viewer/Video_social&serverUrl=https%3A%2F%2Fadobedemo62-h.assetsadobe.com%2Fis%2Fimage%2F&contenturl=%2F&config2=/etc/dam/presets/analytics&videoserverurl=https://gateway-na.assetsadobe.com/DMGateway/public/demoCo&posterimage=/content/dam/dm-public-facing-upgrade-portal-video/04_DynamicImagery_AdvancedSettings_071917_BH.mp4)
--->
