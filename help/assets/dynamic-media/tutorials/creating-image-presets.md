@@ -23,4 +23,4 @@ Este vídeo muestra los pasos para crear ajustes preestablecidos de imagen en Dy
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418239?captions=spa&quality=12&learn=on)
 
-Conozca las prácticas recomendadas para crear URL de Dynamic Media y ajustes preestablecidos de imagen en AEM Assets, y comprenda cómo funciona todo. [Vea el vídeo aquí](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).
+Conozca las prácticas recomendadas para crear URL de Dynamic Media y ajustes preestablecidos de imagen en AEM Assets, y comprenda cómo funciona todo. [Vea el vídeo aquí](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).
