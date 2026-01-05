@@ -11,10 +11,10 @@ duration: 75
 last-substantial-update: 2024-03-30T00:00:00Z
 jira: KT-15219
 exl-id: 1d7dd829-e235-4884-a13f-b6ea8f6b4b0b
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 100%
+source-wordcount: '374'
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ En la tabla siguiente se describe cómo evitar y mitigar los ataques DoS y DDoS:
             <td>Estado del cortafuegos de la aplicación web (WAF)</td>
             <td>Una solución de seguridad diseñada para proteger las aplicaciones web de diversos tipos de ataques.</td>
             <td>
-            <a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licencia de protección WAF-DDoS</a></td>
+            <a href="https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licencia de seguridad extendida (anteriormente denominada Protección WAF-DDoS)</a></td>
             <td><a href="https://docs.aws.amazon.com/waf/" target="_blank">AWS</a> o <a href="https://azure.microsoft.com/es-es/products/web-application-firewall" target="_blank">Azure</a> WAF mediante contrato AMS.</td>
             <td>Su WAF preferido</td>
         </tr>

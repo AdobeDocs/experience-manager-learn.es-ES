@@ -12,9 +12,9 @@ last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Más allá del almacenamiento en caché de contenido, Adobe CDN ofrece varias fu
 
 Estas características son **características de autoservicio**. Configurado en el archivo `cdn.yaml` de su proyecto de AEM e implementado mediante la canalización de configuración de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440272?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
 
 ## Configuración del tráfico en la CDN
 
@@ -39,7 +39,7 @@ Vamos a comprender las funcionalidades clave relacionadas con _Configurar el tr�
 
 - **Prevención de ataques DoS:** Adobe CDN absorbe los ataques DoS en el nivel de red, lo que impide que lleguen al servidor de origen.
 - **Limitación de velocidad:** Para proteger el servidor de origen de que se vea abrumado por demasiadas solicitudes, puede configurar la limitación de velocidad en la CDN.
-- **Firewall de aplicaciones web (WAF):** WAF protege su sitio web de vulnerabilidades comunes de aplicaciones web, como inyección de SQL, scripts entre sitios y mucho más. Se requiere la licencia de seguridad mejorada o la licencia de protección WAF-DDoS para utilizar esta función.
+- **Firewall de aplicaciones web (WAF):** WAF protege su sitio web de vulnerabilidades comunes de aplicaciones web, como inyección de SQL, scripts entre sitios y mucho más. Para utilizar esta función, se necesita la licencia de seguridad extendida (anteriormente denominada Protección WAF-DDoS) o seguridad extendida para atención médica (anteriormente denominada Seguridad mejorada).
 - **Transformación de solicitudes:** Modifique las solicitudes entrantes, como la configuración o desconfiguración de encabezados, la modificación de parámetros de consulta, las cookies y mucho más.
 - **Transformación de respuesta:** Modifique las respuestas salientes, como la configuración o desconfiguración de encabezados.
 - **Selección de origen:** enrute el tráfico a diferentes servidores de origen (Adobe y no Adobe) según la dirección URL de la solicitud.
@@ -91,13 +91,13 @@ data:
 
 [Protección de sitios web con reglas de filtro de tráfico](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 
-[Configurar e implementar la regla CDN de validación de encabezado HTTP](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
+[Configurar e implementar la regla CDN de validación de encabezado HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
 
-[Cómo purgar la caché de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)
+[Cómo purgar la caché de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)
 
-[Configurar páginas de error de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
+[Configurar páginas de error de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)
 
-[Configuración del tráfico en la red de distribución de contenido](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
+[Configuración del tráfico en la red de distribución de contenido](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
 
-[Configurar credenciales y autenticación de CDN](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
+[Configurar credenciales y autenticación de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 

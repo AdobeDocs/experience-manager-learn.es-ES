@@ -11,10 +11,10 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-13148
 thumbnail: null
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 100%
+source-wordcount: '1195'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ También puede obtener información sobre las diferencias entre el filtro de tr�
 
 >[!IMPORTANT]
 >
-> Las reglas de filtro de tráfico WAF requieren una licencia adicional de **Protección WAF-DDoS** o **Seguridad mejorada**. Las reglas de filtro de tráfico estándar están disponibles para los clientes de Sites y Forms de forma predeterminada.
+> Las reglas de filtro de tráfico de WAF requieren una licencia adicional de seguridad extendida (anteriormente denominada protección WAF-DDoS) o seguridad extendida para atención médica (anteriormente denominada seguridad mejorada). Las reglas de filtro de tráfico estándar están disponibles para los clientes de Sites y Forms de forma predeterminada.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3469394/?quality=12&learn=on)
