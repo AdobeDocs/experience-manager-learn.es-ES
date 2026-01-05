@@ -12,9 +12,9 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f4f177f2745cb03c81011679b9d88eaadeb9cae3
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1891'
 ht-degree: 9%
 
 ---
@@ -179,7 +179,9 @@ Si elige el método de autenticación **OAuth Web App** o **OAuth Single Page Ap
 
 ## Configure la instancia de AEM para habilitar la comunicación del proyecto de ADC{#configure-aem-instance}
 
-A continuación, debe configurar la instancia de AEM para habilitar la comunicación anterior del proyecto ADC. Con esta configuración, el ID de cliente del proyecto ADC NO puede comunicarse con la instancia de AEM y provoca un error 403 prohibido. Considere esta configuración como una regla del cortafuegos para permitir que solo los ID de cliente permitidos se comuniquen con la instancia de AEM.
+A continuación, debe configurar la instancia de AEM para habilitar la comunicación anterior del proyecto ADC.
+
+Sin esta configuración, el ID de cliente del proyecto ADC NO puede comunicarse con la instancia de AEM y provoca un error 403 prohibido. Considere esta configuración como una regla del cortafuegos para permitir que solo los ID de cliente permitidos se comuniquen con la instancia de AEM.
 
 Vamos a seguir los pasos para configurar la instancia de AEM para habilitar la comunicación anterior del proyecto ADC.
 
@@ -210,11 +212,16 @@ Vamos a seguir los pasos para configurar la instancia de AEM para habilitar la c
 
 1. Confirme los cambios de configuración e inserte los cambios en el repositorio Git remoto al que está conectada la canalización de Cloud Manager.
 
-1. Implemente los cambios anteriores mediante la [Canalización de configuración](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline) en Cloud Manager.
+1. Implemente los cambios anteriores mediante la [Canalización de configuración](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline) en Cloud Manager.
 
    ![Implementar YAML](./assets/setup/config-pipeline.png)
 
-Tenga en cuenta que el archivo `api.yaml` también se puede instalar en un [RDE](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/overview), [con herramientas de línea de comandos](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Esto resulta útil para probar los cambios de configuración antes de implementarlos en el entorno de producción.
+Tenga en cuenta que el archivo `api.yaml` también se puede instalar en un [RDE](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview), [con herramientas de línea de comandos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Esto resulta útil para probar los cambios de configuración antes de implementarlos en el entorno de producción.
+
+>[!CAUTION]
+>
+>El archivo YAML (`api.yaml`) es la única forma de configurar la instancia de AEM para habilitar la comunicación con el proyecto ADC. Otros métodos, como el uso de variables de entorno, no son compatibles con esta configuración.
+
 
 ## Próximos pasos
 
