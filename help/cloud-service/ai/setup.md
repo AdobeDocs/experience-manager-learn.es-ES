@@ -28,7 +28,7 @@ Obtenga información sobre cómo configurar el acceso al Asistente de IA en Adob
 
 ### Agentes en AEM
 
-Para usar agentes en AEM, primero debe tener configurado el acceso a [AEM AI Assistant](#aem-ai-assistant). Adobe debe aprovisionar a los agentes de AEM. Para solicitar acceso a los agentes en AEM, comuníquese con su representante de Adobe o con [Soporte técnico de Adobe](https://experienceleague.adobe.com/en/support).
+Para usar agentes en AEM, primero debe tener configurado el acceso a [AEM AI Assistant](#aem-ai-assistant). Adobe debe aprovisionar a los agentes de AEM. Para solicitar acceso a los agentes en AEM, comuníquese con su representante de Adobe o con [Soporte técnico de Adobe](https://experienceleague.adobe.com/es/support).
 
 ## Patio
 
