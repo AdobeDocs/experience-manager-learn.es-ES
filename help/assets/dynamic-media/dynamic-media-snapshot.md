@@ -22,6 +22,6 @@ ht-degree: 0%
 
 Instantánea de Adobe es una herramienta de demostración visual, diseñada para ilustrar la potencia de Dynamic Media para una entrega de imágenes optimizada y dinámica. Experimente con imágenes de prueba o URL de Dynamic Media para observar visualmente la salida de varios modificadores de imagen de Dynamic Media, recortes inteligentes y optimizaciones de imágenes inteligentes para el tamaño del archivo (con entrega WebP y AVIF).
 
->[!VIDEO](https://video.tv.adobe.com/v/3419421/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445566/?captions=spa&learn=on)
 
 [Iniciar instantánea de Adobe](https://snapshot.scene7.com/)
