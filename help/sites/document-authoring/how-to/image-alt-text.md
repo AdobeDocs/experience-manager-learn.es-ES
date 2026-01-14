@@ -1,7 +1,7 @@
 ---
 title: Agregar texto alternativo de imagen con la creación de documentos de AEM
 description: Aprenda a utilizar texto alternativo para crear imágenes en la creación de documentos.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User, Developer
@@ -12,17 +12,17 @@ jira: KT-14488
 thumbnail: 3425721.jpeg
 duration: 101
 exl-id: 9577aa66-25a7-4092-984d-52eb2662c4ff
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '37'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
-# Texto alternativo de imagen
+# Texto alternativo de la imagen
 
 {{edge-delivery-services}}
 
 Aprenda a añadir texto alternativo a imágenes en páginas creadas con la creación de documentos de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438678/?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3425721/?learn=on)

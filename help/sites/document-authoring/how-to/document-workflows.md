@@ -1,7 +1,7 @@
 ---
 title: Flujos de trabajo con creación de documentos de AEM
 description: Aprenda a utilizar los flujos de trabajo de contenido con la creación de documentos de AEM.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User, Developer
@@ -12,17 +12,17 @@ jira: KT-14487
 thumbnail: 3425720.jpeg
 duration: 93
 exl-id: 43fccd46-3ce5-4ddd-93a9-e800a4d69f25
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '27'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
-# Flujos de trabajo de documento
+# Flujos de trabajo de documentos
 
 {{edge-delivery-services}}
 
 Explore cómo utilizar flujos de trabajo de documentos con la creación de documentos de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438293/?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3425720/?learn=on)
