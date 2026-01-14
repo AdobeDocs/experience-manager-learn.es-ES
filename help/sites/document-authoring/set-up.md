@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Una guía sobre cómo configurar la creación de documentos para autores.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425699/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438865/?captions=spa&learn=on)

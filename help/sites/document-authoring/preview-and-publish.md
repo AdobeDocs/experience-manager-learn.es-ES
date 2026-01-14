@@ -25,4 +25,4 @@ ht-degree: 25%
 
 Una guía paso a paso sobre cómo crear y publicar contenido mediante la creación de documentos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425700/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441341/?captions=spa&learn=on)

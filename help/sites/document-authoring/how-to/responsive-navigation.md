@@ -25,4 +25,4 @@ ht-degree: 16%
 
 Explore cómo realizar una navegación adaptable en la creación de documentos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425707/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438167/?captions=spa&learn=on)
