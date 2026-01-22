@@ -25,11 +25,11 @@ AEM as a Cloud Service admite varias opciones de autenticación y varía según 
 |                       | AEM Author | AEM Publish |
 |-----------------------|:----------:|:-----------:|
 | [Adobe IMS &#x200B;](../accessing/overview.md)<br>*(la vista previa de AEM no es compatible con Adobe IMS)* | ✔ | ✔ |
-| [Conexión OpenID (OIDC)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) | ✘ | ✔ |
-| [SAML 2.0 a través de Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✔ |
+| [Conexión OpenID (OIDC)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) | ✘ | ✔ |
+| [SAML 2.0 a través de Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=es#how-to-set-up) | ✔ | ✔ |
 | [SAML 2.0](./saml-2-0.md) | ✘ | ✔ |
-| [Inicio de sesión único (SSO)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
-| [OAuth](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
+| [Inicio de sesión único (SSO)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=es#integration-with-an-idp) | ✘ | ✔ |
+| [OAuth](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=es#integration-with-an-idp) | ✘ | ✔ |
 | [Autenticación de token](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
 | Autenticación básica | ✘ | ✘ |
 
