@@ -68,7 +68,7 @@ Se requiere lo siguiente al configurar la autenticación SAML 2.0:
 + AEM acceso de administrador a AEM como entorno de Cloud Service
 + Acceso de administrador a IDP
 + Opcionalmente, el acceso a un par de claves pública/privada utilizado para cifrar cargas útiles SAML
-+ AEM Sites páginas (o árboles Página), publicadas en AEM Publish y [protegidas por grupos cerrados de usuarios (CUG)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ AEM Sites páginas (o árboles Página), publicadas en AEM Publish y [protegidas por grupos cerrados de usuarios (CUG)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0 solo se admite para autenticar usos de AEM Publish o Vista previa. Para administrar la autenticación de AEM Autor utilizando IDP, [integre el IDP con Adobe Systems IMS](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html).
 
@@ -453,7 +453,7 @@ La pertenencia a grupos dinámicos es una característica [de Apache Jackrabbit 
 ### Cómo habilitar la pertenencia dinámica a grupos para usuarios de SAML en entornos nuevos
 
 Para mejorar significativamente el rendimiento de la evaluación grupo en entornos nuevos AEM como Cloud Service, se recomienda la activación de la función de pertenencia dinámica a grupos en entornos nuevos.
-Este también es un paso necesario cuando se activa la sincronización de datos. Más detalles [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+Este también es un paso necesario cuando se activa la sincronización de datos. Más detalles [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
 Para ello, añada la siguiente Propiedad al archivo de configuración de OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
