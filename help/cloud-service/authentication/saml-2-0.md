@@ -131,7 +131,7 @@ El almacén de confianza global se configura con el certificado público del IDP
 
 ## Crear almacén de claves del servicio de autenticación{#authentication-service-keystore}
 
-_Es necesario crear un almacén de claves para el servicio de autenticación cuando el Propiedad [ de configuración OSGi del `handleLogout`gestor de autenticación SAML 2.0 está establecido en `true`](#saml-20-authenticationsaml-2-0-authentication) o cuando [se requiere el cifrado de firma AuthnRequest/aserción SAML](#install-aem-public-private-key-pair)_
+_Es necesario crear un almacén de claves para el servicio de autenticación cuando el Propiedad [&#x200B; de configuración OSGi del `handleLogout`gestor de autenticación SAML 2.0 está establecido en `true`](#saml-20-authenticationsaml-2-0-authentication) o cuando [se requiere el cifrado de firma AuthnRequest/aserción SAML](#install-aem-public-private-key-pair)_
 
 1. Inicie sesión en AEM Author como administrador de AEM para cargar la clave privada.
 1. Vaya a __Herramientas > Seguridad > Usuarios__, seleccione el usuario __authentication-service__ y seleccione __Propiedades__ en la barra de acciones superior.
@@ -543,7 +543,7 @@ Cuando esta migración está habilitada, se realiza durante la autenticación de
 
 Por instancia, si antes de la migración `user1` es un usuario local y un miembro de grupo `group1`local, después de la migración se producirán los siguientes cambios:
 `user1` se convierte en un usuario externo. El atributo `rep:externalId` se agrega a su perfil.
-`user1`se convierte en miembro del grupo externo: `group1;idp`ya no es miembro directo del grupo local: `user1``group1` es miembro del grupo local: `group1;idp`.`group1`
+`user1`se convierte en miembro del grupo externo: `group1;idp`ya no es miembro directo del grupo local: `user1` `group1` es miembro del grupo local: `group1;idp`.`group1`
 
 `user1` es entonces un miembro de la herencia local grupo: `group1` aunque
 
@@ -597,7 +597,7 @@ y proporcionando parámetros de consulta:
 
 | Nombre del parámetro de consulta | Valor del parámetro de consulta |
 |----------------------|-----------------------|
-| `resource` | Cualquier ruta JCR, o subruta, que sea la que escuche el controlador de autenticación SAML, tal como se define en la configuración OSGi[ ](#configure-saml-2-0-authentication-handler) de `path`Adobe Systems Granite SAML 2.0 Propiedad Authentication Handler OSGi. |
+| `resource` | Cualquier ruta JCR, o subruta, que sea la que escuche el controlador de autenticación SAML, tal como se define en la configuración OSGi[&#x200B; &#x200B;](#configure-saml-2-0-authentication-handler) de `path`Adobe Systems Granite SAML 2.0 Propiedad Authentication Handler OSGi. |
 | `saml_request_path` | La ruta URL a la que debe llevarse el usuario después de una autenticación SAML correcta. |
 
 Por ejemplo, esta vincular HTML activará el flujo de inicio de sesión SAML y, si se realiza correctamente, llevará la usuario a `/content/wknd/us/en/protected/page.html`. Estos parámetros de consulta se pueden configurar mediante programación según sea necesario.
@@ -618,7 +618,7 @@ y proporcionar los datos del formulario:
 
 | Nombre de datos del formulario | Valor de datos de formulario |
 |----------------------|-----------------------|
-| `resource` | Cualquier ruta JCR, o subruta, que sea la que escuche el controlador de autenticación SAML, tal como se define en la configuración OSGi[ ](#configure-saml-2-0-authentication-handler) de `path`Adobe Systems Granite SAML 2.0 Propiedad Authentication Handler OSGi. |
+| `resource` | Cualquier ruta JCR, o subruta, que sea la que escuche el controlador de autenticación SAML, tal como se define en la configuración OSGi[&#x200B; &#x200B;](#configure-saml-2-0-authentication-handler) de `path`Adobe Systems Granite SAML 2.0 Propiedad Authentication Handler OSGi. |
 | `saml_request_path` | La ruta URL a la que debe llevarse el usuario después de una autenticación SAML correcta. |
 
 
