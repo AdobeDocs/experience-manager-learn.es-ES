@@ -31,4 +31,4 @@ Los perfiles de producto de IMS de Adobe permiten a los usuarios iniciar sesión
 
 ## Recursos adicionales
 
-+ [Administración de productos y acceso de usuarios en la documentación de Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)
++ [Administración de productos y acceso de usuarios en la documentación de Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=es#managing-products-and-user-access-in-admin-console)
