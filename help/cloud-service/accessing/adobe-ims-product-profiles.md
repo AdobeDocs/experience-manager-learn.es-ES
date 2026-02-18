@@ -27,7 +27,7 @@ ht-degree: 42%
 
 Los perfiles de producto de IMS de Adobe permiten a los usuarios iniciar sesión en un servicio de AEM Author y proporcionar una línea de base de acceso, según el perfil de producto al que pertenezcan.
 
->[!VIDEO](https://video.tv.adobe.com/v/39156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327581?captions=spa&quality=12&learn=on)
 
 ## Recursos adicionales
 
