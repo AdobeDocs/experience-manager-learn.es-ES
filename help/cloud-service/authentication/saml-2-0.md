@@ -68,7 +68,7 @@ Se requiere lo siguiente al configurar la autenticación SAML 2.0:
 + Acceso de administrador de AEM al entorno de AEM as a Cloud Service
 + Acceso de administrador al IDP
 + Opcionalmente, acceso a un par de claves pública y privada utilizado para cifrar cargas SAML
-+ Páginas de AEM Sites (o árboles de páginas), publicadas en AEM Publish y [protegidas por grupos de usuarios cerrados (CUG)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ Páginas de AEM Sites (o árboles de páginas), publicadas en AEM Publish y [protegidas por grupos de usuarios cerrados (CUG)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0 solo se admite para autenticar usuarios en AEM Publish o Preview. Para administrar la autenticación del autor de AEM que usa y IDP, [integre el IDP con Adobe IMS](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html).
 
@@ -453,7 +453,7 @@ La pertenencia a grupos dinámicos es una característica de [Apache Jackrabbit 
 ### Cómo habilitar la pertenencia a grupos dinámicos para usuarios de SAML en nuevos entornos
 
 Para mejorar significativamente el rendimiento de la evaluación de grupos en nuevos entornos de AEM as a Cloud Service, se recomienda activar la función de pertenencia a grupos dinámicos en nuevos entornos.
-También es un paso necesario cuando se activa la sincronización de datos. Más detalles [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+También es un paso necesario cuando se activa la sincronización de datos. Más detalles [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
 Para ello, agregue la siguiente propiedad al archivo de configuración OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
@@ -623,7 +623,7 @@ public void postSyncUserProcess(
 
 **Importante:** Para modificar las propiedades de usuario en el repositorio, la implementación del vínculo requiere:
 + Referencia de `SlingRepository` insertada mediante `@Reference`
-+ Un [usuario de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configurado con los permisos apropiados (configurado en &quot;Modificación del servicio de asignador de usuarios del servicio de Apache Sling&quot;)
++ Un [usuario de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configurado con los permisos apropiados (configurado en &quot;Modificación del servicio de asignador de usuarios del servicio de Apache Sling&quot;)
 + Administración de sesiones adecuada con bloques try-catch-finally
 
 ### Implementación de un vínculo SAML personalizado
@@ -809,7 +809,7 @@ El artefacto `aem-sdk-api` contiene todas las interfaces SAML de Adobe Granite n
 
 #### Paso 4: Configurar el usuario de servicio (si se modifica el repositorio)
 
-Si el vínculo de SAML necesita modificar las propiedades del usuario en el repositorio (como se muestra en el ejemplo `postSyncUserProcess`), se debe configurar un [usuario de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users):
+Si el vínculo de SAML necesita modificar las propiedades del usuario en el repositorio (como se muestra en el ejemplo `postSyncUserProcess`), se debe configurar un [usuario de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/advanced/service-users):
 
 1. Cree una asignación de usuario de servicio en el proyecto en `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json`:
 
@@ -852,8 +852,8 @@ Implemente el vínculo personalizado SAML en AEM as a Cloud Service:
 + **Pruebas**: Pruebe exhaustivamente los vínculos personalizados en entornos inferiores antes de implementarlos en producción
 + **Varios enlaces**: Se pueden configurar varias implementaciones de enlaces de SAML; se ejecutarán todos los enlaces coincidentes. Utilice la propiedad `service.ranking` en el componente OSGi para controlar el orden de ejecución (los valores de mayor clasificación se ejecutan primero). Para reutilizar un vínculo de SAML en varias configuraciones de fábrica del controlador de autenticación SAML (`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`), cree varias configuraciones de vínculo (configuraciones de fábrica OSGi), cada una con un `idpIdentifier` diferente que coincida con el controlador de autenticación SAML correspondiente
 + **Seguridad**: valide y sanee todos los datos de las aserciones de SAML antes de usarlos en la lógica empresarial
-+ **Acceso al repositorio**: Al modificar las propiedades del usuario en `postSyncUserProcess`, use siempre un [usuario de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) con los permisos apropiados en lugar de sesiones administrativas
-+ **Permisos de usuario de servicio**: Conceda los permisos mínimos necesarios al [usuario de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (por ejemplo, solo `jcr:read` y `rep:write` en `/home/users`, no derechos de administrador completos)
++ **Acceso al repositorio**: Al modificar las propiedades del usuario en `postSyncUserProcess`, use siempre un [usuario de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) con los permisos apropiados en lugar de sesiones administrativas
++ **Permisos de usuario de servicio**: Conceda los permisos mínimos necesarios al [usuario de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (por ejemplo, solo `jcr:read` y `rep:write` en `/home/users`, no derechos de administrador completos)
 + **Administración de sesiones**: Use siempre bloques try-catch-finally para asegurarse de que las sesiones del repositorio se cierren correctamente, incluso si se producen excepciones
 + **Sincronización del usuario**: el vínculo `postSyncUserProcess` se ejecuta después de sincronizar el usuario con OAK, por lo que se garantiza que el objeto de usuario existe en el repositorio en ese momento
 
