@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Descubra cómo crear plantillas de comunicaciones interactivas para estandarizar las comunicaciones salientes. Estas plantillas garantizan la coherencia, el control y la alineación de la marca en las comunicaciones con los clientes. Conozca el proceso de creación, edición y activación de plantillas para uso futuro, utilizando herramientas como IC Web Designer y Biblioteca de objetos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480029/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480045/?captions=spa&learn=on&enablevpops)
 
 ## Próximos pasos
 

@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Aprenda a desarrollar fragmentos reutilizables para documentos de comunicaciones interactivas. Optimice los diseños y garantice el enlace dinámico de datos para las secciones de dirección del cliente y cuerpo de la carta. Mejore el diseño del documento con controles de formato, posición y margen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480042/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480057/?captions=spa&learn=on&enablevpops)
 
 ## Próximos pasos
 

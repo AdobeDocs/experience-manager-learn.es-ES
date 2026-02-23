@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Crear documentos de comunicación interactiva mediante plantillas predefinidas y fragmentos reutilizables. Esto garantiza la coherencia y la eficacia en la creación de documentos. Incruste datos dinámicos seleccionando el modelo de datos de formulario (FDM) correcto e insertando fragmentos en áreas de destino designadas. Pruebe la precisión y el formato del resultado final.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480068/?captions=spa&learn=on&enablevpops)
 
 ## Próximos pasos
 

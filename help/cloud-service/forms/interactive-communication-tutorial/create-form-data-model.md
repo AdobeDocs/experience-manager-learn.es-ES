@@ -25,7 +25,7 @@ Se ha implementado un servidor API ficticio que simula el servicio Pedidos con f
 
 El archivo swagger utilizado en la creación del modelo de datos de formulario se puede [descargar desde aquí](assets/UsersAndOrders.json)
 
->[!VIDEO](https://video.tv.adobe.com/v/3480005/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480020/?captions=spa&learn=on&enablevpops)
 
 ## Próximos pasos
 
