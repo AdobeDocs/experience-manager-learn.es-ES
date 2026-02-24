@@ -12,18 +12,14 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 60ea92e57f2bd8bcbc204ccb48abea172e61c969
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 1%
+source-wordcount: '1482'
+ht-degree: 2%
 
 ---
 
 # Eventos de AEM Assets para la integración con PIM
-
->[!IMPORTANT]
->
->Este tutorial utiliza las API de AEM basadas en OpenAPI. Están disponibles como parte de un programa de acceso anticipado. Si está interesado en acceder a ellos, le recomendamos que envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descripción de su caso de uso.
 
 Obtenga información sobre cómo recibir un evento de AEM y actuar en él para actualizar el estado del contenido en AEM mediante la API de autor de Assets basada en OpenAPI.
 
@@ -57,8 +53,8 @@ Para completar este tutorial, necesita lo siguiente:
 
 Los pasos de desarrollo de alto nivel son los siguientes:
 
-1. [Modernización del entorno de AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
-1. [Habilitar el acceso a las API de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
+1. [Modernización del entorno de AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
+1. [Habilitar el acceso a las API de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
 1. [Creación de un proyecto en Adobe Developer Console (ADC)](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
 1. [Inicializar el proyecto para el desarrollo local](./runtime-action.md#initialize-project-for-local-development)
 1. Configurar el proyecto en ADC
@@ -293,7 +289,7 @@ Consulte el archivo adjunto [WKND-Assets-PIM-Integration.zip](../assets/examples
 
 De forma predeterminada, el proyecto de WKND Sites no tiene el esquema de metadatos de recursos para mostrar los metadatos específicos de PIM como SKU, nombre del proveedor, etc. Vamos a crear y aplicar el esquema de metadatos del recurso a una carpeta de recursos en la instancia de AEM.
 
-1. Inicie sesión en la instancia de AEM as a Cloud Service Asset y esté en la [vista Asset](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/authoring/switch-views).
+1. Inicie sesión en la instancia de AEM as a Cloud Service Asset y esté en la [vista Asset](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views).
 
    ![Vista de AEM Assets](../assets/examples/assets-pim-integration/aem-assets-view.png)
 
