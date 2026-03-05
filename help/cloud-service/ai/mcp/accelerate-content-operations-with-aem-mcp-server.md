@@ -92,7 +92,7 @@ A continuación, configure la [aplicación WKND Adventures React](https://github
    $ git clone git@github.com:adobe/aem-guides-wknd.git
    ```
 
-1. Implemente el proyecto [WKND Site](https://github.com/adobe/aem-guides-wknd) en su RDE. Para ver los pasos detallados, consulte [Cómo usar el entorno de desarrollo rápido](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin).
+1. Implemente el proyecto [WKND Site](https://github.com/adobe/aem-guides-wknd) en su RDE. Para ver los pasos detallados, consulte [Cómo usar el entorno de desarrollo rápido](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin).
 
 1. Abra la carpeta `react-app` en su IDE.
 
