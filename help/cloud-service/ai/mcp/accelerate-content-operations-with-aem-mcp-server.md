@@ -22,7 +22,7 @@ Use **Content MCP Server** de un IDE con tecnología de IA como [Cursor IDE](htt
 
 En este tutorial _revisará_ los detalles del fragmento de contenido Adventure, _actualizará_ un fragmento (por ejemplo, el precio de una aventura) y _verificará_ el cambio en la [aplicación WKND Adventures React](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app) desde su IDE con un _entorno AEM inferior_ (RDE o Desarrollo) sin abandonar el flujo MCP.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480895/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480898/?captions=spa&learn=on&enablevpops)
 
 ## Información general
 
