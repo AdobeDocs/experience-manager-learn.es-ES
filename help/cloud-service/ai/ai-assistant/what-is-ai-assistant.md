@@ -20,4 +20,4 @@ ht-degree: 0%
 
 El asistente de IA acelera las tareas de AEM, proporciona respuestas instantáneas, guía el uso de las funciones, soluciona problemas y crea vales de soporte, todo desde la interfaz de Experience Manager. Ayuda a los equipos a entregar contenido más rápido, reducir las búsquedas de documentación y mejorar la eficacia operativa.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480859/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480873/?captions=spa&learn=on&enablevpops)

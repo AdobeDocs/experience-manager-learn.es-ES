@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Descubra cómo el asistente de IA acelera los flujos de trabajo de AEM al proporcionar orientación instantánea, fragmentos de código y pasos para la resolución de problemas. Esto reduce el esfuerzo de soporte y ayuda a los equipos a entregar el contenido de forma más rápida y con mayor calidad.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480858/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480862/?captions=spa&learn=on&enablevpops)

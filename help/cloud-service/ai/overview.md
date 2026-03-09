@@ -55,7 +55,7 @@ Experience Manager as a Cloud Service proporciona funciones de IA avanzadas para
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./ai-assistant/overview.md" title="Asistente de IA de AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1773082651757" alt="Asistente de IA de AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475361/?captions=spa&format=jpeg&nocache=1773082651757" alt="Asistente de IA de AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
