@@ -81,7 +81,7 @@ public void postSyncUserProcess(
 **Important:** To modify user properties in the repository, the hook implementation requires:
 
 + Referencia de `SlingRepository` insertada mediante `@Reference`
-+ Un [usuario de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configurado con los permisos apropiados (configurado en &quot;Modificación del servicio de asignador de usuarios del servicio de Apache Sling&quot;)
++ Un [usuario de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configurado con los permisos apropiados (configurado en &quot;Modificación del servicio de asignador de usuarios del servicio de Apache Sling&quot;)
 + Administración de sesiones adecuada con bloques try-catch-finally
 
 ## Implementación de un vínculo SAML personalizado
@@ -267,7 +267,7 @@ El artefacto `aem-sdk-api` contiene todas las interfaces SAML de Adobe Granite n
 
 ### Configuración del usuario del servicio (opcional)
 
-Si el vínculo SAML necesita modificar el contenido en el repositorio JCR de AEM, como las propiedades del usuario (como se muestra en el ejemplo `postSyncUserProcess`), debe configurarse un [usuario de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users):
+Si el vínculo SAML necesita modificar el contenido en el repositorio JCR de AEM, como las propiedades del usuario (como se muestra en el ejemplo `postSyncUserProcess`), debe configurarse un [usuario de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/advanced/service-users):
 
 1. Cree una asignación de usuario de servicio en el proyecto en `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json`:
 
@@ -310,7 +310,7 @@ Implementar el enlace de SAML personalizado en AEM como Cloud Service:
 + **Pruebas**: Pruebe exhaustivamente los vínculos personalizados en entornos inferiores antes de implementarlos en producción
 + **Varios enlaces**: Se pueden configurar varias implementaciones de enlaces de SAML; se ejecutarán todos los enlaces coincidentes. Utilice la propiedad `service.ranking` en el componente OSGi para controlar el orden de ejecución (los valores de mayor clasificación se ejecutan primero). Para reutilizar un vínculo de SAML en varias configuraciones de fábrica del controlador de autenticación SAML (`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`), cree varias configuraciones de vínculo (configuraciones de fábrica OSGi), cada una con un `idpIdentifier` diferente que coincida con el controlador de autenticación SAML correspondiente
 + **Security**: Validate and sanitize all data from SAML assertions before using them in business logic
-+ **Repository access**: When modifying user properties in `postSyncUserProcess`, always use a [service user](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) with appropriate permissions rather than administrative sessions
-+ **Permisos de usuario de servicio**: Conceda los permisos mínimos necesarios al [usuario de servicio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (por ejemplo, solo `jcr:read` y `rep:write` en `/home/users`, no derechos de administrador completos)
++ **Repository access**: When modifying user properties in `postSyncUserProcess`, always use a [service user](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) with appropriate permissions rather than administrative sessions
++ **Permisos de usuario de servicio**: Conceda los permisos mínimos necesarios al [usuario de servicio](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (por ejemplo, solo `jcr:read` y `rep:write` en `/home/users`, no derechos de administrador completos)
 + **Administración de sesiones**: Use siempre bloques try-catch-finally para asegurarse de que las sesiones del repositorio se cierren correctamente, incluso si se producen excepciones
 + **Sincronización del usuario**: el vínculo `postSyncUserProcess` se ejecuta después de sincronizar el usuario con OAK, por lo que se garantiza que el objeto de usuario existe en el repositorio en ese momento
