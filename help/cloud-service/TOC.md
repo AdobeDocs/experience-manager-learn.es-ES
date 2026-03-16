@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 34f098de6bd15875e5534250b28c08bdb62e74fa
+source-git-commit: 4c5bec95d74d3611dc96d1d23dcd4d3d708e0243
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 95%
+source-wordcount: '1499'
+ht-degree: 94%
 
 ---
 
@@ -30,19 +30,19 @@ ht-degree: 95%
 + [Experience Hub](./experience-hub.md)
 + IA {#ai}
    + [Información general](./ai/overview.md)
-   + [Set up and Provisioning](./ai/setup.md)
+   + [Configuración y aprovisionamiento](./ai/setup.md)
    + Asistente de IA {#ai-assistant}
       + [Información general](./ai/ai-assistant/overview.md)
-      + [What is AI Assistant?](./ai/ai-assistant/what-is-ai-assistant.md)
-      + [Who is AI Assistant for?](./ai/ai-assistant/who-is-ai-assistant-for.md)
+      + [¿Qué es el asistente de IA?](./ai/ai-assistant/what-is-ai-assistant.md)
+      + [¿Para quién es un asistente de IA?](./ai/ai-assistant/who-is-ai-assistant-for.md)
       + [Capacidades clave](./ai/ai-assistant/key-capabilities.md)
-   + Agents {#agents}
+   + Agentes {#agents}
       + [Información general](./ai/agents/agents-in-aem.md)
-      + [Dev Agent and CI/CD Troubleshooting](./ai/agents/development-agent-troubleshoot-ci-cd-pipeline.md)
+      + [Solución de problemas de CI/CD y agente de desarrollo](./ai/agents/development-agent-troubleshoot-ci-cd-pipeline.md)
    + Servidores MCP {#mcp-servers}
       + [Información general](./ai/mcp/overview.md)
-      + [Accelerate AEM Content Operations with the MCP Server](./ai/mcp/accelerate-content-operations-with-aem-mcp-server.md)
-      + [Cloud Manager MCP Server](./ai/mcp/cloud-manager.md)
+      + [Acelerar las operaciones de contenido de AEM con el servidor MCP](./ai/mcp/accelerate-content-operations-with-aem-mcp-server.md)
+      + [Servidor MCP de Cloud Manager](./ai/mcp/cloud-manager.md)
 + Integraciones de Experience Cloud{#integrations}
    + [Integraciones](./integrations/experience-cloud.md)
    + [AEM sin encabezado y Target](./integrations/target.md)
@@ -130,7 +130,7 @@ ht-degree: 95%
       + [Usuarios del servicio](./developing/advanced/service-users.md)
       + [API de imagen optimizadas para la web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
       + [Ejecutar trabajo en instancia de líder en AEM Author](./developing/advanced/run-job-on-leader-instance-in-aem-author.md)
-      + [Find and remove deprecated APIs](./developing/advanced/deprecated-apis-find-removal.md)
+      + [Búsqueda y eliminación de API obsoletas](./developing/advanced/deprecated-apis-find-removal.md)
    + Entorno de desarrollo rápido{#rde}
       + [Información general](./developing/rde/overview.md)
       + [Cómo realizar la configuración](./developing/rde/how-to-setup.md)
@@ -160,14 +160,14 @@ ht-degree: 95%
          + [Advertencias transversales](./debugging/cloud-service/risks/traversals.md)
 + Personalización {#personalization}
    + [Información general](./personalization/overview.md)
-   + [Live Demo](./personalization/live-demo.md)
+   + [Demostración en directo](./personalization/live-demo.md)
    + Configuración{#setup}
       + [Integración con Adobe Target](./personalization/setup/integrate-adobe-target.md)
       + [Integrar etiquetas](./personalization/setup/integrate-adobe-tags.md)
    + Casos de uso {#use-cases}
       + [Experimentación (Pruebas A/B)](./personalization/use-cases/experimentation.md)
-      + [Behavioral Targeting](./personalization/use-cases/behavioral-targeting.md)
-      + [Known-user Personalization](./personalization/use-cases/known-user-personalization.md)
+      + [Direccionamiento de comportamiento](./personalization/use-cases/behavioral-targeting.md)
+      + [Personalization de usuario conocido](./personalization/use-cases/known-user-personalization.md)
 + API DE AEM{#aem-apis}
    + [Información general](./apis/overview.md)
    + OpenAPI{#openapis}
@@ -206,7 +206,7 @@ ht-degree: 95%
 + Autenticación{#authentication}
    + [Información general](./authentication/authentication.md)
    + [SAML 2.0](./authentication/saml-2-0.md)
-   + [SAML login hooks](./authentication/saml-2-0-login-hook.md)
+   + [Enlaces de inicio de sesión SAML](./authentication/saml-2-0-login-hook.md)
 + Redes avanzadas{#networking}
    + [Información general](./networking/advanced-networking.md)
    + [Salida de puerto flexible](./networking/flexible-port-egress.md)
@@ -335,13 +335,16 @@ ht-degree: 95%
       + [&#x200B;4. Añadir iconos](./forms/using-vertical-tabs/icons.md)
    + Usar el resultado y el servicio de formularios{#forms-cs-output-and-forms-service}
       + [Generar PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
-   + Interactive Communication Tutorial{#interactive-communication-tutorial}
+   + Creación de un perfil en AEP al enviar el formulario{#aep-integration}
+      + [Crear configuración de nube](./forms/aep-integration/create-cloud-configuration.md)
+      + [Configuración del formulario para el envío de AEP](./forms/aep-integration/create-integration-with-aep.md)
+   + Tutorial de comunicación interactiva{#interactive-communication-tutorial}
       + [&#x200B;1. Introducción](./forms/interactive-communication-tutorial/introduction.md)
-      + [2. Create FDM](./forms/interactive-communication-tutorial/create-form-data-model.md)
-      + [3. Create Template](./forms/interactive-communication-tutorial/create-template.md)
-      + [4. Create Fragments](./forms/interactive-communication-tutorial/create-fragments.md)
-      + [5. Create IC Document](./forms/interactive-communication-tutorial/create-ic-document.md)
-      + [6. Generate IC Document](./forms/interactive-communication-tutorial/test-document-generation.md)
+      + [&#x200B;2. Crear FDM](./forms/interactive-communication-tutorial/create-form-data-model.md)
+      + [&#x200B;3. Crear plantilla](./forms/interactive-communication-tutorial/create-template.md)
+      + [&#x200B;4. Crear fragmentos](./forms/interactive-communication-tutorial/create-fragments.md)
+      + [&#x200B;5. Crear documento IC](./forms/interactive-communication-tutorial/create-ic-document.md)
+      + [&#x200B;6. Generar documento IC](./forms/interactive-communication-tutorial/test-document-generation.md)
    + Generación de documentos en AEM Forms CS{#doc-gen-formscs}
       + [Introducción](./forms/doc-gen-forms-cs/introduction.md)
       + [Crear credenciales de servicio](./forms/doc-gen-forms-cs/service-credentials.md)
