@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Obtenga información sobre cómo crear y administrar perfiles en Adobe Experience Platform mediante envíos de AEM Forms. Esta integración optimiza la administración de datos y mejora la experiencia del usuario.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481508/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3481512/?captions=spa&learn=on&enablevpops)

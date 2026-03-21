@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Aprenda a configurar una configuración de nube en AEM Forms para integrarse de forma segura con Adobe Experience Platform. Utilice las credenciales de Adobe Developer Console para permitir el envío y la recuperación de datos sin problemas en sus formularios. Esta guía proporciona instrucciones paso a paso para configurar la conexión de forma eficaz.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481496/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3481499/?captions=spa&learn=on&enablevpops)
 
 
 ## Siguientes pasos
