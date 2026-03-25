@@ -1,7 +1,7 @@
 ---
 title: Tutorial para desarrolladores con Edges Delivery Services y el editor universal
 description: Conozca los conceptos básicos del desarrollo de un nuevo sitio web creado en el editor universal de AEM y suministrado con Edge Delivery Services.
-short-description: Un tutorial para desarrolladores para crear sitios web de AEM que combinen la creación avanzada con el editor universal y una entrega rápida con Edge Delivery Services. Aprenda a crear un nuevo proyecto, configurar un entorno de desarrollo local y crear bloques personalizados.
+short-description: Un tutorial para desarrolladores para crear sitios web de AEM que combinen la creación avanzada con el editor universal y un envío a toda velocidad con Edge Delivery Services. Aprenda a crear un nuevo proyecto, configurar un entorno de desarrollo local y crear bloques personalizados.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -11,10 +11,10 @@ doc-type: Catalog
 jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '658'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,8 @@ En este tutorial, aprenderá los aspectos básicos de la creación de un sitio w
 
 Obtenga información sobre cómo crear un proyecto de código y configurar un nuevo sitio en AEM as a Cloud Service. Esta configuración permite un desarrollo sin problemas con el editor universal para la creación de contenido y la distribución rápida de contenido de Edge Delivery Services.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./1-new-code-project.md
 * ./2-new-aem-site.md
@@ -88,7 +89,8 @@ Obtenga información sobre cómo crear un proyecto de código y configurar un nu
 ## Configuración de desarrollo
 
 Aprenda a configurar su entorno de desarrollo local para permitir un desarrollo rápido de sitios web. Esta configuración permite crear sitios sin problemas con el editor universal y suministrar contenido de forma eficaz a través de Edge Delivery Services, lo que garantiza un flujo de trabajo de desarrollo fluido y optimizado.
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./3-local-development-environment.md
 * ./4-website-branding.md
@@ -101,7 +103,7 @@ Aprenda a configurar su entorno de desarrollo local para permitir un desarrollo 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="Configuración de un entorno de desarrollo local" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443981/?captions=spa&format=jpeg&nocache=1753811862249" alt="Configuración de un entorno de desarrollo local"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="Configuración de un entorno de desarrollo local"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -149,7 +151,8 @@ Aprenda a configurar su entorno de desarrollo local para permitir un desarrollo 
 
 Aprenda a crear un nuevo bloque definiendo su modelo de contenido y configurando contenido de muestra para pruebas y desarrollo. Explore dos métodos para procesar el bloque y conozca cómo estructurarlo para obtener un rendimiento y una flexibilidad óptimos en AEM y Edge Delivery Services.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./5-new-block.md {image = ./assets/5-new-block/card.png}
 * ./6-author-block.md {image = ./assets/6-author-block/card.png}
@@ -258,7 +261,8 @@ Aprenda a crear un nuevo bloque definiendo su modelo de contenido y configurando
 
 Ahora que ha completado este tutorial, aproveche lo que ha aprendido con estas guías específicas. Estas guías amplían el código y los conceptos que se tratan aquí, explorando casos de uso específicos de cada función, técnicas avanzadas y sugerencias adicionales para mejorar las habilidades de desarrollo de Edge Delivery Services y el editor universal.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ./how-to/block-options.md
 * ./how-to/header-and-footer.md

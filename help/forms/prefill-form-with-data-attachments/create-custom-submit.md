@@ -1,6 +1,6 @@
 ---
 title: Crear un envío personalizado para gestionar el envío de formularios basado en componentes principales
-description: Crear un envío personalizado para almacenar los datos del formulario con los archivos adjuntos en Azure
+description: Crear envíos personalizados para almacenar los datos del formulario con los archivos adjuntos en Azure
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -10,7 +10,7 @@ topic: Integrations
 jira: KT-14794
 exl-id: c4257567-76bd-417e-a1a2-38a0647767d9
 duration: 147
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 1%
@@ -40,7 +40,7 @@ Para satisfacer el caso de uso, se creó un servicio de envío personalizado par
 }
 ```
 
-El elemento _&#x200B;**contractcopy**&#x200B;_ representa un componente de archivo adjunto y se utiliza para capturar los archivos adjuntos enviados con el formulario.
+El elemento _**contractcopy**_ representa un componente de archivo adjunto y se utiliza para capturar los archivos adjuntos enviados con el formulario.
 Para poder rellenar previamente el formulario adaptable con los datos y sus archivos adjuntos, los archivos adjuntos enviados se guardarán en el portal de Azure y el elemento de datos del objeto de copia de contrato en los datos enviados se actualizará con la dirección URL del archivo adjunto guardado.
 El servicio de envío personalizado extrae y almacena los archivos adjuntos en Azure Portal.  Los datos enviados actualizados lucirán de esta manera
 
@@ -62,9 +62,7 @@ El servicio de envío personalizado extrae y almacena los archivos adjuntos en A
     },
     "Message": "We would like to renew our annual contract "
 }
-``
 ```
-
 
 [El controlador de envío personalizado de ejemplo para el formulario adaptable basado en componentes principales está disponible aquí](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). El siguiente envío personalizado se escribió para administrar el envío del formulario
 
@@ -256,6 +254,6 @@ public String saveFormAttachmentinAzure(InputStream attachmentStream, String fil
  }
 ```
 
-## Siguientes pasos
+## Próximos pasos
 
 [Escribir configuración de OSGi](./create-osgi-configuration.md)

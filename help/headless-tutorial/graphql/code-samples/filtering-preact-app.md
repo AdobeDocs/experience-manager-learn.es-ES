@@ -1,5 +1,5 @@
 ---
-title: Filtrado de aplicación Preact
+title: Filtrado de la aplicación Preact
 description: Una aplicación de Preact simple que filtra aventuras WKND modeladas con fragmentos de contenido.
 version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
@@ -13,14 +13,14 @@ hide: true
 hidefromtoc: true
 exl-id: d2b7e8ab-8bbc-495f-94f1-362ea47b3853
 duration: 26
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Filtrado de aplicación Preact
+# Filtrado de la aplicación Preact
 
 Explore la capacidad de las API de GraphQL de AEM sin encabezado para filtrar datos mediante la aplicación [Preact](https://preactjs.com/). Esta aplicación de Preact crea una lista de las aventuras de WKND que se pueden filtrar por Tipo de actividad.
 

@@ -11,7 +11,7 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18307
 thumbnail: null
 exl-id: 5e235220-82f6-46e4-b64d-315f027a7024
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 100%
@@ -263,7 +263,8 @@ En este tutorial, ha aprendido a proteger los sitios web de AEM frente a la dene
 
 Aprenda a implementar las reglas WAF recomendadas por Adobe para proteger los sitios web de AEM ante amenazas sofisticadas que utilizan técnicas avanzadas para eludir las medidas de seguridad tradicionales.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./using-waf-rules.md
@@ -305,7 +306,8 @@ Aprenda a implementar las reglas WAF recomendadas por Adobe para proteger los si
 
 En el caso de los escenarios más avanzados, puede explorar los siguientes casos de uso que muestran cómo implementar reglas de filtro de tráfico personalizadas en función de requisitos comerciales específicos:
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ../how-to/request-logging.md

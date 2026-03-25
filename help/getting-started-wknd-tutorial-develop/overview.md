@@ -4,7 +4,7 @@ description: Aprenda a implementar un sitio de AEM para una marca ficticia de es
 version: Experience Manager as a Cloud Service
 jira: KT-13565
 mini-toc-levels: 1
-index: y
+index: true
 thumbnail: 30476.jpg
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
 topic: Content Management, Development
@@ -13,8 +13,8 @@ level: Beginner
 doc-type: Catalog
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
-workflow-type: ht
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Bienvenido al tutorial de varias partes diseñado para desarrolladores que se in
 
 El objetivo de este tutorial en varias partes es enseñar a los desarrolladores a implementar un sitio web utilizando los últimos estándares y tecnologías de Adobe Experience Manager (AEM).  Después de completar este tutorial, los desarrolladores deberán comprender los fundamentos básicos de la plataforma y los patrones de diseño habituales de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/35876?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
 ## Opciones para iniciar un proyecto de Sites
 
@@ -63,7 +63,7 @@ Para probar el código más reciente antes de saltar al tutorial, descargue e in
 
 ### Tecnología de Adobe Stock
 
-Muchas de las imágenes del sitio web de referencia de WKND son de [Adobe Stock](https://stock.adobe.com/) y son materiales de terceros, tal como se definen en las condiciones adicionales del recurso de demostración en [https://www.adobe.com/legal/terms.html](https://www.adobe.com/es/legal/terms.html). Si desea utilizar una imagen de Adobe Stock para otros fines más allá de la visualización de este sitio web de demostración, como su inclusión en un sitio web o en materiales de marketing, puede adquirir una licencia de Adobe Stock.
+Muchas de las imágenes del sitio web de referencia de WKND son de [Adobe Stock](https://stock.adobe.com/) y son materiales de terceros, tal como se definen en las condiciones adicionales del recurso de demostración en [https://www.adobe.com/legal/terms.html](https://www.adobe.com/es/legal/terms.html). Si desea utilizar una imagen de Adobe Stock para otros fines más allá de la visualización de este sitio web de demostración, como su inclusión en un sitio web o en materiales de marketing, puede comprar una licencia de Adobe Stock.
 
 Con Adobe Stock, tiene acceso a más de 140 millones de imágenes de alta calidad y libres de derechos de autor, incluidas fotos, gráficos, vídeos y plantillas, para impulsar sus proyectos creativos.
 

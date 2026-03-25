@@ -8,12 +8,12 @@ role: Developer, Admin
 level: Intermediate
 jira: KT-10689
 mini-toc-levels: 1
-index: y
+index: true
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
 duration: 307
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 100%
@@ -30,7 +30,7 @@ En este capítulo, realizaremos cambios de configuración en el __proyecto de WK
 
 ## Información general sobre los cambios de configuración en el proyecto de AEM de pila completa
 
->[!VIDEO](https://video.tv.adobe.com/v/3453612?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
 
 ## Requisitos previos {#prerequisites}
 

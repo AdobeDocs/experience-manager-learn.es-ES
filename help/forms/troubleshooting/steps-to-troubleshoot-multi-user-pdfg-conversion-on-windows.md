@@ -7,10 +7,10 @@ level: Intermediate
 version: Experience Manager 6.5
 feature: PDF Generator
 topic: Development
-index: y
+index: true
 exl-id: 2fddb3a9-570c-4b50-a685-4287a1ddafe1
 duration: 111
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *En este vídeo se describe el proceso de solución de problemas de conversión de PDF Generator para varios usuarios en una instalación de Windows.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3417224?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/335550?quality=12&learn=on)

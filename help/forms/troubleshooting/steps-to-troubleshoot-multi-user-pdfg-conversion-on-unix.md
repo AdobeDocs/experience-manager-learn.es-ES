@@ -7,10 +7,10 @@ level: Intermediate
 version: Experience Manager 6.5
 feature: PDF Generator
 topic: Development
-index: y
+index: true
 exl-id: 35732b0f-a492-4d7f-b152-4a43d2c9b58b
 duration: 138
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Este vídeo describe el proceso de resolución de problemas de la conversión de PDF Generator para varios usuarios en una configuración Unix.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3417610?quality=12&learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/335549?quality=12&learn=on)

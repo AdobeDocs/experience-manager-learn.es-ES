@@ -12,7 +12,7 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: f4f177f2745cb03c81011679b9d88eaadeb9cae3
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 9%
@@ -212,11 +212,11 @@ Vamos a seguir los pasos para configurar la instancia de AEM para habilitar la c
 
 1. Confirme los cambios de configuración e inserte los cambios en el repositorio Git remoto al que está conectada la canalización de Cloud Manager.
 
-1. Implemente los cambios anteriores mediante la [Canalización de configuración](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline) en Cloud Manager.
+1. Implemente los cambios anteriores mediante la [Canalización de configuración](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline) en Cloud Manager.
 
    ![Implementar YAML](./assets/setup/config-pipeline.png)
 
-Tenga en cuenta que el archivo `api.yaml` también se puede instalar en un [RDE](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/overview), [con herramientas de línea de comandos](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Esto resulta útil para probar los cambios de configuración antes de implementarlos en el entorno de producción.
+Tenga en cuenta que el archivo `api.yaml` también se puede instalar en un [RDE](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview), [con herramientas de línea de comandos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Esto resulta útil para probar los cambios de configuración antes de implementarlos en el entorno de producción.
 
 >[!CAUTION]
 >
@@ -227,7 +227,8 @@ Tenga en cuenta que el archivo `api.yaml` también se puede instalar en un [RDE]
 
 Una vez configurada la instancia de AEM para habilitar la comunicación del proyecto ADC, puede empezar a utilizar las API de AEM basadas en OpenAPI. Aprenda a utilizar las API de AEM basadas en OpenAPI utilizando diferentes métodos de autenticación de OAuth:
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./use-cases/invoke-api-using-oauth-s2s.md
