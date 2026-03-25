@@ -30,7 +30,7 @@ En este capítulo, realizaremos cambios de configuración en el __proyecto de WK
 
 ## Información general sobre los cambios de configuración en el proyecto de AEM de pila completa
 
->[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453612?captions=spa&quality=12&learn=on)
 
 ## Requisitos previos {#prerequisites}
 

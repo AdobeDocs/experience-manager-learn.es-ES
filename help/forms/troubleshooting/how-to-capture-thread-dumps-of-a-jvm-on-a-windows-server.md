@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo explica los pasos para capturar volcados de pila de una JVM en un servidor Windows.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335493?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418287?captions=spa&quality=12&learn=on)

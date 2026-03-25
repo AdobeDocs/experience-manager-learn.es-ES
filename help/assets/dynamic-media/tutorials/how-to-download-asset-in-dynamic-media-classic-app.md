@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Este vídeo muestra los pasos para descargar recursos en la aplicación de Dynamic Media Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/335458?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417831?captions=spa&quality=12&learn=on)

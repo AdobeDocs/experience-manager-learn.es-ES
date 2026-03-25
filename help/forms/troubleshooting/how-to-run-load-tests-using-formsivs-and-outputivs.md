@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo explica los pasos para ejecutar pruebas de carga desde la interfaz de usuario con muestras de FormsIVS y OutputIVS.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335507?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441472?captions=spa&quality=12&learn=on)

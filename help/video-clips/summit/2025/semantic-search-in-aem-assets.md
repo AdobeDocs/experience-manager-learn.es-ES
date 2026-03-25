@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Explore cómo la búsqueda semántica en AEM Assets le ayuda a encontrar contenido que coincida con su intención de forma más eficaz.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459226/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461891/?captions=spa&learn=on&enablevpops)

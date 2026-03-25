@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para purgar registros de proceso del Administrador de trabajos.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335577?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437670?captions=spa&quality=12&learn=on)

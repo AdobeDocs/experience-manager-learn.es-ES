@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo explica los pasos para capturar los volcados de la pila de una JVM en un servidor Unix.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335492?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417727?captions=spa&quality=12&learn=on)

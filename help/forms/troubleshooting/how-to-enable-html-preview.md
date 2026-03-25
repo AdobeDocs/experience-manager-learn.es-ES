@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para habilitar la vista previa de HTML en Designer.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335498?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417214?captions=spa&quality=12&learn=on)

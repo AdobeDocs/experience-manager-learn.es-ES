@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para habilitar SSL para la instancia OSGi de AEM Forms.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335524?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418370?captions=spa&quality=12&learn=on)

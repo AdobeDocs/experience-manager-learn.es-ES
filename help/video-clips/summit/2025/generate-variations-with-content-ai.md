@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Descubra cómo la inteligencia artificial aplicada al contenido le permite crear atractivas variaciones de contenido de forma rápida y eficaz.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459227/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461880/?captions=spa&learn=on&enablevpops)

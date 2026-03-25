@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo muestra los pasos para habilitar el seguimiento detallado de ORB.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335526?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439074?captions=spa&quality=12&learn=on)

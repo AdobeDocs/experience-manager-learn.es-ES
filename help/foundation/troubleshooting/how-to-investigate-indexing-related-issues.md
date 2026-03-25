@@ -22,4 +22,4 @@ ht-degree: 44%
 
 *Este vídeo explica los pasos para investigar los problemas relacionados con la indexación en AEM.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335465?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418305?captions=spa&quality=12&learn=on)
