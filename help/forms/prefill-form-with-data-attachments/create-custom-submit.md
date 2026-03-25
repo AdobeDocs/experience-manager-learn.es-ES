@@ -40,7 +40,7 @@ Para satisfacer el caso de uso, se creó un servicio de envío personalizado par
 }
 ```
 
-El elemento _**contractcopy**_ representa un componente de archivo adjunto y se utiliza para capturar los archivos adjuntos enviados con el formulario.
+El elemento _&#x200B;**contractcopy**&#x200B;_ representa un componente de archivo adjunto y se utiliza para capturar los archivos adjuntos enviados con el formulario.
 Para poder rellenar previamente el formulario adaptable con los datos y sus archivos adjuntos, los archivos adjuntos enviados se guardarán en el portal de Azure y el elemento de datos del objeto de copia de contrato en los datos enviados se actualizará con la dirección URL del archivo adjunto guardado.
 El servicio de envío personalizado extrae y almacena los archivos adjuntos en Azure Portal.  Los datos enviados actualizados lucirán de esta manera
 
