@@ -4,9 +4,9 @@ description: Descargar versiones archivadas de la newsletter.
 hidefromtoc: true
 hide: true
 exl-id: 16133400-b4c6-4d86-9c28-d5e230d55839
-source-git-commit: 8f60e8aff04942a3fc1edabac1c5f22f5e9ab2a8
+source-git-commit: cfe98419bc04ad757adb8a14dde9068e62f0ea78
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '59'
 ht-degree: 0%
 
 ---
@@ -35,5 +35,6 @@ Nuestros boletines mensuales de contenido de Experience League están disponible
 |------------|
 | [Enero](assets/Jan-2026.pdf) |
 | [Febrero](assets/Feb-2026.pdf) |
+| [Marzo](assets/March-2026.pdf) |
 
 
