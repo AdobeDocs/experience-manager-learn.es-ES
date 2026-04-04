@@ -21,7 +21,7 @@ ht-degree: 100%
 
 # Plantillas de página {#page-templates}
 
-En este capítulo exploraremos la relación entre una plantilla de página y una página. Generaremos una plantilla de artículo de revista sin estilo basada en algunas maquetas de [AdobeXD](https://www.adobe.com/products/xd.html?lang=es). En el proceso de generación de la plantilla, se tratan los componentes principales y las configuraciones de directiva avanzadas.
+En este capítulo exploraremos la relación entre una plantilla de página y una página. Generaremos una plantilla de artículo de revista sin estilo basada en algunas maquetas de [AdobeXD](https://www.adobe.com/es/products/xd.html?lang=es). En el proceso de generación de la plantilla, se tratan los componentes principales y las configuraciones de directiva avanzadas.
 
 ## Requisitos previos {#prerequisites}
 

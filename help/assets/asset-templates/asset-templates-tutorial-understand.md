@@ -76,5 +76,5 @@ Archivo de plantilla de InDesign e imágenes compatibles
 
 Descargar [archivo de plantilla de InDesign e imágenes compatibles](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
-* [Descarga de prueba de InDesign CC](https://creative.adobe.com/products/download/indesign)
-* La versión de prueba de InDesign Server se puede descargar desde el [sitio de prelanzamiento de Adobe](https://www.adobeprerelease.com/) o [los clientes de CC Enterprise pueden comunicarse con su representante de cuentas para solicitar la licencia de prueba de AEM InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+* [Descarga de prueba de InDesign CC](https://creative.adobe.com/es/products/download/indesign)
+* La versión de prueba de InDesign Server se puede descargar desde el [sitio de prelanzamiento de Adobe](https://www.adobeprerelease.com/) o [los clientes de CC Enterprise pueden comunicarse con su representante de cuentas para solicitar la licencia de prueba de AEM InDesign Server](https://www.adobe.com/es/products/indesignserver/faq.html)

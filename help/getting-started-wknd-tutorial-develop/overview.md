@@ -46,7 +46,7 @@ Existen dos enfoques básicos para iniciar un proyecto de AEM Sites.
 
 ## Kit de IU de Adobe XD
 
-Para que este tutorial se acerque más a un escenario real, los talentosos diseñadores de UX de Adobe han creado las maquetas del sitio utilizando [Adobe XD](https://www.adobe.com/products/xd.html). En el transcurso del tutorial se implementan varias piezas de los diseños en un sitio de AEM totalmente autorizable. Queremos dar las gracias especialmente a **Lorenzo Buosi** y **Kilian Amendola** por haber creado el hermoso diseño del sitio de WKND.
+Para que este tutorial se acerque más a un escenario real, los talentosos diseñadores de UX de Adobe han creado las maquetas del sitio utilizando [Adobe XD](https://www.adobe.com/es/products/xd.html). En el transcurso del tutorial se implementan varias piezas de los diseños en un sitio de AEM totalmente autorizable. Queremos dar las gracias especialmente a **Lorenzo Buosi** y **Kilian Amendola** por haber creado el hermoso diseño del sitio de WKND.
 
 Descargue los kits de IU de XD:
 

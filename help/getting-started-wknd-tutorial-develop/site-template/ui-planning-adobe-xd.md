@@ -21,13 +21,13 @@ ht-degree: 100%
 
 # Planificación de la IU con Adobe XD {#ui-planning-adobe-xd}
 
-En la mayoría de los casos, la planificación de un nuevo sitio web comienza con maquetas y diseños estáticos. [Adobe XD](https://www.adobe.com/products/xd.html?lang=es) es la mejor herramienta de diseño de su clase para crear experiencias de usuario. Adobe recomienda planificar la implementación de Sites mediante el uso de maquetas de interfaz de usuario con Adobe XD u otra herramienta.
+En la mayoría de los casos, la planificación de un nuevo sitio web comienza con maquetas y diseños estáticos. [Adobe XD](https://www.adobe.com/es/products/xd.html?lang=es) es la mejor herramienta de diseño de su clase para crear experiencias de usuario. Adobe recomienda planificar la implementación de Sites mediante el uso de maquetas de interfaz de usuario con Adobe XD u otra herramienta.
 
 ## Requisitos previos {#prerequisites}
 
 Este es un tutorial que consta de varias partes y se da por hecho que se han completado los pasos descritos en el capítulo anterior. Este capítulo es simplemente una parte de la visualización y el aprendizaje; no se requiere ninguna acción para poder continuar con los capítulos siguientes.
 
-Para continuar con los videos necesitará tener instalado [Adobe XD](https://www.adobe.com/products/xd/pricing/free-trial.html); hay una [versión de prueba gratuita disponible](https://www.adobe.com/products/xd/pricing/free-trial.html).
+Para continuar con los videos necesitará tener instalado [Adobe XD](https://www.adobe.com/es/products/xd/pricing/free-trial.html); hay una [versión de prueba gratuita disponible](https://www.adobe.com/es/products/xd/pricing/free-trial.html).
 
 ## Objetivo
 
@@ -62,7 +62,7 @@ Pasos de alto nivel:
 
 Enhorabuena. Ha aprendido cómo se pueden utilizar los kits de la interfaz de usuario de Adobe XD para asignar y planificar una implementación de AEM Sites.
 
-Hay [kits de interfaz de usuario adicionales disponibles](https://www.adobe.com/products/xd/features/ui-kits.html) para inspeccionar y descargar.
+Hay [kits de interfaz de usuario adicionales disponibles](https://www.adobe.com/es/products/xd/features/ui-kits.html) para inspeccionar y descargar.
 
 ### Próximos pasos {#next-steps}
 
