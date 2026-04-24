@@ -9,9 +9,9 @@ duration: 0
 last-substantial-update: 2026-03-04T00:00:00Z
 jira: KT-20473
 exl-id: 7f2e4e37-6440-423e-9ba9-9228fe03600b
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: 794a0109e4b28b452c462c5cab37e2d094ab4897
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,10 @@ Aprenda a utilizar los servidores _Model Context Protocol (MCP) de AEM_ de sus a
 
 ## Lista de servidores MCP de AEM
 
-Todos los servidores MCP de AEM están disponibles en `https://mcp.adobeaemcloud.com/adobe/mcp/`. Consulte [Uso de MCP con AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) para obtener más información.
+Todos los servidores MCP de AEM están disponibles en `https://mcp.adobeaemcloud.com/adobe/mcp/`. Consulte [Uso de MCP con AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) para obtener más información.
 
-- **Contenido** (`/content`): acceso completo para crear, leer, actualizar y eliminar páginas, fragmentos y recursos.
-- **Contenido (de solo lectura)** (`/content-readonly`): de solo lectura para enumerar y obtener páginas, fragmentos y recursos (sin cambios).
+- **Contenido** (`/content`): operaciones de contenido que incluyen crear, leer, actualizar y eliminar (CRUD) para páginas y fragmentos de contenido, además de la importación de recursos.
+- **Contenido (solo lectura)** (`/content-readonly`): operaciones de contenido de solo lectura (obtener, lista/búsqueda) para páginas y fragmentos de contenido.
 - **Cloud Manager** (`/cloudmanager`): para administrar programas, entornos, repositorios y canalizaciones de Adobe Cloud Manager.
 
 >[!TIP]
@@ -43,7 +43,7 @@ Así se comparan estos dos patrones de uso:
 
 | Aspecto | Centrado en el ser humano | Agente |
 | ------ | ------------- | ------- |
-| **Quién conduce acciones** | Tú. <br> La API sugiere o ejecuta herramientas en el IDE o en una aplicación basada en chat. | La IA. <br> Elige qué herramientas usar y continúa con una guía mínima. |
+| **Quién conduce acciones** | Tú. <br> La API sugiere o ejecuta herramientas en el IDE o en una aplicación basada en chat. | La IA. <br> Elige qué herramientas utilizar y continúa con una guía mínima. |
 | **Autoridad de decisión** | Tú manten el control. Usted aprueba o déclencheur cada paso. | La IA tiene más libertad. Las acciones de alto impacto pueden necesitar protecciones o aprobaciones. |
 | **Patrón de uso típico** | **Por desarrollador**, lo usa desde su propio IDE o aplicación basada en chat, un desarrollador por sesión, ideal para el trabajo diario de desarrollo. | **Compartido** a través de una aplicación agéntica, como servicios compartidos y puertas de enlace para muchos usuarios o agentes. |
 | **Más adecuado para** | Revisar contenido, realizar actualizaciones guiadas, explorar o repetir tareas mientras se mantiene al margen. | Flujos de trabajo activos, trabajos por lotes, canalizaciones y objetivos en los que el sistema debe ejecutarse con una intervención mínima. |
@@ -71,7 +71,7 @@ En pocas palabras, **Host** es su aplicación basada en IDE o en chat, **Cliente
 ## Configuración
 
 Los servidores MCP de AEM están diseñados para funcionar con un conjunto definido de aplicaciones compatibles con MCP.
-Para configurar los servidores MCP de AEM en su IDE o aplicación basada en chat preferido, consulte [Aplicaciones MCP compatibles](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) para obtener más información.
+Para configurar los servidores MCP de AEM en su IDE o aplicación basada en chat preferido, consulte [Aplicaciones MCP compatibles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) para obtener más información.
 
 ## Casos de uso
 
