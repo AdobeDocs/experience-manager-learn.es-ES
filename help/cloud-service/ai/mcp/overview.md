@@ -22,7 +22,7 @@ Aprenda a utilizar los servidores _Model Context Protocol (MCP) de AEM_ de sus a
 
 ## Lista de servidores MCP de AEM
 
-Todos los servidores MCP de AEM están disponibles en `https://mcp.adobeaemcloud.com/adobe/mcp/`. Consulte [Uso de MCP con AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) para obtener más información.
+Todos los servidores MCP de AEM están disponibles en `https://mcp.adobeaemcloud.com/adobe/mcp/`. Consulte [Uso de MCP con AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) para obtener más información.
 
 - **Contenido** (`/content`): operaciones de contenido que incluyen crear, leer, actualizar y eliminar (CRUD) para páginas y fragmentos de contenido, además de la importación de recursos.
 - **Contenido (solo lectura)** (`/content-readonly`): operaciones de contenido de solo lectura (obtener, lista/búsqueda) para páginas y fragmentos de contenido.
@@ -71,7 +71,7 @@ En pocas palabras, **Host** es su aplicación basada en IDE o en chat, **Cliente
 ## Configuración
 
 Los servidores MCP de AEM están diseñados para funcionar con un conjunto definido de aplicaciones compatibles con MCP.
-Para configurar los servidores MCP de AEM en su IDE o aplicación basada en chat preferido, consulte [Aplicaciones MCP compatibles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) para obtener más información.
+Para configurar los servidores MCP de AEM en su IDE o aplicación basada en chat preferido, consulte [Aplicaciones MCP compatibles](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) para obtener más información.
 
 ## Casos de uso
 
