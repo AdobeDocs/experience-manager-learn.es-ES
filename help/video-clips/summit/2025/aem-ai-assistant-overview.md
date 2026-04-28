@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Learn how the AEM AI Assistant simplifies finding product knowledge and automates support ticket creation.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459225/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461915/?captions=spa&learn=on&enablevpops)
