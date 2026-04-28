@@ -33,7 +33,7 @@ Descubra cómo se admiten varias vistas en la SPA mediante páginas de AEM y el 
 
 ## Lo qué va a generar
 
-Este capítulo agrega un menú de navegación a un componente `Header` existente. El menú de navegación está gobernado por la jerarquía de páginas de AEM y usa el modelo JSON proporcionado por el [componente principal de navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
+Este capítulo agrega un menú de navegación a un componente `Header` existente. El menú de navegación está gobernado por la jerarquía de páginas de AEM y usa el modelo JSON proporcionado por el [componente principal de navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=es).
 
 ![Navegación implementada](assets/navigation-routing/final-navigation-implemented.gif)
 
@@ -116,7 +116,7 @@ En capítulos anteriores, el componente `HeaderComponent` se agregó como un com
        componentGroup="WKND SPA Angular - Structure"/>
    ```
 
-   The AEM `Header` component will inherit all of the functionality of the [Navigation Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html) via the `sling:resourceSuperType` property.
+   The AEM `Header` component will inherit all of the functionality of the [Navigation Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=es) via the `sling:resourceSuperType` property.
 
 ## Add the HeaderComponent to the SPA template {#add-header-template}
 

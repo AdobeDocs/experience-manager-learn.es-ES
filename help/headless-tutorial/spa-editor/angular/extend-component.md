@@ -39,7 +39,7 @@ En este capítulo, se crea un nuevo componente `Card`. El componente `Card` ampl
 
 >[!NOTE]
 >
-> En una implementación real, puede ser más apropiado usar simplemente el [componente teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html) que ampliar el [componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es) para hacer un componente `Card` según los requisitos del proyecto. Siempre se recomienda usar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) directamente cuando sea posible.
+> En una implementación real, puede ser más apropiado usar simplemente el [componente teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html?lang=es) que ampliar el [componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es) para hacer un componente `Card` según los requisitos del proyecto. Siempre se recomienda usar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) directamente cuando sea posible.
 
 ## Requisitos previos
 
@@ -106,7 +106,7 @@ El código de inicio del capítulo ha proporcionado un componente de tarjeta ini
 
    Observe que `sling:resourceSuperType` señala a `core/wcm/components/image/v2/image`. Esto indica que el componente de imagen de SPA de WKND hereda la funcionalidad de la imagen del componente principal.
 
-   La herencia de recursos de Sling también conocida como [Patrón proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) es un patrón de diseño potente que permite que los componentes secundarios hereden la funcionalidad y amplíen/anulen el comportamiento cuando lo deseen. La herencia de Sling admite varios niveles de herencia, por lo que, en última instancia, el nuevo componente `Card` hereda la funcionalidad de la imagen del componente principal.
+   La herencia de recursos de Sling también conocida como [Patrón proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=es#proxy-component-pattern) es un patrón de diseño potente que permite que los componentes secundarios hereden la funcionalidad y amplíen/anulen el comportamiento cuando lo deseen. La herencia de Sling admite varios niveles de herencia, por lo que, en última instancia, el nuevo componente `Card` hereda la funcionalidad de la imagen del componente principal.
 
    Many development teams strive to be D.R.Y. (don&#39;t repeat yourself). Sling inheritance makes this possible with AEM.
 

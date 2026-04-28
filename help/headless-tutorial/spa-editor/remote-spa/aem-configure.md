@@ -214,7 +214,7 @@ The Sling Mapping effects AEM running on `http` and `localhost`, so only support
 
 ## Cross-Origin Resource Sharing security policies
 
-Next, configure AEM to protect the content so only this SPA can access the AEM content. Configure [Cross-Origin Resource Sharing in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
+Next, configure AEM to protect the content so only this SPA can access the AEM content. Configure [Cross-Origin Resource Sharing in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=es).
 
 1. In your IDE, open the `ui.config` Maven subproject
 1. Navigate `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
