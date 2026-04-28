@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
 duration: 316
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 0%
+source-wordcount: '1115'
+ht-degree: 5%
 
 ---
 
@@ -31,7 +31,7 @@ Obtenga información sobre cómo ampliar un componente principal existente para 
 2. Comprenda los conceptos básicos de la herencia de componentes con el uso de `sling:resourceSuperType`.
 3. Aprenda a aprovechar [Patrón de delegación](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) para modelos Sling para reutilizar la lógica y la funcionalidad existentes.
 
-## Qué va a generar
+## Lo qué va a generar
 
 Este capítulo ilustra el código adicional necesario para agregar una propiedad adicional a un componente estándar `Image` para cumplir los requisitos de un nuevo componente `Banner`. El componente `Banner` contiene las mismas propiedades que el componente `Image` estándar, pero incluye una propiedad adicional para que los usuarios rellenen **Banner Text**.
 

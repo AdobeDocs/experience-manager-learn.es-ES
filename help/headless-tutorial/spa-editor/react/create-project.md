@@ -1,5 +1,5 @@
 ---
-title: Crear proyecto | Introducción al Editor de SPA de AEM y React
+title: Creación de un proyecto | Introducción al Editor de SPA de AEM y React
 description: Obtenga información sobre cómo generar un proyecto Maven de Adobe Experience Manager (AEM) como punto de partida para una aplicación React integrada con AEM SPA Editor.
 feature: SPA Editor, AEM Project Archetype
 version: Experience Manager as a Cloud Service
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
 duration: 250
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 1%
+source-wordcount: '1105'
+ht-degree: 15%
 
 ---
 
@@ -30,7 +30,7 @@ Obtenga información sobre cómo generar un proyecto Maven de Adobe Experience M
 1. Genere un proyecto habilitado para el Editor SPA utilizando el Arquetipo de proyecto de AEM.
 2. Implemente el proyecto de inicio en una instancia local de AEM.
 
-## Qué va a generar {#what-build}
+## Lo qué va a generar {#what-build}
 
 En este capítulo, se genera un nuevo proyecto de AEM basado en el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype). El proyecto de AEM tiene un punto de partida muy sencillo para el SPA de React.
 
@@ -46,7 +46,7 @@ Revise las herramientas y las instrucciones necesarias para configurar un [entor
 
 >[!NOTE]
 >
->Este tutorial utiliza la versión **35** del tipo de archivo.
+>Este tutorial utiliza la versión **35** del arquetipo.
 
 1. Abra un terminal de línea de comandos e introduzca el siguiente comando Maven:
 
@@ -67,11 +67,11 @@ Revise las herramientas y las instrucciones necesarias para configurar un [entor
    >
    > Si se usa AEM 6.5.5+, reemplace `aemVersion="cloud"` por `aemVersion="6.5.5"`. Si el objetivo es 6.4.8+, utilice `aemVersion="6.4.8"`.
 
-   Observe la propiedad `frontendModule=react`. Esto indica al tipo de archivo del proyecto de AEM que arranque el proyecto con un [código React base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=es) inicial que se utilizará con el Editor de SPA de AEM. Propiedades como `appTitle`, `appId`, `artifactId` y `groupId` se utilizan para identificar el proyecto y el propósito.
+   Observe la propiedad `frontendModule=react`. Esto indica al tipo de archivo del proyecto de AEM que arranque el proyecto con un [código React base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) inicial que se utilizará con el Editor de SPA de AEM. Propiedades como `appTitle`, `appId`, `artifactId` y `groupId` se utilizan para identificar el proyecto y el propósito.
 
    Encontrará una lista completa de las propiedades disponibles para configurar un proyecto [aquí](https://github.com/adobe/aem-project-archetype#available-properties).
 
-1. El tipo de archivo Maven genera la siguiente estructura de carpetas y archivos en el sistema de archivos local:
+1. El arquetipo Maven genera la siguiente estructura de carpetas y archivos en el sistema de archivos local:
 
    ```plain
    |--- aem-guides-wknd-spa.react/
@@ -94,7 +94,7 @@ Revise las herramientas y las instrucciones necesarias para configurar un [entor
 
    Cada carpeta representa un módulo Maven individual. En este tutorial trabajaremos principalmente con el módulo `ui.frontend`, que es la aplicación React. Encontrará más detalles sobre módulos individuales en la [documentación de tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es).
 
-## Implementación y compilación del proyecto
+## Implemente y genere el proyecto
 
 A continuación, compile, genere e implemente el código del proyecto en una instancia local de AEM usando Maven.
 
@@ -233,6 +233,6 @@ A continuación, compruebe que se trata de una aplicación de una sola página c
 
 El SPA es bastante sencillo. En los próximos capítulos se agregará más funcionalidad.
 
-### Siguientes pasos {#next-steps}
+### Próximos pasos {#next-steps}
 
 [Integrar un SPA](integrate-spa.md): aprenda cómo se integra el código fuente del SPA con el proyecto de AEM y comprenda las herramientas disponibles para desarrollar rápidamente el SPA.

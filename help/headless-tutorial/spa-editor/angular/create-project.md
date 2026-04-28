@@ -1,5 +1,5 @@
 ---
-title: Proyecto de SPA Editor | Introducción al Editor de SPA de AEM y Angular
+title: Proyecto de SPA Editor | Introducción a AEM SPA Editor y Angular
 description: Aprenda a utilizar un proyecto Maven de Adobe Experience Manager (AEM) como punto de partida para una aplicación de Angular integrada con AEM SPA Editor.
 feature: SPA Editor, AEM Project Archetype
 version: Experience Manager as a Cloud Service
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
 duration: 252
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 1%
+source-wordcount: '1148'
+ht-degree: 6%
 
 ---
 
@@ -30,7 +30,7 @@ Aprenda a utilizar un proyecto Maven de Adobe Experience Manager (AEM) como punt
 1. Comprenda la estructura de un nuevo proyecto de AEM SPA Editor creado a partir de un arquetipo de Maven.
 2. Implemente el proyecto de inicio en una instancia local de AEM.
 
-## Qué va a generar
+## Lo qué va a generar
 
 En este capítulo, se implementa un nuevo proyecto de AEM basado en el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype). El proyecto de AEM tiene un punto de partida muy sencillo para la SPA de Angular. El proyecto utilizado en este capítulo servirá de base para la implementación de la SPA de WKND y se basa en capítulos futuros.
 
@@ -90,7 +90,7 @@ Existen varias opciones para crear un proyecto de módulo múltiple de Maven par
 
    >[!NOTE]
    >
-   > Observe la propiedad `frontendModule=angular`. Esto indica al tipo de archivo del proyecto de AEM que arranque el proyecto con un [código base de Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=es) inicial que se utilizará con el editor de SPA de AEM.
+   > Observe la propiedad `frontendModule=angular`. Esto indica al tipo de archivo del proyecto de AEM que arranque el proyecto con un [código base de Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) inicial que se utilizará con el editor de SPA de AEM.
 
 ## Creación del proyecto
 
@@ -139,7 +139,7 @@ A continuación, compile, genere e implemente el código del proyecto en una ins
    [INFO] ------------------------------------------------------------------------
    ```
 
-   El perfil de Maven ***autoInstallSinglePackage*** compila los módulos individuales del proyecto e implementa un paquete único en la instancia de AEM. De manera predeterminada, este paquete se implementa en una instancia de AEM que se ejecuta localmente en el puerto **4502** y con las credenciales de **admin:admin**.
+   El perfil de Maven ***autoInstallSinglePackage*** compila los módulos individuales del proyecto e implementa un paquete único en la instancia de AEM. De forma predeterminada, este paquete se implementa en una instancia de AEM que se ejecuta localmente en el puerto **4502** y con las credenciales de **admin:admin**.
 
 4. Vaya a **[!UICONTROL Administrador de paquetes]** en la instancia local de AEM: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp).
 
@@ -237,6 +237,6 @@ A continuación, compruebe que se trata de una aplicación de una sola página c
 
 Ahora mismo es bastante simple, pero en los próximos capítulos se agrega más funcionalidad.
 
-### Siguientes pasos {#next-steps}
+### Próximos pasos {#next-steps}
 
 [Integrar el SPA](integrate-spa.md): aprenda cómo se integra el código fuente del SPA con el proyecto de AEM y comprenda las herramientas disponibles para desarrollar rápidamente el SPA.

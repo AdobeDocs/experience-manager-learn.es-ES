@@ -13,10 +13,10 @@ doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
 duration: 297
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 0%
+source-wordcount: '1278'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,7 @@ $ cd remote-spa-tutorial
 
 ## Creación de un proyecto de AEM
 
-Cree un proyecto de AEM en el que se administren configuraciones y contenido de línea de base. Este proyecto se generará dentro de la carpeta `aem-guides-wknd-graphql` del proyecto `remote-spa-tutorial` clonado.
+Cree un proyecto de AEM en el que se administren configuraciones y contenido de línea de base. Este proyecto se generará dentro de la carpeta `remote-spa-tutorial` del proyecto `aem-guides-wknd-graphql` clonado.
 
 _Utilice siempre la última versión del [tipo de archivo de AEM](https://github.com/adobe/aem-project-archetype)._
 
@@ -139,12 +139,12 @@ La importancia de esta configuración se analiza más adelante.
 
 La asignación se puede realizar con [la asignación de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1) definida en `/etc/map`.
 
-1. En el IDE, abra el subproyecto `ui.content`
-1. Navegar a `src/main/content/jcr_root`
-1. Crear una carpeta `etc`
-1. En `etc`, cree una carpeta `map`
-1. En `map`, cree una carpeta `http`
-1. En `http`, cree un archivo `.content.xml` con el contenido:
+1. In the IDE, open the `ui.content` subproject
+1. Navigate to  `src/main/content/jcr_root`
+1. Create a folder `etc`
+1. In `etc`, create a folder `map`
+1. In `map`, create a folder `http`
+1. In `http`, create a file `.content.xml` with the contents:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -154,8 +154,8 @@ La asignación se puede realizar con [la asignación de Sling](https://sling.apa
    </jcr:root>
    ```
 
-1. En `http` , cree una carpeta `localhost_any`
-1. En `localhost_any`, cree un archivo `.content.xml` con el contenido:
+1. In `http` , create a folder `localhost_any`
+1. In `localhost_any`, create a file `.content.xml` with the contents:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -166,8 +166,8 @@ La asignación se puede realizar con [la asignación de Sling](https://sling.apa
    </jcr:root>
    ```
 
-1. En `localhost_any` , cree una carpeta `wknd-app-routes-adventure`
-1. En `wknd-app-routes-adventure`, cree un archivo `.content.xml` con el contenido:
+1. In `localhost_any` , create a folder `wknd-app-routes-adventure`
+1. In `wknd-app-routes-adventure`, create a file `.content.xml` with the contents:
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -185,7 +185,7 @@ La asignación se puede realizar con [la asignación de Sling](https://sling.apa
        sling:internalRedirect="/content/wknd-app/us/en/home/adventure/$1"/>
    ```
 
-1. Agregue los nodos de asignación a `ui.content/src/main/content/META-INF/vault/filter.xml` para que se incluyan en el paquete de AEM.
+1. Add the mapping nodes to `ui.content/src/main/content/META-INF/vault/filter.xml` to they included in the AEM package.
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -200,25 +200,25 @@ La asignación se puede realizar con [la asignación de Sling](https://sling.apa
    </workspaceFilter>
    ```
 
-La estructura de carpetas y los archivos de `.context.xml` deberían tener el siguiente aspecto:
+The folder structure and `.context.xml` files should look like:
 
-![Asignación de Sling](./assets/aem-project/sling-mapping.png)
+![Sling Mapping](./assets/aem-project/sling-mapping.png)
 
-El archivo `filter.xml` debe tener el siguiente aspecto:
+The `filter.xml` file should look like:
 
-![Asignación de Sling](./assets/aem-project/sling-mapping-filter.png)
+![Sling Mapping](./assets/aem-project/sling-mapping-filter.png)
 
-Ahora, cuando se implementa el proyecto de AEM, estas configuraciones se incluyen automáticamente.
+Now, when the AEM project is deployed, these configurations are automatically included.
 
-La asignación de Sling afecta a la ejecución de AEM en `http` y `localhost`, de modo que solo admite el desarrollo local. Al implementar en AEM as a Cloud Service, se deben agregar asignaciones de Sling similares para ese destino `https` y los dominios de AEM as a Cloud Service correspondientes. Para obtener más información, consulte la [Documentación de asignación de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html).
+The Sling Mapping effects AEM running on `http` and `localhost`, so only support local development. When deploying to AEM as a Cloud Service, similar Sling Mappings must be added that target `https` and the appropriate AEM as a Cloud Service domain/s. For more information, see the [Sling Mapping documentation](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html).
 
-## Políticas de seguridad de Intercambio de recursos de origen cruzado
+## Cross-Origin Resource Sharing security policies
 
-A continuación, configure AEM para proteger el contenido de modo que solo esta SPA pueda acceder al contenido de AEM. Configure [Intercambio de recursos de origen cruzado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=es).
+Next, configure AEM to protect the content so only this SPA can access the AEM content. Configure [Cross-Origin Resource Sharing in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
 
-1. En su IDE, abra el subproyecto Maven `ui.config`
-1. Navegar `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
-1. Cree un archivo con el nombre `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json`
+1. In your IDE, open the `ui.config` Maven subproject
+1. Navigate `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
+1. Create a file named `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json`
 1. Añada lo siguiente al archivo:
 
    ```
@@ -264,7 +264,7 @@ Los elementos clave de la configuración son:
 * `alloworigin` especifica qué hosts pueden recuperar contenido de AEM.
    * `localhost:3000` se ha agregado para admitir que la SPA se ejecute localmente
    * `https://external-hosted-app` actúa como un marcador de posición para reemplazarse con el dominio en el que se aloja el SPA remoto.
-* `allowedpaths` especifica qué rutas en AEM están cubiertas por esta configuración CORS. El valor predeterminado permite el acceso a todo el contenido en AEM; sin embargo, esto solo se puede vincular a las rutas específicas a las que puede acceder la SPA, por ejemplo: `/content/wknd-app`.
+* `allowedpaths` specify which paths in AEM are covered by this CORS configuration. El valor predeterminado permite el acceso a todo el contenido en AEM; sin embargo, esto solo se puede vincular a las rutas específicas a las que puede acceder la SPA, por ejemplo: `/content/wknd-app`.
 
 ## Establecer página de AEM como plantilla de página de SPA remota
 
@@ -322,46 +322,46 @@ Esta página también se puede eliminar y volver a crear como una página de SPA
 ## Implementar el proyecto de AEM en AEM SDK
 
 1. Asegúrese de que el servicio AEM Author se está ejecutando en el puerto 4502
-1. Desde la línea de comandos, vaya a la raíz del proyecto Maven de AEM
-1. Utilice Maven para implementar el proyecto en el servicio local de AEM SDK Author
+1. From the command line, navigate to the root of the AEM Maven project
+1. Use Maven to deploy the project to your local AEM SDK Author service
 
    ```
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   ![instalación limpia de mvn -PautoInstallSinglePackage](./assets/aem-project/mvn-install.png)
+   ![mvn clean install -PautoInstallSinglePackage](./assets/aem-project/mvn-install.png)
 
-## Configuración de la página raíz de AEM
+## Configure the root AEM page
 
-Con el proyecto de AEM implementado, hay un último paso para preparar el Editor de SPA para cargar nuestro SPA remoto. En AEM, marque la página de AEM que corresponde a la raíz de la SPA, `/content/wknd-app/us/en/home`, generada por el tipo de archivo del proyecto de AEM.
+With the AEM Project deployed, there is one last step to prepare SPA Editor to load our Remote SPA. In AEM, mark the AEM page that corresponds to the SPA&#39;s root,`/content/wknd-app/us/en/home`, generated by the AEM Project Archetype.
 
-1. Iniciar sesión en AEM Author
-1. Vaya a **Sitios > Aplicación WKND > us > en**
-1. Seleccione la **página de inicio de la aplicación WKND** y pulse **Propiedades**
+1. Log in to AEM Author
+1. Navigate to **Sites > WKND App > us > en**
+1. Select the **WKND App Home Page**, and tap **Properties**
 
-   ![Página principal de la aplicación WKND: propiedades](./assets/aem-content/edit-home-properties.png)
+   ![WKND App Home Page - Properties](./assets/aem-content/edit-home-properties.png)
 
-1. Vaya a la pestaña **SPA**
-1. Rellene la **configuración remota de SPA**
-   1. **URL de host SPA**: `http://localhost:3000`
-      1. La URL a la raíz de la SPA remota
+1. Navigate to the **SPA** tab
+1. Fill out the **Remote SPA Configuration**
+   1. **SPA Host URL**: `http://localhost:3000`
+      1. The URL to the root of the Remote SPA
 
-   ![Página de inicio de la aplicación WKND: configuración remota de SPA](./assets/aem-content/remote-spa-configuration.png)
+   ![WKND App Home Page - Remote SPA Configuration](./assets/aem-content/remote-spa-configuration.png)
 
-1. Pulse **Guardar y cerrar**
+1. Tap **Save &amp; Close**
 
-Recuerde que hemos cambiado el tipo de esta página al de una **página de SPA remota**, que es lo que nos permite ver la ficha **SPA** en sus **propiedades de página**.
+Remember that we changed this page&#39;s type to that of a **Remote SPA Page**, which is what allows us to see the **SPA** tab in its **Page Properties**.
 
-Esta configuración solo debe establecerse en la página de AEM que corresponda a la raíz de la SPA. Todas las páginas de AEM debajo de esta página heredan el valor.
+This configuration only must be set on the AEM page that corresponds to the root of the SPA. All AEM pages beneath this page inherit the value.
 
 ## Enhorabuena.
 
-Ya ha preparado las configuraciones de AEM y las ha implementado en el autor local de AEM. Ahora ya sabe cómo:
+You&#39;ve now prepared AEM&#39;s configurations and deployed them to your local AEM author! You now know how to:
 
-* Elimine la SPA generada por el tipo de archivo del proyecto de AEM, comentando las dependencias de `ui.frontend`
-* Añadir asignaciones de Sling a AEM que asignen las rutas de SPA a los recursos de AEM
-* Configure las políticas de seguridad de Intercambio de recursos de origen cruzado de AEM que permiten que la SPA remota consuma contenido de AEM
-* Implemente el proyecto de AEM en el servicio local de AEM SDK Author
+* Remove the AEM Project Archetype-generated SPA, by commenting out the dependencies in `ui.frontend`
+* Add Sling Mappings to AEM that map the SPA routes to resources in AEM
+* Set up AEM&#39;s Cross-Origin Resource Sharing security policies that allow the Remote SPA to consume content from AEM
+* Deploy the AEM project to your local AEM SDK Author service
 * Marcar una página de AEM como raíz de la SPA remota mediante la propiedad de página URL del host de la SPA
 
 ## Próximos pasos

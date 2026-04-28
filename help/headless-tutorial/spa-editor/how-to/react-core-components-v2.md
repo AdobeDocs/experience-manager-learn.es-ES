@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
 duration: 190
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 1%
+source-wordcount: '634'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ AEM proporciona [AEM React Editable Components v2](https://www.npmjs.com/package
 
 * [módulo npm](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Proyecto de Github](https://github.com/adobe/aem-react-editable-components)
-* [Documentación de Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html?lang=es)
+* [Documentación de Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html)
 
 
 Para obtener más información y ejemplos de código para la versión 2.0 de los componentes editables de AEM React, consulte la documentación técnica:
@@ -38,14 +38,14 @@ Para obtener más información y ejemplos de código para la versión 2.0 de los
 
 ## Páginas de AEM
 
-Los componentes editables de AEM React funcionan tanto con aplicaciones de Editor de SPA como con aplicaciones de React de SPA remotas. El contenido que rellena los componentes editables de React debe exponerse a través de páginas de AEM que extienden el [componente de página SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html?lang=es). Los componentes de AEM, que se asignan a componentes editables de React, deben implementar el [marco del exportador de componentes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html?lang=es) de AEM, como los [componentes principales de WCM de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
+Los componentes editables de AEM React funcionan tanto con aplicaciones de Editor de SPA como con aplicaciones de React de SPA remotas. El contenido que rellena los componentes editables de React debe exponerse a través de páginas de AEM que extienden el [componente de página SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). Los componentes de AEM, que se asignan a componentes editables de React, deben implementar el [marco del exportador de componentes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) de AEM, como los [componentes principales de WCM de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
 
 
 ## Dependencias
 
 Asegúrese de que la aplicación React se esté ejecutando en Node.js 14+.
 
-El conjunto mínimo de dependencias para que la aplicación React utilice AEM React Editable Components v2 es: `@adobe/aem-react-editable-components`, `@adobe/aem-spa-component-mapping` y `@adobe/aem-spa-page-model-manager`.
+The minimal set of dependencies for the React app to use AEM React Editable Components v2 are: `@adobe/aem-react-editable-components`, `@adobe/aem-spa-component-mapping`, and  `@adobe/aem-spa-page-model-manager`.
 
 * `package.json`
 
@@ -64,16 +64,16 @@ El conjunto mínimo de dependencias para que la aplicación React utilice AEM Re
 
 >[!WARNING]
 >
-> [La base de componentes de AEM React Core WCM](https://github.com/adobe/aem-react-core-wcm-components-base) y [AEM React Core WCM Components SPA](https://github.com/adobe/aem-react-core-wcm-components-spa) no son compatibles con AEM React Editable Components v2.
+> [AEM React Core WCM Components Base](https://github.com/adobe/aem-react-core-wcm-components-base) and [AEM React Core WCM Components SPA](https://github.com/adobe/aem-react-core-wcm-components-spa) are not compatible with AEM React Editable Components v2.
 
-## Editor de SPA 
+## Editor de SPA
 
-Al utilizar los componentes editables de AEM React con una aplicación React basada en el Editor de SPA, AEM `ModelManager` SDK, como SDK:
+When using the AEM React Editable Components with a SPA Editor-based React app, the AEM `ModelManager` SDK, as the SDK:
 
-1. Recupera contenido de AEM
-1. Rellena los componentes comestibles de React con contenido de AEM
+1. Retrieves content from AEM
+1. Populates the React Edible components with AEM&#39;s content
 
-Ajuste la aplicación React con un ModelManager inicializado y procese la aplicación React. La aplicación React debe contener una instancia del componente `<Page>` exportado desde `@adobe/aem-react-editable-components`. El componente `<Page>` tiene lógica para crear dinámicamente componentes de React basados en `.model.json` proporcionados por AEM.
+Wrap the React app with an initialized ModelManager, and render the React app. The React app should contain one instance of the `<Page>` component exported from `@adobe/aem-react-editable-components`. The `<Page>` component has logic to dynamically create React components based on the `.model.json` provided by AEM.
 
 * `src/index.js`
 
@@ -101,11 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-`<Page>` se pasa como representación de la página de AEM como JSON, a través de `pageModel` proporcionado por `ModelManager`. El componente `<Page>` crea dinámicamente componentes React para los objetos de `pageModel` al hacer coincidir `resourceType` con un componente React que se registra al tipo de recurso mediante `MapTo(..)`.
+The `<Page>` is passed as the AEM page&#39;s representation as JSON, via the `pageModel` provided by the `ModelManager`. The `<Page>` component dynamically creates React components for objects in the `pageModel` by matching the `resourceType` with a React component that registers itself to the resource type via `MapTo(..)`.
 
-## Componentes editables
+## Editable components
 
-Se pasó `<Page>` a la representación de la página de AEM como JSON, a través de `ModelManager`. A continuación, el componente `<Page>` crea dinámicamente componentes de React para cada objeto en el JSON haciendo coincidir el valor `resourceType` del objeto JS con un componente de React que se registra al tipo de recurso a través de la invocación `MapTo(..)` del componente. Por ejemplo, se utilizaría lo siguiente para crear una instancia
+The `<Page>` is passed the AEM page&#39;s representation as JSON, via the `ModelManager`. The `<Page>` component then dynamically creates React components for each object in the JSON by matching the JS object&#39;s `resourceType` value with a React component that registers itself to the resource type via the component&#39;s `MapTo(..)` invocation. For example, the following would be used to instantiate an instance
 
 * `HTTP GET /content/.../home.model.json`
 
@@ -121,7 +121,7 @@ Se pasó `<Page>` a la representación de la página de AEM como JSON, a través
 ...
 ```
 
-El JSON anterior proporcionado por AEM se puede usar para crear instancias de forma dinámica y rellenar un componente React editable.
+The above JSON provided by AEM could be used to dynamically instantiate and populate an editable React component.
 
 ```javascript
 import React from "react";
@@ -174,12 +174,12 @@ const EditableExample = (props) => {
 export default MapTo("wknd-examples/components/example")(EditableExample);
 ```
 
-## Incrustar componentes
+## Embedding components
 
-Los componentes editables se pueden reutilizar e incrustar entre sí. Existen dos consideraciones clave al incrustar un componente editable en otro:
+Editable components can be reused and embedded in each other. There are two key considerations when embedding one editable component in another:
 
-1. El contenido JSON de AEM para el componente de incrustación debe contener el contenido para satisfacer los componentes incrustados. Esto se hace creando un cuadro de diálogo para el componente AEM que recopila los datos necesarios.
-1. La instancia &quot;no editable&quot; del componente React debe estar incrustada, en lugar de la instancia &quot;editable&quot; que está ajustada con `<EditableComponent>`. El motivo es que, si el componente incrustado tiene el envoltorio `<EditableComponent>`, el Editor de SPA intenta vestir el componente interno con el cuadro de edición de Chrome (cuadro de desplazamiento azul), en lugar del componente de incrustación exterior.
+1. The JSON content from AEM for the embedding component must contain the content to satisfy the embedded components. This is done by creating a dialog for the AEM component that collects the requisite data.
+1. The &quot;non-editable&quot; instance of the React component must be embedded, rather than the &quot;editable&quot; instance which is wrapped with `<EditableComponent>`. The reason is, if the embedded component has the `<EditableComponent>` wrapper, the SPA Editor attempts to dress the inner component with the edit chrome (blue hover box), rather than the outer embedding component.
 
 * `HTTP GET /content/.../home.model.json`
 
@@ -196,7 +196,7 @@ Los componentes editables se pueden reutilizar e incrustar entre sí. Existen do
 ...
 ```
 
-El JSON anterior proporcionado por AEM se puede usar para crear instancias de forma dinámica y rellenar un componente React editable que incruste otro componente React.
+The above JSON provided by AEM could be used to dynamically instantiate and populate an editable React component that embeds another React component.
 
 
 ```javascript

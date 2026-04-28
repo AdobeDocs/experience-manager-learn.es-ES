@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
 duration: 123
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: ht
-source-wordcount: '583'
-ht-degree: 100%
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
+workflow-type: tm+mt
+source-wordcount: '734'
+ht-degree: 88%
 
 ---
 
@@ -35,8 +35,8 @@ El objetivo de este tutorial en varias partes es enseñar a los desarrolladores 
 
 El tutorial está diseñado para trabajar con **AEM as a Cloud Service**, además es compatible con versiones anteriores de **AEM 6.5.4+** y **AEM 6.4.8+**. La SPA se implementa usando lo siguiente:
 
-* El [Arquetipo del proyecto Maven de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
-* y el [editor de SPA de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html?lang=es#content-editing-experience-with-spa)
+* [Arquetipo de proyecto de Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
+* [Editor de SPA de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html?lang=es#content-editing-experience-with-spa)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Angular](https://angular.io/)
 
@@ -54,7 +54,7 @@ Antes de iniciar este tutorial, necesita lo siguiente:
 
 * Comprender los conceptos básicos de HTML, CSS y JavaScript
 * Familiaridad básica con [Angular](https://angular.io/)
-* [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es#download-the-aem-as-a-cloud-service-sdk), [AEM 6.5.4+](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html?lang=es#65) o [AEM 6.4.8+](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html?lang=es#64)
+* [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es#download-the-aem-as-a-cloud-service-sdk), [AEM 6.5.4+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html?lang=es#65) o [AEM 6.4.8+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html?lang=es#64)
 * [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o posterior)
 * [Node.js](https://nodejs.org/es/) y [npm](https://www.npmjs.com/)
@@ -67,13 +67,13 @@ Se necesita un entorno de desarrollo local para completar este tutorial. Las cap
 
 >[!NOTE]
 >
-> **¿Es novato en el uso de AEM as a Cloud Service?** Consulte la [siguiente guía para configurar un entorno de desarrollo local con el SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es).
+> **Nuevo en AEM as a Cloud Service?** Consulte la [siguiente guía para configurar un entorno de desarrollo local con AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es).
 >
-> **¿Es nuevo en AEM 6.5?** Consulte la [siguiente guía para configurar un entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es).
+> **Nuevo en AEM 6.5?** Consulte la [siguiente guía para configurar un entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es).
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
-Inicie ya el tutorial en el capítulo [Proyecto de editor de SPA](create-project.md) para generar un proyecto habilitado con el editor de SPA mediante el arquetipo de proyecto de AEM.
+¿Qué estás esperando?! Inicie el tutorial navegando hasta el capítulo [Proyecto de editor de SPA](create-project.md) y aprenda a generar un proyecto habilitado para el editor de SPA mediante el arquetipo de proyecto de AEM.
 
 ## Compatibilidad con versiones anteriores {#compatibility}
 

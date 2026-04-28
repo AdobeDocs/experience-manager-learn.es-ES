@@ -1,6 +1,6 @@
 ---
 title: Filtrado de la aplicación Angular
-description: Una aplicación de Angular sencilla que filtra las aventuras de WKND modeladas con fragmentos de contenido.
+description: A simple Angular app that filters WKND adventures modeled using Content Fragments.
 version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -13,20 +13,20 @@ hide: true
 hidefromtoc: true
 exl-id: c238dd83-65d3-4b04-b90e-19ed250b8e36
 duration: 26
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '141'
 ht-degree: 5%
 
 ---
 
 # Filtrado de la aplicación Angular
 
-Explore la capacidad de las API de GraphQL de AEM sin encabezado para filtrar datos mediante la aplicación [Angular](https://angular.io/). Esta aplicación de Angular crea una lista de las aventuras de WKND que se pueden filtrar por Tipo de actividad.
+Explore AEM Headless GraphQL APIs ability to filter data using a [Angular](https://angular.io/) app. This Angular app creates a list of WKND adventures filterable by Activity Type.
 
-Este código muestra el uso de [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) de Adobe para invocar consultas de GraphQL persistentes desde Angular. Esta aplicación usa la consulta persistente `wknd-shared/adventures-all` para recopilar todas las aventuras y derivar una lista de tipos de actividades disponibles. Cuando un usuario selecciona un Tipo de actividad, el tipo seleccionado se pasa a la consulta persistente `wknd-shared/adventures-by-activity` y recupera los detalles de la aventura solo para aquellas aventuras del Tipo de actividad especificado.
+This code demonstrates using Adobe&#39;s [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) to invoke persisted GraphQL queries from Angular. This app uses the `wknd-shared/adventures-all` persisted query to collect all adventures, and derive a list of available Activity Types. When a user selects an Activity Type, the selected type is passed to the `wknd-shared/adventures-by-activity` persisted query and retrieves the adventure details for only those adventures of the specified Activity Type.
 
-Este código:
+This code:
 
-+ Se conecta a un servicio de publicación de AEM y no requiere autenticación
-+ Utiliza las consultas persistentes de WKND: `wknd-shared/adventures-all` y `wknd-shared/adventures-by-activity`
++ Connects to an AEM Publish service, and does not require authentication
++ Uses the WKND&#39;s persisted queries: `wknd-shared/adventures-all` and `wknd-shared/adventures-by-activity`

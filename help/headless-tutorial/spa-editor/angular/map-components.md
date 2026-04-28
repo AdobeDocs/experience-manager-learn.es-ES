@@ -1,5 +1,5 @@
 ---
-title: Asignación de componentes de SPA a componentes de AEM | Introducción al Editor de SPA de AEM y Angular
+title: Asignación de componentes de SPA a componentes de AEM | Introducción al Editor de SPA de AEM y a Angular
 description: Obtenga información sobre cómo asignar componentes de Angular a componentes de Adobe Experience Manager (AEM) con AEM SPA Editor JS SDK. La asignación de componentes permite a los usuarios realizar actualizaciones dinámicas de los componentes de la SPA en el Editor de SPA de AEM, de forma similar a la creación tradicional de AEM.
 feature: SPA Editor
 version: Experience Manager as a Cloud Service
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
 duration: 509
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '2213'
-ht-degree: 0%
+source-wordcount: '2475'
+ht-degree: 8%
 
 ---
 
@@ -33,7 +33,7 @@ Este capítulo profundiza en la API del modelo JSON de AEM y en cómo el conteni
 2. Comprenda la diferencia entre los componentes **Contenedor** y los componentes **Contenido**.
 3. Cree un nuevo componente de Angular que se asigne a un componente de AEM existente.
 
-## Qué va a generar
+## Lo qué va a generar
 
 Este capítulo analizará cómo se asigna el componente de SPA `Text` proporcionado al componente `Text` de AEM. Se crea un nuevo componente de SPA `Image` que se puede usar en la SPA y crear en AEM. Las características predeterminadas de las directivas **Contenedor de diseño** y **Editor de plantillas** también se usarán para crear una vista que tenga un aspecto un poco más variado.
 
@@ -69,7 +69,7 @@ Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-
 
 ## Método de asignación
 
-El concepto básico es asignar un componente de SPA a un componente de AEM. Los componentes de AEM, del lado del servidor de ejecución, exportan contenido como parte de la API del modelo JSON. La SPA consume el contenido JSON, que se ejecuta en el lado del cliente en el explorador. Se crea una asignación 1:1 entre los componentes de SPA y un componente de AEM.
+El concepto básico es asignar un componente de SPA a un componente de AEM. Los componentes de AEM, del lado del servidor de ejecución, exportan contenido como parte de la API del modelo JSON. La SPA consume el contenido JSON, que se ejecuta en el lado del cliente en el explorador. Se crea una asignación 1:1 entre los componentes de la SPA y un componente de AEM.
 
 ![Información general de alto nivel sobre la asignación de un componente AEM a un componente Angular](./assets/map-components/high-level-approach.png)
 
@@ -77,7 +77,7 @@ El concepto básico es asignar un componente de SPA a un componente de AEM. Los 
 
 ## Inspeccionar el componente Texto
 
-El [tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) proporciona un componente `Text` asignado al [componente Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=es) de AEM. Este es un ejemplo de un componente **content**, ya que procesa *content* de AEM.
+El [tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) proporciona un componente `Text` asignado al [componente Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) de AEM. Este es un ejemplo de un componente **content**, ya que procesa *content* de AEM.
 
 Veamos cómo funciona el componente.
 
@@ -401,7 +401,7 @@ El componente `ImageComponent` solo está visible en el **servidor de desarrollo
 
    Haga clic en **Listo** para guardar la actualización de la directiva.
 
-6. Vaya a **Página principal** [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html).
+6. Vaya a la **página principal** [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html).
 
    También debería poder editar el componente `Text` y agregar estilos de párrafo adicionales en el modo **pantalla completa**.
 
@@ -437,9 +437,9 @@ Vamos a inspeccionar más el contenedor de diseño.
 
    El componente **Contenedor de diseño** tiene un `sling:resourceType` de `wcm/foundation/components/responsivegrid` y el Editor de la SPA lo reconoce usando la propiedad `:type`, al igual que los componentes `Text` y `Image`.
 
-   Las mismas capacidades para cambiar el tamaño de un componente mediante [Modo de diseño](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=es#defining-layouts-layout-mode) están disponibles con el Editor de SPA.
+   Las mismas capacidades para cambiar el tamaño de un componente mediante [Modo de diseño](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) están disponibles con el Editor de SPA.
 
-3. Volver a [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Agregue componentes adicionales de **Image** e intente cambiar su tamaño con la opción **Diseño**:
+3. Vuelva a [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Agregue componentes adicionales de **Image** e intente cambiar su tamaño con la opción **Diseño**:
 
    ![Cambiar el tamaño de la imagen mediante el modo Diseño](./assets/map-components/responsive-grid-layout-change.gif)
 
@@ -463,7 +463,7 @@ Felicidades, ha aprendido a asignar componentes de la SPA a componentes de AEM y
 
 Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) o desprotegerlo localmente cambiando a la rama `Angular/map-components-solution`.
 
-### Siguientes pasos {#next-steps}
+### Próximos pasos {#next-steps}
 
 [Navegación y enrutamiento](navigation-routing.md): descubra cómo se pueden admitir varias vistas en la SPA asignándolas a páginas de AEM con la SDK del Editor de SPA. La navegación dinámica se implementa mediante Angular Router y se añade a un componente de encabezado existente.
 
@@ -479,7 +479,7 @@ Los siguientes pasos se llevarán a cabo con el IDE de código de Visual Studio 
 
 2. Expanda el módulo **ui.content** en el explorador del proyecto y vaya a `/conf/wknd-spa-angular/settings/wcm/templates`.
 
-3. **Haga clic con el botón derecho** en la carpeta `templates` y seleccione **Importar desde el servidor de AEM**:
+3. **Haga clic con el botón derecho del ratón** en la carpeta `templates` y seleccione **Importar desde el servidor de AEM**:
 
    ![Plantilla de importación de VSCode](assets/map-components/import-aem-servervscode.png)
 
@@ -498,6 +498,6 @@ Los siguientes pasos se llevarán a cabo con el IDE de código de Visual Studio 
     </workspaceFilter>
    ```
 
-   El archivo `filter.xml` es responsable de identificar las rutas de acceso de los nodos instalados con el paquete. Observe el `mode="merge"` en cada uno de los filtros que indica que el contenido existente no se modificará, solo se agregará contenido nuevo. Dado que los autores de contenido pueden estar actualizando estas rutas, es importante que una implementación de código sobrescriba el contenido **no**. Consulte la [documentación de FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obtener más información sobre cómo trabajar con elementos de filtro.
+   El archivo `filter.xml` es responsable de identificar las rutas de acceso de los nodos instalados con el paquete. Observe el `mode="merge"` en cada uno de los filtros que indica que el contenido existente no se modificará, solo se agregará contenido nuevo. Dado que los autores de contenido pueden estar actualizando estas rutas, es importante que una implementación de código **no** sobrescriba el contenido. Consulte la [documentación de FileVault](https://jackrabbit.apache.org/filevault/filter.html?lang=es) para obtener más información sobre cómo trabajar con elementos de filtro.
 
    Compare `ui.content/src/main/content/META-INF/vault/filter.xml` y `ui.apps/src/main/content/META-INF/vault/filter.xml` para comprender los diferentes nodos administrados por cada módulo.

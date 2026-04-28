@@ -1,5 +1,5 @@
 ---
-title: Agregar navegación y enrutamiento | Introducción al Editor de SPA de AEM y React
+title: Añadir navegación y enrutamiento | Introducción al Editor de SPA de AEM y React
 description: Descubra cómo se pueden admitir varias vistas en la SPA asignando a páginas de AEM con la SDK del Editor de SPA. La navegación dinámica se implementa mediante los componentes principales React y React Router.
 feature: SPA Editor
 version: Experience Manager as a Cloud Service
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
 duration: 337
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 0%
+source-wordcount: '1721'
+ht-degree: 2%
 
 ---
 
@@ -31,9 +31,9 @@ Descubra cómo se pueden admitir varias vistas en la SPA asignando a páginas de
 1. Aprenda a utilizar [React Router](https://reacttraining.com/react-router) para navegar entre diferentes vistas de la SPA.
 1. Utilice los componentes principales de AEM React para implementar una navegación dinámica controlada por la jerarquía de páginas de AEM.
 
-## Qué va a generar
+## Lo qué va a generar
 
-Este capítulo añadirá navegación a un SPA en AEM. El menú de navegación está gobernado por la jerarquía de páginas de AEM y utilizará el modelo JSON proporcionado por el [componente principal de navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=es).
+Este capítulo añadirá navegación a un SPA en AEM. El menú de navegación está gobernado por la jerarquía de páginas de AEM y utilizará el modelo JSON proporcionado por el [componente principal de navegación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
 
 ![Navegación agregada](assets/navigation-routing/navigation-added.png)
 
@@ -44,7 +44,7 @@ Revise las herramientas y las instrucciones necesarias para configurar un [entor
 ## Añadir la navegación a la plantilla {#add-navigation-template}
 
 1. Abra un explorador e inicie sesión en AEM, [http://localhost:4502/](http://localhost:4502/). La base del código de inicio ya debería implementarse.
-1. Vaya a la **plantilla de página SPA**: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
+1. Vaya a la **plantilla de página de SPA**: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
 1. Seleccione el **contenedor de diseño raíz más externo** y haga clic en su icono **directiva**. Tenga cuidado **no** al seleccionar el **contenedor de diseño** desbloqueado para la creación.
 
    ![Seleccione el icono de directiva del contenedor de diseño raíz](assets/navigation-routing/root-layout-container-policy.png)
@@ -73,9 +73,9 @@ Revise las herramientas y las instrucciones necesarias para configurar un [entor
    En **Propiedades**:
 
    * Establezca **Raíz de navegación** en `/content/wknd-spa-react/us/en`.
-   * Establecer **Excluir niveles de raíz** en **1**.
+   * Establezca **Excluir niveles de raíz** en **1**.
    * Desmarque **Recopilar todas las páginas secundarias**.
-   * Establezca la **profundidad de la estructura de navegación** en **3**.
+   * Establezca la **Profundidad de la estructura de navegación** en **3**.
 
    ![Configurar directiva de navegación](assets/navigation-routing/navigation-policy.png)
 

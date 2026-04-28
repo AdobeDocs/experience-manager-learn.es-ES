@@ -1,6 +1,6 @@
 ---
-title: Información general sobre AEM AI Assistant
-description: Descubra cómo el asistente de IA de AEM simplifica la búsqueda de conocimientos del producto y automatiza la creación de vales de soporte.
+title: AEM AI Assistant Overview
+description: Learn how the AEM AI Assistant simplifies finding product knowledge and automates support ticket creation.
 cloud: Experience Cloud
 solution: Experience Manager
 feature-set: Experience Manager
@@ -14,15 +14,15 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: 5a799ef6-9770-4cf1-a288-80a9bbb26faf
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
 
 ---
 
-# Información general sobre AEM AI Assistant
+# AEM AI Assistant Overview
 
-Descubra cómo el asistente de IA de AEM simplifica la búsqueda de conocimientos del producto y automatiza la creación de vales de soporte.
+Learn how the AEM AI Assistant simplifies finding product knowledge and automates support ticket creation.
 
->[!VIDEO](https://video.tv.adobe.com/v/3461915/?captions=spa&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459225/?learn=on&enablevpops)

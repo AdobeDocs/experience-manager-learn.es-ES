@@ -1,23 +1,23 @@
 ---
-title: Índice de imágenes de AEM Trials
-description: Este archivo contiene una referencia a las imágenes utilizadas en los materiales de marketing de las pruebas de AEM.
+title: AEM Trials image index
+description: This file contains reference to images used in the AEM trials marketing materials.
 index: false
 hidefromtoc: true
 hide: true
 exl-id: c2ee05f0-9e10-4a3b-8ecb-0366116356e8
 duration: 8
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%
 
 ---
 
-# Índice de imágenes de AEM Trials
+# AEM Trials image index
 
-Los archivos de imagen deben colocarse en la carpeta `assets` que reside junto a este archivo.
+Image files must be put in the `assets` folder that resides next to this file.
 
-Cada archivo de imagen que se publique debe vincularse desde este archivo con la sintaxis:
+Each image file to be published should be linked from this file using the syntax:
 
-![Cuenta personal de imagen de correo electrónico de prueba lista](./assets/select-personal-account.png)
-![imagen de correo electrónico de Slack](./assets/Slack-email-image.png)
+![Trial ready email image personal account](./assets/select-personal-account.png)
+![Slack email image](./assets/Slack-email-image.png)

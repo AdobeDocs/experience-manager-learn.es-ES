@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
 duration: 536
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '2045'
-ht-degree: 0%
+source-wordcount: '2299'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ Comprenda cómo el código fuente de una aplicación de una sola página (SPA) e
 2. Aprenda a utilizar un servidor de desarrollo local para el desarrollo front-end dedicado.
 3. Explore el uso de un **proxy** y un archivo **simulador** estático para desarrollar con la API del modelo JSON de AEM
 
-## Qué va a generar
+## Lo qué va a generar
 
 Este capítulo agregará un componente `Header` simple a la SPA. En el proceso de crear este componente `Header` estático se utilizan varios enfoques para el desarrollo de la SPA de AEM.
 
@@ -77,17 +77,17 @@ El módulo `ui.frontend` es un proyecto [webpack](https://webpack.js.org/) que c
 
 *Representación de alto nivel de la integración de SPA.*
 
-Encontrará información adicional sobre la versión del front-end [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=es).
+Encontrará información adicional sobre la versión del front-end [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
 ## Inspeccione la integración de SPA {#inspect-spa-integration}
 
-A continuación, inspeccione el módulo `ui.frontend` para comprender la SPA que ha generado automáticamente el [arquetipo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=es).
+A continuación, inspeccione el módulo `ui.frontend` para comprender la SPA que ha generado automáticamente el [arquetipo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
-1. En el IDE de su elección, abra el proyecto de AEM para la SPA de WKND. Este tutorial usará el [IDE de código de Visual Studio](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=es#microsoft-visual-studio-code).
+1. En el IDE de su elección, abra el proyecto de AEM para la SPA de WKND. Este tutorial usará el [IDE de código de Visual Studio](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
    ![VSCode - Proyecto de la SPA de AEM WKND](./assets/integrate-spa/vscode-ide-openproject.png)
 
-2. Expanda e inspeccione la carpeta `ui.frontend`. Abrir el archivo `ui.frontend/package.json`
+2. Expanda e inspeccione la carpeta `ui.frontend`. Abra el archivo `ui.frontend/package.json`
 
 3. En `dependencies` debería ver varios elementos relacionados con `@angular`:
 
@@ -112,7 +112,7 @@ A continuación, inspeccione el módulo `ui.frontend` para comprender la SPA que
    "@adobe/cq-spa-page-model-manager": "^1.1.3",
    ```
 
-   Los módulos anteriores conforman [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html?lang=es) y proporcionan la funcionalidad para que sea posible asignar componentes SPA a componentes AEM.
+   Los módulos anteriores conforman [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html) y proporcionan la funcionalidad para que sea posible asignar componentes SPA a componentes AEM.
 
 5. En el archivo `package.json` se han definido varios `scripts`:
 
@@ -132,7 +132,7 @@ A continuación, inspeccione el módulo `ui.frontend` para comprender la SPA que
 
    `build`: compila la aplicación de Angular para la distribución de producción. La adición de `&& clientlib` es responsable de copiar el SPA compilado en el módulo `ui.apps` como una biblioteca del lado del cliente durante una compilación. El módulo npm [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) se usa para facilitar esto.
 
-   Encontrará más detalles sobre los scripts disponibles [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=es).
+   Encontrará más detalles sobre los scripts disponibles [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
 6. Inspeccione el archivo `ui.frontend/clientlib.config.js`. [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) utiliza este archivo de configuración para determinar cómo generar la biblioteca de cliente.
 
@@ -313,7 +313,7 @@ Se puede usar un [servidor de desarrollo de Webpack](https://webpack.js.org/conf
    ℹ ｢wds｣: 404s will fallback to //index.html
    ```
 
-4. Abra una nueva ficha de explorador (si no está abierta) y vaya a [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html).
+4. Abra una nueva ficha de explorador (si aún no está abierta) y vaya a [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html).
 
    ![Servidor de desarrollo de Webpack - proxy json](assets/integrate-spa/webpack-dev-server-1.png)
 
@@ -439,7 +439,7 @@ La configuración inicial del JSON ficticio **requiere una instancia de AEM loca
 
    Añadir un nuevo comando facilita el cambio entre las configuraciones de proxy.
 
-8. Si se está ejecutando, detenga el **servidor de desarrollo de Webpack**. Inicie el servidor de desarrollo **webpack** con el script **start:mock**:
+8. Si se está ejecutando, detenga el **servidor de desarrollo de Webpack**. Inicie el **servidor de desarrollo de Webpack** con el script **start:mock**:
 
    ```shell
    $ npm run start:mock
@@ -655,6 +655,6 @@ Actualmente, los cambios realizados en **Header** solo son visibles a través de
 
 Siempre puede ver el código terminado en [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/integrate-spa-solution) o desprotegerlo localmente cambiando a la rama `Angular/integrate-spa-solution`.
 
-### Siguientes pasos {#next-steps}
+### Próximos pasos {#next-steps}
 
 [Asignar componentes de SPA a componentes de AEM](map-components.md): aprenda a asignar componentes de Angular a componentes de Adobe Experience Manager (AEM) con AEM SPA Editor JS SDK. La asignación de componentes permite a los autores realizar actualizaciones dinámicas de los componentes de la SPA en el Editor de SPA de AEM, de forma similar a la creación tradicional de AEM.

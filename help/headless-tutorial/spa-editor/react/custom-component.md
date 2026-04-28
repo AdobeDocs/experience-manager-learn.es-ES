@@ -1,5 +1,5 @@
 ---
-title: Crear un componente meteorológico personalizado | Introducción al Editor de SPA de AEM y React
+title: Creación de un componente meteorológico personalizado | Introducción al Editor de SPA de AEM y React
 description: Aprenda a crear un componente meteorológico personalizado para utilizarlo con el Editor de SPA de AEM. Aprenda a desarrollar cuadros de diálogo de autor y modelos Sling para ampliar el modelo JSON y rellenar un componente personalizado. Se utilizan los componentes Open Weather API y React Open Weather.
 feature: SPA Editor
 version: Experience Manager as a Cloud Service
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 82466e0e-b573-440d-b806-920f3585b638
 duration: 323
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 0%
+source-wordcount: '1274'
+ht-degree: 4%
 
 ---
 
@@ -31,7 +31,7 @@ Aprenda a crear un componente meteorológico personalizado para utilizarlo con e
 2. Obtenga información sobre cómo crear nuevos cuadros de diálogo de componentes de AEM.
 3. Aprenda a crear un componente de AEM **custom** que sea compatible con el marco del editor de SPA.
 
-## Qué va a generar
+## Lo qué va a generar
 
 Se crea un componente meteorológico simple. Los autores de contenido pueden añadir este componente a la SPA. Con un cuadro de diálogo de AEM, los autores pueden establecer la ubicación del tiempo que se mostrará.  La implementación de este componente ilustra los pasos necesarios para crear un nuevo componente de AEM compatible con el marco de trabajo del Editor de SPA de AEM.
 
@@ -51,7 +51,7 @@ Un componente de AEM se define como un nodo y propiedades. En el proyecto, estos
 
 >[!NOTE]
 >
-> Un repaso rápido de los [conceptos básicos de los componentes de AEM puede ser útil](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=es).
+> Un repaso rápido de los [conceptos básicos de los componentes de AEM puede ser útil](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
 
 1. En el IDE que elija, abra la carpeta `ui.apps`.
 2. Vaya a `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components` y cree una nueva carpeta llamada `open-weather`.
@@ -151,7 +151,7 @@ Un componente de AEM se define como un nodo y propiedades. En el proyecto, estos
 
 ## Creación del modelo Sling
 
-Los modelos Sling son objetos Java antiguos comunes (&quot;POJO&quot;) impulsados por anotaciones que facilitan la asignación de datos desde el JCR a variables Java. [Los modelos Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=es#sling-models) suelen funcionar para encapsular lógica empresarial compleja del lado del servidor para componentes de AEM.
+Los modelos Sling son objetos Java antiguos comunes (&quot;POJO&quot;) impulsados por anotaciones que facilitan la asignación de datos desde el JCR a variables Java. [Los modelos Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=en#sling-models) suelen funcionar para encapsular lógica empresarial compleja del lado del servidor para componentes de AEM.
 
 En el contexto del editor de SPA, los modelos Sling exponen el contenido de un componente a través del modelo JSON mediante una función que utiliza [Exportador de modelos Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=es).
 
@@ -376,7 +376,7 @@ A continuación, cree el componente `Open Weather` con el Editor de SPA de AEM.
 
    ![Componente meteorológico actualizado](assets/custom-component/weather-updated.png)
 
-1. Vea el modelo JSON navegando a [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Buscar `wknd-spa-react/components/open-weather`:
+1. Para ver el modelo JSON, vaya a [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Buscar `wknd-spa-react/components/open-weather`:
 
    ```json
    "open_weather": {
@@ -391,8 +391,8 @@ A continuación, cree el componente `Open Weather` con el Editor de SPA de AEM.
 
 ## Enhorabuena. {#congratulations}
 
-¡Enhorabuena! Ha aprendido a crear un componente personalizado de AEM para utilizarlo con el Editor de SPA. También ha aprendido cómo los cuadros de diálogo, las propiedades JCR y los modelos Sling interactúan para generar el modelo JSON.
+Congratulations, you learned how to create a custom AEM component to be used with the SPA Editor. You also learned how dialogs, JCR properties, and Sling Models interact to output the JSON model.
 
-### Siguientes pasos {#next-steps}
+### Próximos pasos {#next-steps}
 
-[Ampliar un componente principal](extend-component.md): aprenda a ampliar un componente principal de AEM existente para utilizarlo con el Editor de SPA de AEM. Entender cómo añadir propiedades y contenido a un componente existente es una técnica potente para expandir las capacidades de una implementación de AEM SPA Editor.
+[Extend a Core Component](extend-component.md) - Learn how to extend an existing AEM Core Component to be used with the AEM SPA Editor. Understanding how to add properties and content to an existing component is a powerful technique to expand the capabilities of an AEM SPA Editor implementation.

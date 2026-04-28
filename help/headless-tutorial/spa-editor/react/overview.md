@@ -13,10 +13,10 @@ exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
 last-substantial-update: 2022-08-25T00:00:00Z
 duration: 71
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: ht
-source-wordcount: '417'
-ht-degree: 100%
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 86%
 
 ---
 
@@ -47,7 +47,7 @@ Antes de iniciar este tutorial, necesita lo siguiente:
 * Comprender los conceptos básicos de HTML, CSS y JavaScript
 * Familiaridad básica con [React](https://reactjs.org/tutorial/tutorial.html?lang=es)
 
-*Aunque no es necesario, es beneficioso tener una comprensión básica del [desarrollo de componentes tradicionales de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es).*
+*Aunque no es necesario, es útil tener un conocimiento básico del [desarrollo de componentes tradicionales de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es).*
 
 ## Entorno de desarrollo local {#local-dev-environment}
 
@@ -62,10 +62,10 @@ Se necesita un entorno de desarrollo local para completar este tutorial. Las cap
 
 >[!NOTE]
 >
-> **¿Es novato en el uso de AEM as a Cloud Service?** Consulte la [siguiente guía para configurar un entorno de desarrollo local con el SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es).
+> **Nuevo en AEM as a Cloud Service?** Consulte la [siguiente guía para configurar un entorno de desarrollo local con AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es).
 >
-> **¿Es nuevo en AEM 6.5?** Consulte la [siguiente guía para configurar un entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es).
+> **Nuevo en AEM 6.5?** Consulte la [siguiente guía para configurar un entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es).
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
-Inicie ya el tutorial en el capítulo [Creación de proyectos](create-project.md) para generar un proyecto habilitado con el editor de SPA mediante el arquetipo de proyecto de AEM.
+¿Qué estás esperando?! Inicie el tutorial navegando hasta el capítulo [Crear proyecto](create-project.md) y aprenda a generar un proyecto con Editor SPA habilitado mediante el arquetipo de proyecto de AEM.

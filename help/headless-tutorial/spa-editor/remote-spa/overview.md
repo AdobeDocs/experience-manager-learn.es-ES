@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
 duration: 294
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 100%
+source-wordcount: '667'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ Bienvenido al tutorial de varias partes para desarrolladores que buscan aumentar
 
 Este tutorial se basa en la [aplicación WKND GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) React, esta consume contenido de fragmentos de contenido de AEM a través de las API de GraphQL de AEM; sin embargo, no proporciona ninguna creación contextual de contenido de SPA.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444850?captions=spa&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
 ## Información sobre el tutorial
 
@@ -48,8 +48,8 @@ El tutorial está diseñado para funcionar con **AEM as a Cloud Service**, y se 
 
 Este tutorial requiere lo siguiente:
 
-+ El [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es)
-+ [Node.js, versión 18](https://nodejs.org/es/)
++ [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es)
++ [Node.js v18](https://nodejs.org/es/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
@@ -66,15 +66,15 @@ Este tutorial utiliza lo siguiente:
 
 >[!NOTE]
 >
-> **¿Necesita ayuda para configurar su entorno de desarrollo local?** Consulte la[ siguiente guía para configurar un entorno de desarrollo local con el SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es).
+> **¿Necesita ayuda para configurar su entorno de desarrollo local?** Consulte la [siguiente guía para configurar un entorno de desarrollo local con AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es).
 
-## &#x200B;1. Configurar AEM para el editor de SPA
+## &#x200B;1. Configuración de AEM para el Editor de SPA
 
 Se requieren configuraciones de AEM para integrar la SPA con el editor de SPA de AEM. Estas configuraciones se administran e implementan mediante un proyecto de AEM. En este capítulo, aprenderá qué configuraciones son necesarias y cómo definirlas.
 
 + [Obtenga información sobre cómo configurar AEM para el editor de SPA](./aem-configure.md)
 
-## &#x200B;2. Arrancar la SPA
+## 2. Bootstrap the SPA
 
 Para que el editor de SPA de AEM integre una SPA en su contexto de creación, se deben realizar algunas adiciones a la SPA.
 
@@ -86,7 +86,7 @@ En primer lugar, explore la adición de un “componente fijo” editable a la S
 
 + [Obtenga información sobre los componentes fijos editables](./spa-fixed-component.md)
 
-## &#x200B;4. Componentes editables del contenedor
+## &#x200B;4. Componentes de contenedor editables
 
 A continuación, explore la adición de un “componente del contenedor” editable a la SPA. Esto ilustra cómo un desarrollador puede colocar un componente del contenedor en la SPA. Los componentes del contenedor permiten a los autores colocar el componente permitido y ajustar su diseño.
 

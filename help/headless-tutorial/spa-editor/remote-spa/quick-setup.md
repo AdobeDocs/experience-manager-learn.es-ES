@@ -1,6 +1,6 @@
 ---
-title: Configuración rápida de Editor de SPA y SPA remota
-description: Aprenda a ponerse en marcha con un SPA remoto y un editor de SPA de AEM en 15 minutos.
+title: Quick setup SPA Editor and Remote SPA
+description: Learn how to get up and running with a remote SPA and AEM SPA Editor in 15 mins!
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer
@@ -13,38 +13,38 @@ doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
 duration: 647
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 10%
+source-wordcount: '838'
+ht-degree: 13%
 
 ---
 
-# Configuración rápida 
+# Configuración rápida
 
 {{spa-editor-deprecation}}
 
-La configuración rápida es una guía rápida que ilustra cómo instalar y ejecutar la aplicación WKND y como SPA remota, y crearla con el Editor de SPA de AEM.
+Quick setup is an expedited walk-through illustrating how to install and run the WKND App and as a Remote SPA, and author it using AEM SPA Editor.
 
-La configuración rápida le lleva directamente al estado final de este tutorial.
+Quick setup takes you directly to the end state of this tutorial.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333181?quality=12&learn=on)
 
-_Un recorrido en vídeo de la configuración rápida_
+_A video walk-through of the quick setup_
 
 ## Requisitos previos
 
 Este tutorial requiere lo siguiente:
 
-+ El [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es)
-+ [Node.js, versión 18](https://nodejs.org/es/)
++ [SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=es)
++ [Node.js v18](https://nodejs.org/es/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
-+ Requisitos previos solo de macOS
-   + [Xcode](https://developer.apple.com/xcode/) o [herramientas de línea de comandos de Xcode](https://developer.apple.com/xcode/resources/)
-+ [aem-guides-wknd.all-2.1.0.zip o superior](https://github.com/adobe/aem-guides-wknd/releases)
-+ [código fuente aem-guides-wknd-graphql (rama: feature/spa-editor)](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
++ macOS only prerequisites
+   + [Xcode](https://developer.apple.com/xcode/) or [Xcode command-line tools](https://developer.apple.com/xcode/resources/)
++ [aem-guides-wknd.all-2.1.0.zip or greater](https://github.com/adobe/aem-guides-wknd/releases)
++ [aem-guides-wknd-graphql source code (branch: feature/spa-editor)](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
 
 
 Este tutorial utiliza lo siguiente:
@@ -55,13 +55,13 @@ Este tutorial utiliza lo siguiente:
 + Ejecución del SDK de AEM con la cuenta local `admin` con la contraseña `admin`
 + Ejecución de la SPA en `http://localhost:3000`
 
-## Inicio rápido de AEM SDK
+## Start the AEM SDK Quickstart
 
-Descargue e instale AEM SDK Quickstart en el puerto 4502, con las credenciales predeterminadas `admin/admin`.
+Download and install the AEM SDK Quickstart on port 4502, with default `admin/admin` credentials.
 
-1. [Descargar la última versión de AEM SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=1)
-1. Descomprima AEM SDK en `~/aem-sdk`
-1. Ejecute el Jar de inicio rápido de AEM SDK
+1. [Download latest AEM SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=1)
+1. Unzip the AEM SDK to `~/aem-sdk`
+1. Run the AEM SDK Quickstart Jar
 
    ```
    $ java -jar aem-sdk-quickstart-xxx.jar
@@ -69,7 +69,7 @@ Descargue e instale AEM SDK Quickstart en el puerto 4502, con las credenciales p
    # Provide `admin` as the admin user's password
    ```
 
-AEM SDK se inicia y se inicia automáticamente en [http://localhost:4502](http://localhost:4502). Inicie sesión con las siguientes credenciales:
+AEM SDK starts and automatically launches on [http://localhost:4502](http://localhost:4502). Log in using the following credentials:
 
 + Nombre de usuario: `admin`
 + Contraseña: `admin`
@@ -78,7 +78,7 @@ AEM SDK se inicia y se inicia automáticamente en [http://localhost:4502](http:/
 
 Este tutorial depende del proyecto __WKND 2.1.0+&#39;s__ (para contenido).
 
-1. [Descargar la versión más reciente de `aem-guides-wknd.all.x.x.x.zip`](https://github.com/adobe/aem-guides-wknd/releases)
+1. [Descargar la última versión de `aem-guides-wknd.all.x.x.x.zip`](https://github.com/adobe/aem-guides-wknd/releases)
 1. Inicie sesión en el Administrador de paquetes de AEM SDK en [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) con las credenciales de `admin`.
 1. __Cargar__ `aem-guides-wknd.all.x.x.x.zip` descargado en el paso 1
 1. Pulse el botón __Instalar__ para la entrada `aem-guides-wknd.all-x.x.x.zip`
@@ -87,8 +87,8 @@ Este tutorial depende del proyecto __WKND 2.1.0+&#39;s__ (para contenido).
 
 Para realizar una configuración rápida, aquí se proporcionan paquetes de AEM que contienen la configuración y el contenido finales de AEM del tutorial.
 
-1. [Descargar &#x200B;](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [Descargar &#x200B;](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
+1. [Descargar `wknd-app.all.x.x.x.zip`](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [Descargar `wknd-app.ui.content.sample.x.x.x.zip`](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
 1. Inicie sesión en el Administrador de paquetes de AEM SDK en [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) con las credenciales de `admin`.
 1. __Cargar__ `wknd-app.all.x.x.x.zip` descargado en el paso 1
 1. Pulse el botón __Instalar__ para la entrada `wknd-app.all.x.x.x.zip`
@@ -129,37 +129,37 @@ Compruebe que la SPA se esté ejecutando en [http://localhost:3000](http://local
 
 ## Contenido de autor en AEM SPA Editor
 
-Antes de crear contenido, organice las ventanas del explorador de modo que AEM Author (`http://localhost:4502`) esté a la izquierda y el SPA remoto (`http://localhost:3000`) se ejecute a la derecha. Esta disposición le permite ver cómo los cambios en el contenido procedente de AEM se reflejan inmediatamente en la SPA.
+Antes de crear contenido, organice las ventanas del explorador de modo que AEM Author (`http://localhost:4502`) esté a la izquierda y el SPA remoto (`http://localhost:3000`) se ejecute a la derecha. This arrangement allows you to see how changes to AEM-sourced content are immediately reflected in the SPA.
 
-1. Inicie sesión en [AEM SDK Author service](http://localhost:4502) como `admin`
-1. Vaya a __Sitios > Aplicación WKND > us > en__
-1. Editar __página principal de la aplicación WKND__
-1. Cambiar a modo __Editar__
+1. Log in to [AEM SDK Author service](http://localhost:4502) as `admin`
+1. Navigate to __Sites > WKND App > us > en__
+1. Edit __WKND App Home Page__
+1. Switch to __Edit__ mode
 
-### Crear el componente fijo de la vista Inicio
+### Author the Home view&#39;s fixed component
 
-1. Pulse el texto __WKND Adventures__ para activar el componente Título fijo (codificado en la vista Inicio de la SPA)
-1. Pulse el icono __llave inglesa__ en la barra de acciones del componente Título
-1. Cambia el contenido del componente Título y lo guarda
-1. Actualice la SPA que se ejecuta el `http://localhost:3000` y vea que los cambios se reflejan
+1. Tap on the text __WKND Adventures__ to activate the fixed Title component (hardcoded into the SPA&#39;s Home view)
+1. Tap the __wrench__ icon on the Title component&#39;s action bar
+1. Changes the Title component&#39;s content and save
+1. Refresh the SPA running on `http://localhost:3000` and see that the changes reflected
 
-### Crear el componente contenedor de la vista Inicio
+### Author the Home view&#39;s container component
 
-1. Mientras sigue editando la __página principal de la aplicación WKND__...
-1. Expandir la __barra lateral del editor de SPA__ (a la izquierda)
-1. Pulse los iconos __Componentes__
-1. Agregar, cambiar o quitar componentes del componente contenedor que se encuentra debajo del logotipo de WKND y encima del componente de título fijo
-1. Actualice la SPA que se ejecuta el `http://localhost:3000` y vea que los cambios se reflejan
+1. While still editing the __WKND App Home Page__...
+1. Expand the __SPA Editor&#39;s sidebar__ (on the left)
+1. Tap the __Components__ icons
+1. Add, change, or remove components from the container component that sits beneath the WKND logo and above the fixed Title component
+1. Refresh the SPA running on `http://localhost:3000` and see that the changes reflected
 
-### Crear un componente de contenedor en una ruta dinámica
+### Author a container component on a dynamic route
 
-1. Cambiar al modo __Vista previa__ en el Editor de SPA
-1. Toca la tarjeta __Bali Surf Camp__ y navega a su ruta dinámica
-1. Agregar, cambiar o quitar componentes del componente contenedor que se encuentra sobre el encabezado __Itinerario__
-1. Actualice la SPA que se ejecuta el `http://localhost:3000` y vea que los cambios se reflejan
+1. Switch to __Preview__ mode in SPA Editor
+1. Tap on the __Bali Surf Camp__ card and navigate to its dynamic route
+1. Add, change, or remove components from the container component that sites above the __Itinerary__ heading
+1. Refresh the SPA running on `http://localhost:3000` and see that the changes reflected
 
-Las nuevas páginas de AEM bajo la __página de inicio de la aplicación WKND > Aventura__ _deben_ tener una página de AEM que coincida con el nombre del fragmento de contenido de la aventura correspondiente. Esto se debe a que la asignación de ruta de SPA a página de AEM se basa en el último segmento de la ruta, que es el nombre del fragmento de contenido.
+New AEM pages under the __WKND App Home page > Adventure__ _must_ have an AEM page name that matches the corresponding adventure&#39;s Content Fragment&#39;s name. This is because the SPA route to AEM Page mapping is based off the last segment of the route, which is the Content Fragment&#39;s name.
 
 ## Enhorabuena.
 
-Acaba de probar rápidamente cómo AEM SPA Editor puede mejorar su SPA con áreas controladas y editables. Si está interesado, consulte el resto del tutorial, pero asegúrese de empezar de nuevo, ya que en esta configuración rápida su entorno de desarrollo local ahora está en estado final del tutorial.
+You just got quick taste of how AEM SPA Editor can enhance your SPA with controlled, editable areas! If you&#39;re interested - check out the rest of the tutorial, but make sure to start fresh, since in this quick setup your local development environment is now in  end state of the tutorial!
