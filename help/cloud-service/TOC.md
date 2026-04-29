@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 2eb26576a0308d8b74c2d1ce7db61c148936d076
+source-git-commit: e3ef450cfe9005ba940ff1897c216681654341b3
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 94%
+source-wordcount: '1642'
+ht-degree: 93%
 
 ---
 
@@ -44,6 +44,12 @@ ht-degree: 94%
       + [Información general](./ai/mcp/overview.md)
       + [Acelerar las operaciones de contenido de AEM con el servidor MCP](./ai/mcp/accelerate-content-operations-with-aem-mcp-server.md)
       + [Servidor MCP de Cloud Manager](./ai/mcp/cloud-manager.md)
+   + Desarrollo asistido por IA {#ai-assisted-development}
+      + [Información general](./ai/ai-assited-development/overview.md)
+      + Configuración{#setup}
+         + [Aptitudes de agente](./ai/ai-assited-development/setup/agent-skills.md)
+      + Casos de uso{#use-cases}
+         + [Desarrollo de componentes](./ai/ai-assited-development/use-cases/component-development.md)
 + Integraciones de Experience Cloud{#integrations}
    + [Integraciones](./integrations/experience-cloud.md)
    + [AEM sin encabezado y Target](./integrations/target.md)
@@ -142,7 +148,7 @@ ht-degree: 94%
          + [Información general](./developing/universal-editor/react-app/overview.md)
          + [Configuración del desarrollo local](./developing/universal-editor/react-app/local-development-setup.md)
          + [Instrumentalizar la aplicación React](./developing/universal-editor/react-app/instrument-to-edit-content.md)
-   + [JavDocs de la API del SDK de AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
+   + [JavaDocs de la API de AEM SDK](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Depuración de AEM{#debugging}
    + Depuración del SDK de AEM{#debugging-aem-sdk}
       + [Información general](./debugging/aem-sdk-local-quickstart/overview.md)
@@ -333,7 +339,7 @@ ht-degree: 94%
       + [&#x200B;1. Introducción](./forms/using-vertical-tabs/introduction.md)
       + [&#x200B;2. Crear formulario](./forms/using-vertical-tabs/create-af.md)
       + [&#x200B;3. Navegación](./forms/using-vertical-tabs/navigation.md)
-      + [&#x200B;4. Añadir iconos](./forms/using-vertical-tabs/icons.md)
+      + [&#x200B;4. Adición de iconos](./forms/using-vertical-tabs/icons.md)
    + Usar el resultado y el servicio de formularios{#forms-cs-output-and-forms-service}
       + [Generar PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
    + Creación de un perfil en AEP al enviar el formulario{#aep-integration}
@@ -457,11 +463,11 @@ ht-degree: 94%
    + [Resolución de problemas](./asset-compute/troubleshooting.md)
 
 + Tutoriales en varios pasos{#multi-step-tutorials}
-   + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es){target=_blank}
+   + [Desarrollo de AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es){target=_blank}
-   + [Editor de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
-   + [AEM Sites y Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=es){target=_blank}
-   + [Autenticación basada en token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=es){target=_blank}
+   + [Editor SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
+   + [AEM SITES y ADOBE TARGET](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=es){target=_blank}
+   + [Autenticación basada en tókenes](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=es){target=_blank}
 + Recursos de expertos {#expert-resources}
    + AEM Champions {#aem-champions}
       + [Manual de tácticas de incorporación de Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)
