@@ -105,7 +105,7 @@ Creación de ![AGENTS.md](../assets/component-development/agents-md-creation.png
 
 ## Recursos adicionales
 
-- [Desarrollo local con herramientas de IA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [Desarrollo local con herramientas de IA](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [Aptitudes de Adobe para agentes de codificación de IA](https://github.com/adobe/skills)
 
