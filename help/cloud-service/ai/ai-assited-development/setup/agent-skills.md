@@ -10,13 +10,13 @@ duration: 0
 last-substantial-update: 2026-04-24T00:00:00Z
 jira: KT-20900
 thumbnail: KT-20900.png
-source-git-commit: e3ef450cfe9005ba940ff1897c216681654341b3
+exl-id: c92d9124-4b92-4ee1-b04f-b6d1f82d53aa
+source-git-commit: f93359e731b6c3fa549e9499ef693042eba3aad7
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 4%
 
 ---
-
 
 # Configurar las aptitudes de agente de AEM
 
@@ -27,6 +27,8 @@ Cuando solicita a un agente de codificación a través de un IDE con tecnología
 Adobe proporciona las aptitudes de agente de AEM a través del repositorio [Adobe Skills](https://github.com/adobe/skills). Consulte también [Desarrollo asistido por IA](../overview.md) para ver cómo Adobe ayuda con el desarrollo asistido por IA.
 
 En este tutorial, instalará las habilidades en un clon local del [proyecto WKND Sites](https://github.com/adobe/aem-guides-wknd). Puede seguir los mismos pasos para su propio proyecto de AEM as a Cloud Service.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3484940/?learn=on&enablevpops)
 
 ## Requisitos previos
 
@@ -119,7 +121,7 @@ CARDS
 
 ## Recursos adicionales
 
-- [Desarrollo local con herramientas de IA](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [Desarrollo local con herramientas de IA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [Aptitudes de Adobe para agentes de codificación de IA](https://github.com/adobe/skills)
 

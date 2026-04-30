@@ -10,19 +10,21 @@ duration: 0
 last-substantial-update: 2026-04-24T00:00:00Z
 jira: KT-20901
 thumbnail: KT-20901.png
-source-git-commit: e3ef450cfe9005ba940ff1897c216681654341b3
+exl-id: bd9b74e8-81ab-4d42-bd0a-5443248b5770
+source-git-commit: f93359e731b6c3fa549e9499ef693042eba3aad7
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 2%
 
 ---
 
-
 # Desarrollo de componentes con habilidades de agente de AEM
 
 Aprenda a desarrollar un componente de AEM con las habilidades de agente de AEM como parte de [desarrollo asistido por IA](../overview.md).
 
 En este tutorial, utilizará lenguaje natural en un IDE con tecnología de IA (por ejemplo, Cursor) para desarrollar un componente **Banner promocional** en el [Proyecto de sitios WKND](https://github.com/adobe/aem-guides-wknd). El agente de codificación aplica la aptitud de agente de AEM `create-component` para generar la implementación.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3484952/?learn=on&enablevpops)
 
 ## Requisitos previos
 
@@ -105,7 +107,7 @@ Creación de ![AGENTS.md](../assets/component-development/agents-md-creation.png
 
 ## Recursos adicionales
 
-- [Desarrollo local con herramientas de IA](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [Desarrollo local con herramientas de IA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [Aptitudes de Adobe para agentes de codificación de IA](https://github.com/adobe/skills)
 
