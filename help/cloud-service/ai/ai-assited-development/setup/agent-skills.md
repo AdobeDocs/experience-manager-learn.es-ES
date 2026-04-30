@@ -28,7 +28,7 @@ Adobe proporciona las aptitudes de agente de AEM a través del repositorio [Adob
 
 En este tutorial, instalará las habilidades en un clon local del [proyecto WKND Sites](https://github.com/adobe/aem-guides-wknd). Puede seguir los mismos pasos para su propio proyecto de AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3484940/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3484943/?captions=spa&learn=on&enablevpops)
 
 ## Requisitos previos
 
