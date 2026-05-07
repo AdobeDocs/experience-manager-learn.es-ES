@@ -3,20 +3,20 @@ title: Desarrollo asistido por IA
 description: Obtenga información sobre el desarrollo asistido por IA que utiliza un IDE o agentes de codificación con tecnología de IA junto con AGENTS.md, habilidades de agente y servidores MCP para ayudar a producir código de alta calidad y listo para la producción para proyectos en AEM as a Cloud Service.
 version: Experience Manager as a Cloud Service
 feature: Developer Tools
-role: Developer, Architect
+role: Developer
 level: Beginner
 doc-type: Article
 duration: 0
 last-substantial-update: 2026-04-24T00:00:00Z
 jira: KT-20899
 thumbnail: KT-20899.pngKT-20899
-source-git-commit: e3ef450cfe9005ba940ff1897c216681654341b3
+exl-id: 19b7ab0b-2f47-434a-a141-17701f432fac
+source-git-commit: 6f303c8fbec523227716fe0bc1bff8fceffad1f9
 workflow-type: tm+mt
 source-wordcount: '906'
 ht-degree: 0%
 
 ---
-
 
 # Desarrollo asistido por IA
 
@@ -69,10 +69,10 @@ Los servidores MCP exponen herramientas y datos al agente de codificación a tra
 
 Para **desarrollo local** con AEM SDK y Dispatcher, instale estos **servidores MCP locales** desde el portal [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3):
 
-- **AEM Quickstart Local MCP server**: Exposes live runtime data from a local AEM SDK instance to support troubleshooting and development. For more information, see [AEM Quickstart MCP Server](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#aem-quickstart-mcp-server).
-- **Dispatcher Local MCP server**: Enables runtime validation and inspection of a local Dispatcher instance. For more information, see [Dispatcher MCP Server](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#dispatcher-mcp-server).
+- **Servidor MCP local de inicio rápido de AEM**: expone datos en tiempo de ejecución en tiempo de ejecución de una instancia local de AEM SDK para admitir la solución de problemas y el desarrollo. Para obtener más información, consulte [Servidor AEM Quickstart MCP](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#aem-quickstart-mcp-server).
+- **Servidor MCP local de Dispatcher**: habilita la validación y la inspección en tiempo de ejecución de una instancia de Dispatcher local. Para obtener más información, consulte [Servidor MCP de Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#dispatcher-mcp-server).
 
-For Adobe-hosted AEM MCP servers (for example, content, read-only content, and Cloud Manager), see [MCP Servers in AEM](../mcp/overview.md).
+Para servidores MCP de AEM alojados por Adobe (por ejemplo, contenido, contenido de solo lectura y Cloud Manager), consulte [Servidores MCP en AEM](../mcp/overview.md).
 
 ## Configuración
 
@@ -93,8 +93,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./setup/agent-skills.md" title="Set up AEM Agent Skills" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/agent-skills/select-aem-agent-skills-to-install.png" alt="Set up AEM Agent Skills"
+                    <a href="./setup/agent-skills.md" title="Configurar las aptitudes de agente de AEM" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/agent-skills/select-aem-agent-skills-to-install.png" alt="Configurar las aptitudes de agente de AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -102,12 +102,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./setup/agent-skills.md" target="_self" rel="referrer" title="Set up AEM Agent Skills">Set up AEM Agent Skills</a>
+                        <a href="./setup/agent-skills.md" target="_self" rel="referrer" title="Configurar las aptitudes de agente de AEM">Configurar aptitudes de agente de AEM</a>
                     </p>
-                    <p class="is-size-6">Learn how to set up AEM Agent Skills for AI-assisted development.</p>
+                    <p class="is-size-6">Aprenda a configurar las habilidades de agente de AEM para el desarrollo asistido por IA.</p>
                 </div>
                 <a href="./setup/agent-skills.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Install AEM Agent Skills</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Instalar aptitudes de agente de AEM</span>
                 </a>
             </div>
         </div>
@@ -133,8 +133,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./use-cases/component-development.md" title="Create AEM Component with AI-assisted development" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/component-development/review-generated-code.png" alt="Create AEM Component with AI-assisted development"
+                    <a href="./use-cases/component-development.md" title="Creación de un componente de AEM con desarrollo asistido por IA" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/component-development/review-generated-code.png" alt="Creación de un componente de AEM con desarrollo asistido por IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -142,12 +142,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/component-development.md" target="_self" rel="referrer" title="Create AEM Component with AI-assisted development">Create AEM Component with AI-assisted development</a>
+                        <a href="./use-cases/component-development.md" target="_self" rel="referrer" title="Creación de un componente de AEM con desarrollo asistido por IA">Crear componente de AEM con desarrollo asistido por IA</a>
                     </p>
-                    <p class="is-size-6">Learn how to use AI-assisted development to develop AEM components.</p>
+                    <p class="is-size-6">Aprenda a utilizar el desarrollo asistido por IA para desarrollar componentes de AEM.</p>
                 </div>
                 <a href="./use-cases/component-development.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Create AEM Component</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Crear componente de AEM</span>
                 </a>
             </div>
         </div>
@@ -157,10 +157,10 @@ CARDS
 
 ## Recursos adicionales
 
-- [Local development with AI Tools](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [Desarrollo local con herramientas de IA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
-- [Adobe Skills for AI Coding Agents](https://github.com/adobe/skills)
+- [Aptitudes de Adobe para agentes de codificación de IA](https://github.com/adobe/skills)
 
 - [AGENTS.md](https://agents.md/)
 
-- [Agent Skills](https://agentskills.io/home)
+- [Aptitudes de agente](https://agentskills.io/home)
